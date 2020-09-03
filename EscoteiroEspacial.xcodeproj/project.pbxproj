@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27F5BC6B25011E8800AD5531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC6A25011E8800AD5531 /* AppDelegate.swift */; };
+		27F5BC6D25011E8800AD5531 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC6C25011E8800AD5531 /* SceneDelegate.swift */; };
+		27F5BC6F25011E8800AD5531 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC6E25011E8800AD5531 /* ViewController.swift */; };
+		27F5BC7225011E8800AD5531 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F5BC7025011E8800AD5531 /* Main.storyboard */; };
+		27F5BC7425011E8A00AD5531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F5BC7325011E8A00AD5531 /* Assets.xcassets */; };
+		27F5BC7725011E8A00AD5531 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F5BC7525011E8A00AD5531 /* LaunchScreen.storyboard */; };
+		27F5BC8225011E8A00AD5531 /* EscoteiroEspacialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8125011E8A00AD5531 /* EscoteiroEspacialTests.swift */; };
+		27F5BC8D25011E8A00AD5531 /* EscoteiroEspacialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27F5BC7E25011E8A00AD5531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F5BC5F25011E8800AD5531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27F5BC6625011E8800AD5531;
+			remoteInfo = EscoteiroEspacial;
+		};
+		27F5BC8925011E8A00AD5531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F5BC5F25011E8800AD5531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27F5BC6625011E8800AD5531;
+			remoteInfo = EscoteiroEspacial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27F5BC6725011E8800AD5531 /* EscoteiroEspacial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EscoteiroEspacial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F5BC6A25011E8800AD5531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27F5BC6C25011E8800AD5531 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		27F5BC6E25011E8800AD5531 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27F5BC7125011E8800AD5531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27F5BC7325011E8A00AD5531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27F5BC7625011E8A00AD5531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27F5BC7825011E8A00AD5531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F5BC7D25011E8A00AD5531 /* EscoteiroEspacialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EscoteiroEspacialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F5BC8125011E8A00AD5531 /* EscoteiroEspacialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscoteiroEspacialTests.swift; sourceTree = "<group>"; };
+		27F5BC8325011E8A00AD5531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F5BC8825011E8A00AD5531 /* EscoteiroEspacialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EscoteiroEspacialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscoteiroEspacialUITests.swift; sourceTree = "<group>"; };
+		27F5BC8E25011E8A00AD5531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27F5BC6425011E8800AD5531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F5BC7A25011E8A00AD5531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F5BC8525011E8A00AD5531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27F5BC5E25011E8800AD5531 = {
+			isa = PBXGroup;
+			children = (
+				27F5BC6925011E8800AD5531 /* EscoteiroEspacial */,
+				27F5BC8025011E8A00AD5531 /* EscoteiroEspacialTests */,
+				27F5BC8B25011E8A00AD5531 /* EscoteiroEspacialUITests */,
+				27F5BC6825011E8800AD5531 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27F5BC6825011E8800AD5531 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27F5BC6725011E8800AD5531 /* EscoteiroEspacial.app */,
+				27F5BC7D25011E8A00AD5531 /* EscoteiroEspacialTests.xctest */,
+				27F5BC8825011E8A00AD5531 /* EscoteiroEspacialUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27F5BC6925011E8800AD5531 /* EscoteiroEspacial */ = {
+			isa = PBXGroup;
+			children = (
+				27F5BC6A25011E8800AD5531 /* AppDelegate.swift */,
+				27F5BC6C25011E8800AD5531 /* SceneDelegate.swift */,
+				27F5BC6E25011E8800AD5531 /* ViewController.swift */,
+				27F5BC7025011E8800AD5531 /* Main.storyboard */,
+				27F5BC7325011E8A00AD5531 /* Assets.xcassets */,
+				27F5BC7525011E8A00AD5531 /* LaunchScreen.storyboard */,
+				27F5BC7825011E8A00AD5531 /* Info.plist */,
+			);
+			path = EscoteiroEspacial;
+			sourceTree = "<group>";
+		};
+		27F5BC8025011E8A00AD5531 /* EscoteiroEspacialTests */ = {
+			isa = PBXGroup;
+			children = (
+				27F5BC8125011E8A00AD5531 /* EscoteiroEspacialTests.swift */,
+				27F5BC8325011E8A00AD5531 /* Info.plist */,
+			);
+			path = EscoteiroEspacialTests;
+			sourceTree = "<group>";
+		};
+		27F5BC8B25011E8A00AD5531 /* EscoteiroEspacialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */,
+				27F5BC8E25011E8A00AD5531 /* Info.plist */,
+			);
+			path = EscoteiroEspacialUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27F5BC6625011E8800AD5531 /* EscoteiroEspacial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F5BC9125011E8A00AD5531 /* Build configuration list for PBXNativeTarget "EscoteiroEspacial" */;
+			buildPhases = (
+				27F5BC6325011E8800AD5531 /* Sources */,
+				27F5BC6425011E8800AD5531 /* Frameworks */,
+				27F5BC6525011E8800AD5531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EscoteiroEspacial;
+			productName = EscoteiroEspacial;
+			productReference = 27F5BC6725011E8800AD5531 /* EscoteiroEspacial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27F5BC7C25011E8A00AD5531 /* EscoteiroEspacialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F5BC9425011E8A00AD5531 /* Build configuration list for PBXNativeTarget "EscoteiroEspacialTests" */;
+			buildPhases = (
+				27F5BC7925011E8A00AD5531 /* Sources */,
+				27F5BC7A25011E8A00AD5531 /* Frameworks */,
+				27F5BC7B25011E8A00AD5531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27F5BC7F25011E8A00AD5531 /* PBXTargetDependency */,
+			);
+			name = EscoteiroEspacialTests;
+			productName = EscoteiroEspacialTests;
+			productReference = 27F5BC7D25011E8A00AD5531 /* EscoteiroEspacialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27F5BC8725011E8A00AD5531 /* EscoteiroEspacialUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F5BC9725011E8A00AD5531 /* Build configuration list for PBXNativeTarget "EscoteiroEspacialUITests" */;
+			buildPhases = (
+				27F5BC8425011E8A00AD5531 /* Sources */,
+				27F5BC8525011E8A00AD5531 /* Frameworks */,
+				27F5BC8625011E8A00AD5531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27F5BC8A25011E8A00AD5531 /* PBXTargetDependency */,
+			);
+			name = EscoteiroEspacialUITests;
+			productName = EscoteiroEspacialUITests;
+			productReference = 27F5BC8825011E8A00AD5531 /* EscoteiroEspacialUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27F5BC5F25011E8800AD5531 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Mateus Nobre";
+				TargetAttributes = {
+					27F5BC6625011E8800AD5531 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					27F5BC7C25011E8A00AD5531 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 27F5BC6625011E8800AD5531;
+					};
+					27F5BC8725011E8A00AD5531 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 27F5BC6625011E8800AD5531;
+					};
+				};
+			};
+			buildConfigurationList = 27F5BC6225011E8800AD5531 /* Build configuration list for PBXProject "EscoteiroEspacial" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27F5BC5E25011E8800AD5531;
+			productRefGroup = 27F5BC6825011E8800AD5531 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27F5BC6625011E8800AD5531 /* EscoteiroEspacial */,
+				27F5BC7C25011E8A00AD5531 /* EscoteiroEspacialTests */,
+				27F5BC8725011E8A00AD5531 /* EscoteiroEspacialUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27F5BC6525011E8800AD5531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F5BC7725011E8A00AD5531 /* LaunchScreen.storyboard in Resources */,
+				27F5BC7425011E8A00AD5531 /* Assets.xcassets in Resources */,
+				27F5BC7225011E8800AD5531 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F5BC7B25011E8A00AD5531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F5BC8625011E8A00AD5531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27F5BC6325011E8800AD5531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F5BC6F25011E8800AD5531 /* ViewController.swift in Sources */,
+				27F5BC6B25011E8800AD5531 /* AppDelegate.swift in Sources */,
+				27F5BC6D25011E8800AD5531 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F5BC7925011E8A00AD5531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F5BC8225011E8A00AD5531 /* EscoteiroEspacialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F5BC8425011E8A00AD5531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F5BC8D25011E8A00AD5531 /* EscoteiroEspacialUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27F5BC7F25011E8A00AD5531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27F5BC6625011E8800AD5531 /* EscoteiroEspacial */;
+			targetProxy = 27F5BC7E25011E8A00AD5531 /* PBXContainerItemProxy */;
+		};
+		27F5BC8A25011E8A00AD5531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27F5BC6625011E8800AD5531 /* EscoteiroEspacial */;
+			targetProxy = 27F5BC8925011E8A00AD5531 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27F5BC7025011E8800AD5531 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27F5BC7125011E8800AD5531 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27F5BC7525011E8A00AD5531 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27F5BC7625011E8A00AD5531 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27F5BC8F25011E8A00AD5531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27F5BC9025011E8A00AD5531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27F5BC9225011E8A00AD5531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
+				INFOPLIST_FILE = EscoteiroEspacial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.EscoteiroEspacial.EscoteiroEspacial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27F5BC9325011E8A00AD5531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
+				INFOPLIST_FILE = EscoteiroEspacial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.EscoteiroEspacial.EscoteiroEspacial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		27F5BC9525011E8A00AD5531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
+				INFOPLIST_FILE = EscoteiroEspacialTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.EscoteiroEspacial.EscoteiroEspacialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EscoteiroEspacial.app/EscoteiroEspacial";
+			};
+			name = Debug;
+		};
+		27F5BC9625011E8A00AD5531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
+				INFOPLIST_FILE = EscoteiroEspacialTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.EscoteiroEspacial.EscoteiroEspacialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EscoteiroEspacial.app/EscoteiroEspacial";
+			};
+			name = Release;
+		};
+		27F5BC9825011E8A00AD5531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
+				INFOPLIST_FILE = EscoteiroEspacialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.EscoteiroEspacial.EscoteiroEspacialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EscoteiroEspacial;
+			};
+			name = Debug;
+		};
+		27F5BC9925011E8A00AD5531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
+				INFOPLIST_FILE = EscoteiroEspacialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.EscoteiroEspacial.EscoteiroEspacialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EscoteiroEspacial;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27F5BC6225011E8800AD5531 /* Build configuration list for PBXProject "EscoteiroEspacial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F5BC8F25011E8A00AD5531 /* Debug */,
+				27F5BC9025011E8A00AD5531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F5BC9125011E8A00AD5531 /* Build configuration list for PBXNativeTarget "EscoteiroEspacial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F5BC9225011E8A00AD5531 /* Debug */,
+				27F5BC9325011E8A00AD5531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F5BC9425011E8A00AD5531 /* Build configuration list for PBXNativeTarget "EscoteiroEspacialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F5BC9525011E8A00AD5531 /* Debug */,
+				27F5BC9625011E8A00AD5531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F5BC9725011E8A00AD5531 /* Build configuration list for PBXNativeTarget "EscoteiroEspacialUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F5BC9825011E8A00AD5531 /* Debug */,
+				27F5BC9925011E8A00AD5531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27F5BC5F25011E8800AD5531 /* Project object */;
+}
