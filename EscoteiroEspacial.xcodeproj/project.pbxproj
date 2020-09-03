@@ -15,6 +15,7 @@
 		27F5BC7725011E8A00AD5531 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F5BC7525011E8A00AD5531 /* LaunchScreen.storyboard */; };
 		27F5BC8225011E8A00AD5531 /* EscoteiroEspacialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8125011E8A00AD5531 /* EscoteiroEspacialTests.swift */; };
 		27F5BC8D25011E8A00AD5531 /* EscoteiroEspacialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */; };
+		27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27F5BCA0250121BA00AD5531 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		27F5BC8825011E8A00AD5531 /* EscoteiroEspacialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EscoteiroEspacialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscoteiroEspacialUITests.swift; sourceTree = "<group>"; };
 		27F5BC8E25011E8A00AD5531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F5BCA0250121BA00AD5531 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		27F5BC5E25011E8800AD5531 = {
 			isa = PBXGroup;
 			children = (
+				27F5BCA0250121BA00AD5531 /* .swiftlint.yml */,
 				27F5BC6925011E8800AD5531 /* EscoteiroEspacial */,
 				27F5BC8025011E8A00AD5531 /* EscoteiroEspacialTests */,
 				27F5BC8B25011E8A00AD5531 /* EscoteiroEspacialUITests */,
@@ -99,10 +102,11 @@
 		27F5BC6925011E8800AD5531 /* EscoteiroEspacial */ = {
 			isa = PBXGroup;
 			children = (
+				27F5BC9C25011FCB00AD5531 /* Controller */,
+				27F5BC9B25011FC500AD5531 /* Model */,
+				27F5BC9A25011FBA00AD5531 /* View */,
 				27F5BC6A25011E8800AD5531 /* AppDelegate.swift */,
 				27F5BC6C25011E8800AD5531 /* SceneDelegate.swift */,
-				27F5BC6E25011E8800AD5531 /* ViewController.swift */,
-				27F5BC7025011E8800AD5531 /* Main.storyboard */,
 				27F5BC7325011E8A00AD5531 /* Assets.xcassets */,
 				27F5BC7525011E8A00AD5531 /* LaunchScreen.storyboard */,
 				27F5BC7825011E8A00AD5531 /* Info.plist */,
@@ -128,6 +132,53 @@
 			path = EscoteiroEspacialUITests;
 			sourceTree = "<group>";
 		};
+		27F5BC9A25011FBA00AD5531 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27F5BC7025011E8800AD5531 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27F5BC9B25011FC500AD5531 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27F5BC9D25011FD200AD5531 /* Entity */,
+				27F5BC9E25011FDA00AD5531 /* Service */,
+				27F5BC9F25011FE100AD5531 /* Persistence */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27F5BC9C25011FCB00AD5531 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27F5BC6E25011E8800AD5531 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		27F5BC9D25011FD200AD5531 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		27F5BC9E25011FDA00AD5531 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		27F5BC9F25011FE100AD5531 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +189,7 @@
 				27F5BC6325011E8800AD5531 /* Sources */,
 				27F5BC6425011E8800AD5531 /* Frameworks */,
 				27F5BC6525011E8800AD5531 /* Resources */,
+				27F5BCA22501223100AD5531 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -232,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */,
 				27F5BC7725011E8A00AD5531 /* LaunchScreen.storyboard in Resources */,
 				27F5BC7425011E8A00AD5531 /* Assets.xcassets in Resources */,
 				27F5BC7225011E8800AD5531 /* Main.storyboard in Resources */,
@@ -253,6 +306,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27F5BCA22501223100AD5531 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: Swiftlint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		27F5BC6325011E8800AD5531 /* Sources */ = {
