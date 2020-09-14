@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Space Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeSpaceController" customModule="EscoteiroEspacial" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="BackStars" translatesAutoresizingMaskIntoConstraints="NO" id="9zy-r0-Os1">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <viewLayoutGuide key="safeArea" id="dUZ-fH-qQg"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas" translatesAutoresizingMaskIntoConstraints="NO" id="TB7-8H-8eY">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoO-uo-YKz" userLabel="Sol">
+                                <rect key="frame" x="8" y="109.5" width="133.5" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aoO-uo-YKz" secondAttribute="height" multiplier="195:228" id="8af-v7-H5d"/>
+                                </constraints>
+                                <state key="normal" image="Sol"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DI-Tj-jBx" userLabel="Mercurio">
+                                <rect key="frame" x="103" y="46" width="80" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9DI-Tj-jBx" secondAttribute="height" multiplier="92:85" id="NlI-RW-SHw"/>
+                                </constraints>
+                                <state key="normal" image="Mercurio"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4n-JT-4FN" userLabel="Venus">
+                                <rect key="frame" x="175" y="186" width="100" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="n4n-JT-4FN" secondAttribute="height" multiplier="63:100" id="041-eW-jpn"/>
+                                </constraints>
+                                <state key="normal" image="Venus"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7h-uK-eqD" userLabel="Terra">
+                                <rect key="frame" x="221" y="33" width="100" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="G7h-uK-eqD" secondAttribute="height" multiplier="62:109" id="YTL-QY-5On"/>
+                                </constraints>
+                                <state key="normal" image="Terra"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8C-ca-XF3" userLabel="Marte">
+                                <rect key="frame" x="297.5" y="160.5" width="100" height="144.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="K8C-ca-XF3" secondAttribute="height" multiplier="63:91" id="6XD-ms-lgq"/>
+                                </constraints>
+                                <state key="normal" image="Marte"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoU-iF-K4H" userLabel="Lua">
+                                <rect key="frame" x="329" y="0.0" width="33.5" height="69.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IoU-iF-K4H" secondAttribute="height" multiplier="36:75" id="4w7-Lu-a2V"/>
+                                </constraints>
+                                <state key="normal" image="Lua"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpR-FC-7Gp" userLabel="Jupiter">
+                                <rect key="frame" x="388" y="109" width="80" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tpR-FC-7Gp" secondAttribute="height" multiplier="80:115" id="4CU-UZ-3xh"/>
+                                </constraints>
+                                <state key="normal" image="Jupiter"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLR-kK-1Cs" userLabel="Saturno">
+                                <rect key="frame" x="469" y="222" width="80" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uLR-kK-1Cs" secondAttribute="height" multiplier="91:98" id="9sy-Dd-Vp2"/>
+                                </constraints>
+                                <state key="normal" image="Saturno"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWU-ee-Ux0" userLabel="Urano">
+                                <rect key="frame" x="553" y="69" width="53.5" height="82.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iWU-ee-Ux0" secondAttribute="height" multiplier="64:99" id="CnV-Yc-bTk"/>
+                                </constraints>
+                                <state key="normal" image="Urano"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIb-cj-1tu" userLabel="Netuno">
+                                <rect key="frame" x="610" y="276" width="53.5" height="74.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FIb-cj-1tu" secondAttribute="height" multiplier="76:106" id="Vhw-fY-xPp"/>
+                                </constraints>
+                                <state key="normal" image="Netuno"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="K8C-ca-XF3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.15" id="05f-kD-LGI"/>
+                            <constraint firstItem="9DI-Tj-jBx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.12" id="7Tz-vd-EXv"/>
+                            <constraint firstItem="TB7-8H-8eY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Axy-CB-XAo"/>
+                            <constraint firstItem="K8C-ca-XF3" firstAttribute="top" secondItem="aoO-uo-YKz" secondAttribute="bottom" constant="-105" id="CBD-hs-n6C"/>
+                            <constraint firstItem="9zy-r0-Os1" firstAttribute="leading" secondItem="TB7-8H-8eY" secondAttribute="leading" id="E9r-Kx-bu9"/>
+                            <constraint firstItem="9DI-Tj-jBx" firstAttribute="leading" secondItem="aoO-uo-YKz" secondAttribute="trailing" constant="-38.5" id="Gja-7u-H6t"/>
+                            <constraint firstItem="tpR-FC-7Gp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.12" id="H2R-yi-GUf"/>
+                            <constraint firstItem="iWU-ee-Ux0" firstAttribute="leading" secondItem="aoO-uo-YKz" secondAttribute="trailing" constant="411.5" id="HpS-jS-vsY"/>
+                            <constraint firstItem="aoO-uo-YKz" firstAttribute="top" secondItem="G7h-uK-eqD" secondAttribute="bottom" constant="-99.5" id="KpN-Hy-9me"/>
+                            <constraint firstItem="aoO-uo-YKz" firstAttribute="top" secondItem="9DI-Tj-jBx" secondAttribute="bottom" constant="-10.5" id="MuY-U1-6PP"/>
+                            <constraint firstItem="aoO-uo-YKz" firstAttribute="top" secondItem="tpR-FC-7Gp" secondAttribute="bottom" constant="-114.5" id="Mxa-b0-MWl"/>
+                            <constraint firstItem="aoO-uo-YKz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OYJ-Oo-EbM"/>
+                            <constraint firstItem="FIb-cj-1tu" firstAttribute="leading" secondItem="aoO-uo-YKz" secondAttribute="trailing" constant="468.5" id="Odk-gg-SUU"/>
+                            <constraint firstItem="G7h-uK-eqD" firstAttribute="top" secondItem="IoU-iF-K4H" secondAttribute="bottom" constant="-36.5" id="Om5-HU-ASx"/>
+                            <constraint firstItem="aoO-uo-YKz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="PYf-bT-ayo"/>
+                            <constraint firstItem="aoO-uo-YKz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="QUn-3f-G8G"/>
+                            <constraint firstItem="9zy-r0-Os1" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Ssa-rz-O3u"/>
+                            <constraint firstItem="K8C-ca-XF3" firstAttribute="leading" secondItem="aoO-uo-YKz" secondAttribute="trailing" constant="156" id="XMl-xA-ElI"/>
+                            <constraint firstItem="9zy-r0-Os1" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="YAz-Q4-Qxn"/>
+                            <constraint firstItem="n4n-JT-4FN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.15" id="ZZy-Vn-9Fm"/>
+                            <constraint firstItem="IoU-iF-K4H" firstAttribute="leading" secondItem="G7h-uK-eqD" secondAttribute="trailing" constant="8" id="Zxy-E3-Hi3"/>
+                            <constraint firstItem="G7h-uK-eqD" firstAttribute="leading" secondItem="aoO-uo-YKz" secondAttribute="trailing" constant="79.5" id="b70-FA-zQb"/>
+                            <constraint firstItem="tpR-FC-7Gp" firstAttribute="leading" secondItem="aoO-uo-YKz" secondAttribute="trailing" constant="246.5" id="bwe-jJ-NEA"/>
+                            <constraint firstItem="9zy-r0-Os1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bzq-au-isk"/>
+                            <constraint firstItem="FIb-cj-1tu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.08" id="cdh-W7-hce"/>
+                            <constraint firstItem="9zy-r0-Os1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hX5-iw-BLG"/>
+                            <constraint firstItem="TB7-8H-8eY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="iyY-VY-jvQ"/>
+                            <constraint firstItem="IoU-iF-K4H" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.05" id="k3H-uc-7C2"/>
+                            <constraint firstItem="iWU-ee-Ux0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.08" id="o6E-4A-ybU"/>
+                            <constraint firstItem="n4n-JT-4FN" firstAttribute="top" secondItem="aoO-uo-YKz" secondAttribute="bottom" constant="-79.5" id="oAc-cM-xUX"/>
+                            <constraint firstItem="n4n-JT-4FN" firstAttribute="leading" secondItem="aoO-uo-YKz" secondAttribute="trailing" constant="33.5" id="oEQ-cR-6Ey"/>
+                            <constraint firstItem="uLR-kK-1Cs" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.12" id="oWC-ef-ybd"/>
+                            <constraint firstItem="9zy-r0-Os1" firstAttribute="top" secondItem="TB7-8H-8eY" secondAttribute="top" id="rgP-c6-Eza"/>
+                            <constraint firstItem="FIb-cj-1tu" firstAttribute="top" secondItem="aoO-uo-YKz" secondAttribute="bottom" constant="10.5" id="woN-tb-jd7"/>
+                            <constraint firstItem="aoO-uo-YKz" firstAttribute="top" secondItem="iWU-ee-Ux0" secondAttribute="bottom" constant="-42" id="xD3-Zx-mGG"/>
+                            <constraint firstItem="G7h-uK-eqD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.15" id="xtA-fa-wQS"/>
+                            <constraint firstItem="uLR-kK-1Cs" firstAttribute="leading" secondItem="aoO-uo-YKz" secondAttribute="trailing" constant="327.5" id="yQ6-dA-f0Q"/>
+                            <constraint firstItem="uLR-kK-1Cs" firstAttribute="top" secondItem="aoO-uo-YKz" secondAttribute="bottom" constant="-43.5" id="z81-4g-FW1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.0809595202399" y="136.80000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackStars" width="1792" height="828"/>
+        <image name="Jupiter" width="160" height="214"/>
+        <image name="Lua" width="68" height="130"/>
+        <image name="Marte" width="61" height="81"/>
+        <image name="Mercurio" width="98" height="82"/>
+        <image name="Netuno" width="146" height="192"/>
+        <image name="Orbitas" width="1792" height="828"/>
+        <image name="Saturno" width="180" height="180"/>
+        <image name="Sol" width="195" height="220"/>
+        <image name="Terra" width="124" height="202"/>
+        <image name="Urano" width="126" height="182"/>
+        <image name="Venus" width="61" height="92"/>
+    </resources>
+</document>
