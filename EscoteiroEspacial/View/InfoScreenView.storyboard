@@ -11,9 +11,8 @@
         <scene sceneID="WO0-Fx-Ks2">
             <objects>
                 <viewController id="XY6-rH-Cgn" customClass="InfoScreenController" customModule="EscoteiroEspacial" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="N30-xs-4Zt">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N30-xs-4Zt">
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0y-KV-Uno">
                                 <rect key="frame" x="368" y="0.0" width="368" height="414"/>
@@ -40,10 +39,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="368" height="414"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRo-Wr-BUp">
-                                        <rect key="frame" x="12" y="12" width="60" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="Mfa-yc-lAF"/>
-                                        </constraints>
+                                        <rect key="frame" x="12" y="12" width="73.666666666666671" height="30"/>
                                         <state key="normal" title="Voltar">
                                             <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -82,6 +78,7 @@
                             <constraint firstItem="CEM-oc-TbF" firstAttribute="top" secondItem="WBE-97-qCR" secondAttribute="top" id="jwr-b2-gqt"/>
                             <constraint firstItem="CEM-oc-TbF" firstAttribute="leading" secondItem="WBE-97-qCR" secondAttribute="leading" id="l1z-4H-rx1"/>
                             <constraint firstItem="WBE-97-qCR" firstAttribute="bottom" secondItem="F0y-KV-Uno" secondAttribute="bottom" id="lfg-OZ-btU"/>
+                            <constraint firstItem="bRo-Wr-BUp" firstAttribute="width" secondItem="N30-xs-4Zt" secondAttribute="width" multiplier="0.1" id="oWe-sw-ule"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WBE-97-qCR"/>
                     </view>
