@@ -1,0 +1,17 @@
+[
+    {
+        "customer_id" : 1,
+        "customer_name" : "Joe",
+        "customer_type" : "agricultor",
+        "age" : 46,
+        "units_sold" : 2
+    },
+    {
+        "customer_id" : 2,
+        "customer_name" : "Paulo",
+        "customer_type" : "programador",
+        "age" : 21,
+        "units_sold" : 2
+    }
+    
+]
