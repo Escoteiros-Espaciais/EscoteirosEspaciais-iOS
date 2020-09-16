@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XY6-rH-Cgn">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Info Screen Controller-->
+        <scene sceneID="WO0-Fx-Ks2">
+            <objects>
+                <viewController id="XY6-rH-Cgn" customClass="InfoScreenController" customModule="EscoteiroEspacial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N30-xs-4Zt">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0y-KV-Uno">
+                                <rect key="frame" x="412" y="0.0" width="440" height="393"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0F-xt-pWZ">
+                                        <rect key="frame" x="12" y="52" width="412" height="293"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTM-Bc-v52">
+                                        <rect key="frame" x="287.5" y="8" width="136.5" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vTM-Bc-v52" secondAttribute="height" multiplier="106:28" id="Yra-7v-pLk"/>
+                                            <constraint firstAttribute="height" constant="36" id="uIO-9v-N8V"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="teste-button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="vTM-Bc-v52" firstAttribute="top" secondItem="F0y-KV-Uno" secondAttribute="top" constant="8" id="2Uq-4b-3HA"/>
+                                    <constraint firstItem="Q0F-xt-pWZ" firstAttribute="leading" secondItem="F0y-KV-Uno" secondAttribute="leading" constant="12" id="4AY-Wf-4sY"/>
+                                    <constraint firstAttribute="bottom" secondItem="Q0F-xt-pWZ" secondAttribute="bottom" constant="48" id="Mp9-V3-6Nz"/>
+                                    <constraint firstItem="vTM-Bc-v52" firstAttribute="trailing" secondItem="Q0F-xt-pWZ" secondAttribute="trailing" id="diB-Co-GSx"/>
+                                    <constraint firstItem="Q0F-xt-pWZ" firstAttribute="top" secondItem="vTM-Bc-v52" secondAttribute="bottom" constant="8" id="fLX-Sz-i0N"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q0F-xt-pWZ" secondAttribute="trailing" constant="16" id="hrm-cG-DF1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEM-oc-TbF">
+                                <rect key="frame" x="44" y="0.0" width="368" height="393"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRo-Wr-BUp">
+                                        <rect key="frame" x="24" y="8" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="658-gb-oIM"/>
+                                            <constraint firstAttribute="width" secondItem="bRo-Wr-BUp" secondAttribute="height" multiplier="1:1" id="uQC-Ci-UnQ"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="back-button">
+                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M0p-qS-aFp">
+                                        <rect key="frame" x="48" y="64" width="272" height="265"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="M0p-qS-aFp" firstAttribute="top" secondItem="CEM-oc-TbF" secondAttribute="top" constant="64" id="1Ry-ys-Da1"/>
+                                    <constraint firstAttribute="bottom" secondItem="M0p-qS-aFp" secondAttribute="bottom" constant="64" id="2aC-GE-Opx"/>
+                                    <constraint firstAttribute="trailing" secondItem="M0p-qS-aFp" secondAttribute="trailing" constant="48" id="5A3-rA-hFe"/>
+                                    <constraint firstItem="bRo-Wr-BUp" firstAttribute="leading" secondItem="CEM-oc-TbF" secondAttribute="leading" constant="24" id="EWc-fR-FYn"/>
+                                    <constraint firstItem="bRo-Wr-BUp" firstAttribute="top" secondItem="CEM-oc-TbF" secondAttribute="top" constant="8" id="XXX-Rw-TXK"/>
+                                    <constraint firstItem="M0p-qS-aFp" firstAttribute="leading" secondItem="CEM-oc-TbF" secondAttribute="leading" constant="48" id="bpm-Ob-Sxm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="F0y-KV-Uno" firstAttribute="leading" secondItem="CEM-oc-TbF" secondAttribute="trailing" id="6iv-Od-hEK"/>
+                            <constraint firstItem="F0y-KV-Uno" firstAttribute="top" secondItem="WBE-97-qCR" secondAttribute="top" id="7Xx-L1-myw"/>
+                            <constraint firstItem="F0y-KV-Uno" firstAttribute="leading" secondItem="WBE-97-qCR" secondAttribute="centerX" constant="-36" id="KKQ-N0-wzC"/>
+                            <constraint firstItem="WBE-97-qCR" firstAttribute="bottom" secondItem="CEM-oc-TbF" secondAttribute="bottom" id="S5f-Im-BUd"/>
+                            <constraint firstItem="WBE-97-qCR" firstAttribute="trailing" secondItem="F0y-KV-Uno" secondAttribute="trailing" id="deC-Rv-StK"/>
+                            <constraint firstItem="CEM-oc-TbF" firstAttribute="top" secondItem="WBE-97-qCR" secondAttribute="top" id="jwr-b2-gqt"/>
+                            <constraint firstItem="CEM-oc-TbF" firstAttribute="leading" secondItem="WBE-97-qCR" secondAttribute="leading" id="l1z-4H-rx1"/>
+                            <constraint firstItem="WBE-97-qCR" firstAttribute="bottom" secondItem="F0y-KV-Uno" secondAttribute="bottom" id="lfg-OZ-btU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WBE-97-qCR"/>
+                    </view>
+                    <connections>
+                        <outlet property="InfoView" destination="F0y-KV-Uno" id="gjx-J9-wlD"/>
+                        <outlet property="backButon" destination="bRo-Wr-BUp" id="g0a-zs-8Yx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afV-fW-xxc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-251.08695652173915" y="-7.2463768115942031"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back-button" width="30" height="30"/>
+        <image name="teste-button" width="106" height="28"/>
+    </resources>
+</document>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27ED6904250A563700E5A67E /* InfoScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27ED6903250A563700E5A67E /* InfoScreenView.storyboard */; };
+		27ED6906250A59AB00E5A67E /* InfoScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ED6905250A59AB00E5A67E /* InfoScreenController.swift */; };
 		27F5BC6B25011E8800AD5531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC6A25011E8800AD5531 /* AppDelegate.swift */; };
 		27F5BC6D25011E8800AD5531 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC6C25011E8800AD5531 /* SceneDelegate.swift */; };
 		27F5BC6F25011E8800AD5531 /* HomeSpaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC6E25011E8800AD5531 /* HomeSpaceController.swift */; };
@@ -16,6 +18,9 @@
 		27F5BC8225011E8A00AD5531 /* EscoteiroEspacialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8125011E8A00AD5531 /* EscoteiroEspacialTests.swift */; };
 		27F5BC8D25011E8A00AD5531 /* EscoteiroEspacialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */; };
 		27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27F5BCA0250121BA00AD5531 /* .swiftlint.yml */; };
+		A4BB8C84250FA1C300A2CAB1 /* Test1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BB8C83250FA1C300A2CAB1 /* Test1.storyboard */; };
+		A4BB8C8A250FA95900A2CAB1 /* Descriptions.json in Resources */ = {isa = PBXBuildFile; fileRef = A4BB8C89250FA95900A2CAB1 /* Descriptions.json */; };
+		A4BB8C8C250FA9A200A2CAB1 /* LoaderDescriptionJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C8B250FA9A200A2CAB1 /* LoaderDescriptionJson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27ED6903250A563700E5A67E /* InfoScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoScreenView.storyboard; sourceTree = "<group>"; };
+		27ED6905250A59AB00E5A67E /* InfoScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoScreenController.swift; sourceTree = "<group>"; };
 		27F5BC6725011E8800AD5531 /* EscoteiroEspacial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EscoteiroEspacial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F5BC6A25011E8800AD5531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27F5BC6C25011E8800AD5531 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +58,9 @@
 		27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscoteiroEspacialUITests.swift; sourceTree = "<group>"; };
 		27F5BC8E25011E8A00AD5531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F5BCA0250121BA00AD5531 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		A4BB8C83250FA1C300A2CAB1 /* Test1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test1.storyboard; sourceTree = "<group>"; };
+		A4BB8C89250FA95900A2CAB1 /* Descriptions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Descriptions.json; path = EscoteiroEspacial/Descriptions.json; sourceTree = SOURCE_ROOT; };
+		A4BB8C8B250FA9A200A2CAB1 /* LoaderDescriptionJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoaderDescriptionJson.swift; path = EscoteiroEspacial/View/LoaderDescriptionJson.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,7 @@
 				27F5BC9C25011FCB00AD5531 /* Controller */,
 				27F5BC9B25011FC500AD5531 /* Model */,
 				27F5BC9A25011FBA00AD5531 /* View */,
+				A4BB8C89250FA95900A2CAB1 /* Descriptions.json */,
 				27F5BC6A25011E8800AD5531 /* AppDelegate.swift */,
 				27F5BC6C25011E8800AD5531 /* SceneDelegate.swift */,
 				27F5BC7325011E8A00AD5531 /* Assets.xcassets */,
@@ -136,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				27F5BC7025011E8800AD5531 /* HomeSpace.storyboard */,
+				27ED6903250A563700E5A67E /* InfoScreenView.storyboard */,
+				A4BB8C83250FA1C300A2CAB1 /* Test1.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				27F5BC6E25011E8800AD5531 /* HomeSpaceController.swift */,
+				27ED6905250A59AB00E5A67E /* InfoScreenController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,6 +189,7 @@
 		27F5BC9F25011FE100AD5531 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				A4BB8C8B250FA9A200A2CAB1 /* LoaderDescriptionJson.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -284,10 +299,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27ED6904250A563700E5A67E /* InfoScreenView.storyboard in Resources */,
 				27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */,
+				A4BB8C84250FA1C300A2CAB1 /* Test1.storyboard in Resources */,
 				27F5BC7725011E8A00AD5531 /* LaunchScreen.storyboard in Resources */,
 				27F5BC7425011E8A00AD5531 /* Assets.xcassets in Resources */,
 				27F5BC7225011E8800AD5531 /* HomeSpace.storyboard in Resources */,
+				A4BB8C8A250FA95900A2CAB1 /* Descriptions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +351,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F5BC6F25011E8800AD5531 /* HomeSpaceController.swift in Sources */,
+				27ED6906250A59AB00E5A67E /* InfoScreenController.swift in Sources */,
+				A4BB8C8C250FA9A200A2CAB1 /* LoaderDescriptionJson.swift in Sources */,
 				27F5BC6B25011E8800AD5531 /* AppDelegate.swift in Sources */,
 				27F5BC6D25011E8800AD5531 /* SceneDelegate.swift in Sources */,
 			);
