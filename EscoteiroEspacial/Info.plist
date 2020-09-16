@@ -59,5 +59,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>PatrickHandSC-Regular.ttf</string>
+	</array>
 </dict>
 </plist>

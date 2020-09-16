@@ -10,13 +10,13 @@ import UIKit
 
 class InfoScreenController: UIViewController {
 
-    @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var backButon: UIButton!
+    @IBOutlet weak var testeButton: UIButton!
+    @IBOutlet weak var onOffButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        backButon.layer.borderColor = CGColor(srgbRed: 100, green: 100, blue: 50, alpha: 1)
 //        infoView.layer.cornerRadius = 12
         // Do any additional setup after loading the view.
     }
