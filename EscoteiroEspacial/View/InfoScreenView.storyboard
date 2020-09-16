@@ -18,8 +18,10 @@
                 <viewController id="XY6-rH-Cgn" customClass="InfoScreenController" customModule="EscoteiroEspacial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N30-xs-4Zt">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-sem-cometa" translatesAutoresizingMaskIntoConstraints="NO" id="340-wq-UXW">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0y-KV-Uno">
                                 <rect key="frame" x="412" y="0.0" width="440" height="393"/>
                                 <subviews>
@@ -30,7 +32,7 @@
                                                 <rect key="frame" x="8" y="8" width="388" height="249"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="21"/>
+                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -99,12 +101,16 @@
                         <constraints>
                             <constraint firstItem="F0y-KV-Uno" firstAttribute="leading" secondItem="CEM-oc-TbF" secondAttribute="trailing" id="6iv-Od-hEK"/>
                             <constraint firstItem="F0y-KV-Uno" firstAttribute="top" secondItem="WBE-97-qCR" secondAttribute="top" id="7Xx-L1-myw"/>
+                            <constraint firstItem="340-wq-UXW" firstAttribute="top" secondItem="N30-xs-4Zt" secondAttribute="top" id="JgP-sI-s7T"/>
                             <constraint firstItem="F0y-KV-Uno" firstAttribute="leading" secondItem="WBE-97-qCR" secondAttribute="centerX" constant="-36" id="KKQ-N0-wzC"/>
                             <constraint firstItem="WBE-97-qCR" firstAttribute="bottom" secondItem="CEM-oc-TbF" secondAttribute="bottom" id="S5f-Im-BUd"/>
+                            <constraint firstAttribute="bottom" secondItem="340-wq-UXW" secondAttribute="bottom" id="ToX-BV-iME"/>
                             <constraint firstItem="WBE-97-qCR" firstAttribute="trailing" secondItem="F0y-KV-Uno" secondAttribute="trailing" id="deC-Rv-StK"/>
+                            <constraint firstAttribute="trailing" secondItem="340-wq-UXW" secondAttribute="trailing" id="djY-Ky-SQY"/>
                             <constraint firstItem="CEM-oc-TbF" firstAttribute="top" secondItem="WBE-97-qCR" secondAttribute="top" id="jwr-b2-gqt"/>
                             <constraint firstItem="CEM-oc-TbF" firstAttribute="leading" secondItem="WBE-97-qCR" secondAttribute="leading" id="l1z-4H-rx1"/>
                             <constraint firstItem="WBE-97-qCR" firstAttribute="bottom" secondItem="F0y-KV-Uno" secondAttribute="bottom" id="lfg-OZ-btU"/>
+                            <constraint firstItem="340-wq-UXW" firstAttribute="leading" secondItem="N30-xs-4Zt" secondAttribute="leading" id="ofg-Oe-V06"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WBE-97-qCR"/>
                     </view>
@@ -120,6 +126,7 @@
     </scenes>
     <resources>
         <image name="back-button" width="30" height="30"/>
+        <image name="background-sem-cometa" width="897" height="414"/>
         <image name="teste-button" width="106" height="28"/>
     </resources>
 </document>
