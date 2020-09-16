@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="PatrickHandSC-Regular.ttf">
+            <string>PatrickHandSC-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Info Screen Controller-->
         <scene sceneID="WO0-Fx-Ks2">
@@ -19,8 +24,23 @@
                                 <rect key="frame" x="412" y="0.0" width="440" height="393"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0F-xt-pWZ">
-                                        <rect key="frame" x="12" y="52" width="412" height="293"/>
+                                        <rect key="frame" x="12" y="52" width="404" height="293"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Olá amigos! Aqui vamos contar uma história bem legal sobre o planeta terra" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gid-j6-MZf">
+                                                <rect key="frame" x="8" y="8" width="388" height="249"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="21"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Gid-j6-MZf" firstAttribute="top" secondItem="Q0F-xt-pWZ" secondAttribute="top" constant="8" id="BhY-ua-NyE"/>
+                                            <constraint firstAttribute="bottom" secondItem="Gid-j6-MZf" secondAttribute="bottom" constant="36" id="CD1-dL-ysH"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gid-j6-MZf" secondAttribute="trailing" constant="8" id="dV1-oh-MwV"/>
+                                            <constraint firstItem="Gid-j6-MZf" firstAttribute="leading" secondItem="Q0F-xt-pWZ" secondAttribute="leading" constant="8" id="gmm-Or-5Q8"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="12"/>
@@ -28,7 +48,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTM-Bc-v52">
-                                        <rect key="frame" x="287.5" y="8" width="136.5" height="36"/>
+                                        <rect key="frame" x="279.5" y="8" width="136.5" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="vTM-Bc-v52" secondAttribute="height" multiplier="106:28" id="Yra-7v-pLk"/>
                                             <constraint firstAttribute="height" constant="36" id="uIO-9v-N8V"/>
@@ -43,7 +63,7 @@
                                     <constraint firstAttribute="bottom" secondItem="Q0F-xt-pWZ" secondAttribute="bottom" constant="48" id="Mp9-V3-6Nz"/>
                                     <constraint firstItem="vTM-Bc-v52" firstAttribute="trailing" secondItem="Q0F-xt-pWZ" secondAttribute="trailing" id="diB-Co-GSx"/>
                                     <constraint firstItem="Q0F-xt-pWZ" firstAttribute="top" secondItem="vTM-Bc-v52" secondAttribute="bottom" constant="8" id="fLX-Sz-i0N"/>
-                                    <constraint firstAttribute="trailing" secondItem="Q0F-xt-pWZ" secondAttribute="trailing" constant="16" id="hrm-cG-DF1"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q0F-xt-pWZ" secondAttribute="trailing" constant="24" id="hrm-cG-DF1"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEM-oc-TbF">
