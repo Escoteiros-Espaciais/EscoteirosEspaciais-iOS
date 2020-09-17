@@ -5,7 +5,7 @@
 //  Created by Mateus Nobre on 03/09/20.
 //  Copyright © 2020 Mateus Nobre. All rights reserved.
 //
-// swiftlint:disable line_length unused_optional_binding
+// swiftlint:disable unused_optional_binding
 
 import UIKit
 
