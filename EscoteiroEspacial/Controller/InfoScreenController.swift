@@ -7,27 +7,39 @@
 //
 
 import UIKit
+import SceneKit
 
 class InfoScreenController: UIViewController {
 
     @IBOutlet weak var backButon: UIButton!
     @IBOutlet weak var testeButton: UIButton!
     @IBOutlet weak var onOffButton: UIButton!
+    @IBOutlet weak var sceneView: SCNView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let scene = SCNScene()
         
-//        infoView.layer.cornerRadius = 12
-        // Do any additional setup after loading the view.
-    }
-    /*
-    // MARK: - Navigation
+        let cameraNode = SCNNode()
+        cameraNode.camera = SCNCamera()
+        cameraNode.position = SCNVector3(x: 0, y: 0, z: 5)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        scene.rootNode.addChildNode(cameraNode)
+
+        let lightNode = SCNNode()
+        lightNode.light = SCNLight()
+        lightNode.light?.type = .ambient
+        lightNode.position = SCNVector3(x: 0, y: 10, z: 2)
+
+        scene.rootNode.addChildNode(lightNode)
+
+        let planetNode = PlanetNode()
+        scene.rootNode.addChildNode(planetNode)
+
+        sceneView.scene = scene
+        sceneView.backgroundColor = UIColor.clear
+        sceneView.allowsCameraControl = true
+        
     }
-    */
 
 }
