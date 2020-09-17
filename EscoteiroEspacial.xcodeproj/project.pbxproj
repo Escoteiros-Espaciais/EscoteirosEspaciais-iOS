@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270DC2132513A41100E8781F /* PlanetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270DC2122513A41000E8781F /* PlanetNode.swift */; };
 		273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 273DAD5B25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf */; };
 		27ED6904250A563700E5A67E /* InfoScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27ED6903250A563700E5A67E /* InfoScreenView.storyboard */; };
 		27ED6906250A59AB00E5A67E /* InfoScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ED6905250A59AB00E5A67E /* InfoScreenController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		270DC2122513A41000E8781F /* PlanetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNode.swift; sourceTree = "<group>"; };
 		273DAD5B25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PatrickHandSC-Regular.ttf"; sourceTree = "<group>"; };
 		27ED6903250A563700E5A67E /* InfoScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoScreenView.storyboard; sourceTree = "<group>"; };
 		27ED6905250A59AB00E5A67E /* InfoScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoScreenController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				27F5BC7025011E8800AD5531 /* HomeSpace.storyboard */,
 				27ED6903250A563700E5A67E /* InfoScreenView.storyboard */,
 				A4BB8C83250FA1C300A2CAB1 /* Test1.storyboard */,
+				270DC2122513A41000E8781F /* PlanetNode.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				A4BB8C8C250FA9A200A2CAB1 /* LoaderDescriptionJson.swift in Sources */,
 				27F5BC6B25011E8800AD5531 /* AppDelegate.swift in Sources */,
 				27F5BC6D25011E8800AD5531 /* SceneDelegate.swift in Sources */,
+				270DC2132513A41100E8781F /* PlanetNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

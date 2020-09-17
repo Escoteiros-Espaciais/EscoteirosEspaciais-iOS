@@ -78,51 +78,42 @@
                                     <constraint firstAttribute="trailing" secondItem="Q0F-xt-pWZ" secondAttribute="trailing" constant="24" id="hrm-cG-DF1"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEM-oc-TbF">
-                                <rect key="frame" x="44" y="0.0" width="368" height="393"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRo-Wr-BUp">
-                                        <rect key="frame" x="24" y="8" width="36" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="36" id="658-gb-oIM"/>
-                                            <constraint firstAttribute="width" secondItem="bRo-Wr-BUp" secondAttribute="height" multiplier="1:1" id="uQC-Ci-UnQ"/>
-                                        </constraints>
-                                        <state key="normal" backgroundImage="back-button">
-                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M0p-qS-aFp">
-                                        <rect key="frame" x="48" y="64" width="272" height="265"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ih-YP-Sug">
+                                <rect key="frame" x="44" y="50" width="368" height="343"/>
+                            </sceneKitView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRo-Wr-BUp">
+                                <rect key="frame" x="60" y="8" width="36" height="36"/>
                                 <constraints>
-                                    <constraint firstItem="M0p-qS-aFp" firstAttribute="top" secondItem="CEM-oc-TbF" secondAttribute="top" constant="64" id="1Ry-ys-Da1"/>
-                                    <constraint firstAttribute="bottom" secondItem="M0p-qS-aFp" secondAttribute="bottom" constant="64" id="2aC-GE-Opx"/>
-                                    <constraint firstAttribute="trailing" secondItem="M0p-qS-aFp" secondAttribute="trailing" constant="48" id="5A3-rA-hFe"/>
-                                    <constraint firstItem="bRo-Wr-BUp" firstAttribute="leading" secondItem="CEM-oc-TbF" secondAttribute="leading" constant="24" id="EWc-fR-FYn"/>
-                                    <constraint firstItem="bRo-Wr-BUp" firstAttribute="top" secondItem="CEM-oc-TbF" secondAttribute="top" constant="8" id="XXX-Rw-TXK"/>
-                                    <constraint firstItem="M0p-qS-aFp" firstAttribute="leading" secondItem="CEM-oc-TbF" secondAttribute="leading" constant="48" id="bpm-Ob-Sxm"/>
+                                    <constraint firstAttribute="width" constant="36" id="658-gb-oIM"/>
+                                    <constraint firstAttribute="width" secondItem="bRo-Wr-BUp" secondAttribute="height" multiplier="1:1" id="uQC-Ci-UnQ"/>
                                 </constraints>
-                            </view>
+                                <state key="normal" backgroundImage="back-button">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="F0y-KV-Uno" firstAttribute="leading" secondItem="CEM-oc-TbF" secondAttribute="trailing" id="6iv-Od-hEK"/>
                             <constraint firstItem="F0y-KV-Uno" firstAttribute="top" secondItem="WBE-97-qCR" secondAttribute="top" id="7Xx-L1-myw"/>
+                            <constraint firstItem="F0y-KV-Uno" firstAttribute="leading" secondItem="0ih-YP-Sug" secondAttribute="trailing" id="EQh-zC-4HX"/>
                             <constraint firstItem="340-wq-UXW" firstAttribute="top" secondItem="N30-xs-4Zt" secondAttribute="top" id="JgP-sI-s7T"/>
                             <constraint firstItem="F0y-KV-Uno" firstAttribute="leading" secondItem="WBE-97-qCR" secondAttribute="centerX" constant="-36" id="KKQ-N0-wzC"/>
-                            <constraint firstItem="WBE-97-qCR" firstAttribute="bottom" secondItem="CEM-oc-TbF" secondAttribute="bottom" id="S5f-Im-BUd"/>
+                            <constraint firstItem="0ih-YP-Sug" firstAttribute="leading" secondItem="WBE-97-qCR" secondAttribute="leading" id="LCa-Bp-daa"/>
                             <constraint firstAttribute="bottom" secondItem="340-wq-UXW" secondAttribute="bottom" id="ToX-BV-iME"/>
+                            <constraint firstItem="WBE-97-qCR" firstAttribute="bottom" secondItem="0ih-YP-Sug" secondAttribute="bottom" id="dTk-9z-qun"/>
                             <constraint firstItem="WBE-97-qCR" firstAttribute="trailing" secondItem="F0y-KV-Uno" secondAttribute="trailing" id="deC-Rv-StK"/>
                             <constraint firstAttribute="trailing" secondItem="340-wq-UXW" secondAttribute="trailing" id="djY-Ky-SQY"/>
-                            <constraint firstItem="CEM-oc-TbF" firstAttribute="top" secondItem="WBE-97-qCR" secondAttribute="top" id="jwr-b2-gqt"/>
-                            <constraint firstItem="CEM-oc-TbF" firstAttribute="leading" secondItem="WBE-97-qCR" secondAttribute="leading" id="l1z-4H-rx1"/>
                             <constraint firstItem="WBE-97-qCR" firstAttribute="bottom" secondItem="F0y-KV-Uno" secondAttribute="bottom" id="lfg-OZ-btU"/>
+                            <constraint firstItem="bRo-Wr-BUp" firstAttribute="top" secondItem="WBE-97-qCR" secondAttribute="top" constant="8" id="nZu-Tr-exJ"/>
                             <constraint firstItem="340-wq-UXW" firstAttribute="leading" secondItem="N30-xs-4Zt" secondAttribute="leading" id="ofg-Oe-V06"/>
+                            <constraint firstItem="0ih-YP-Sug" firstAttribute="top" secondItem="WBE-97-qCR" secondAttribute="top" constant="50" id="tCJ-qT-5gg"/>
+                            <constraint firstItem="bRo-Wr-BUp" firstAttribute="leading" secondItem="WBE-97-qCR" secondAttribute="leading" constant="16" id="xz2-uc-xvd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WBE-97-qCR"/>
                     </view>
+                    <connections>
+                        <outlet property="sceneView" destination="0ih-YP-Sug" id="fjb-Ny-80U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afV-fW-xxc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
