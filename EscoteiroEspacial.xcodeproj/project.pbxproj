@@ -22,6 +22,8 @@
 		A4BB8C84250FA1C300A2CAB1 /* Test1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BB8C83250FA1C300A2CAB1 /* Test1.storyboard */; };
 		A4BB8C8A250FA95900A2CAB1 /* Descriptions.json in Resources */ = {isa = PBXBuildFile; fileRef = A4BB8C89250FA95900A2CAB1 /* Descriptions.json */; };
 		A4BB8C8C250FA9A200A2CAB1 /* LoaderDescriptionJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C8B250FA9A200A2CAB1 /* LoaderDescriptionJson.swift */; };
+		A4BB8C8E2510E7C200A2CAB1 /* Planets .swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C8D2510E7C100A2CAB1 /* Planets .swift */; };
+		A4BB8C902510EC6400A2CAB1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C8F2510EC6400A2CAB1 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		A4BB8C83250FA1C300A2CAB1 /* Test1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test1.storyboard; sourceTree = "<group>"; };
 		A4BB8C89250FA95900A2CAB1 /* Descriptions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Descriptions.json; path = EscoteiroEspacial/Descriptions.json; sourceTree = SOURCE_ROOT; };
 		A4BB8C8B250FA9A200A2CAB1 /* LoaderDescriptionJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoaderDescriptionJson.swift; path = EscoteiroEspacial/View/LoaderDescriptionJson.swift; sourceTree = SOURCE_ROOT; };
+		A4BB8C8D2510E7C100A2CAB1 /* Planets .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Planets .swift"; path = "EscoteiroEspacial/View/Planets .swift"; sourceTree = SOURCE_ROOT; };
+		A4BB8C8F2510EC6400A2CAB1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Question.swift; path = EscoteiroEspacial/View/Question.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,8 @@
 		27F5BC9D25011FD200AD5531 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				A4BB8C8D2510E7C100A2CAB1 /* Planets .swift */,
+				A4BB8C8F2510EC6400A2CAB1 /* Question.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -362,10 +368,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BB8C902510EC6400A2CAB1 /* Question.swift in Sources */,
+				27F5BC6F25011E8800AD5531 /* ViewController.swift in Sources */,
 				27F5BC6F25011E8800AD5531 /* HomeSpaceController.swift in Sources */,
 				27ED6906250A59AB00E5A67E /* InfoScreenController.swift in Sources */,
 				A4BB8C8C250FA9A200A2CAB1 /* LoaderDescriptionJson.swift in Sources */,
 				27F5BC6B25011E8800AD5531 /* AppDelegate.swift in Sources */,
+				A4BB8C8E2510E7C200A2CAB1 /* Planets .swift in Sources */,
 				27F5BC6D25011E8800AD5531 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

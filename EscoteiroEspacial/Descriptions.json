@@ -1,17 +1,123 @@
 [
     {
-        "customer_id" : 1,
-        "customer_name" : "Joe",
-        "customer_type" : "agricultor",
-        "age" : 46,
-        "units_sold" : 2
+        "name": "Sol",
+        "information": "O Sol é a estrela central do Sistema Solar, dessa forma todos os planetas giram ao redor dela. É um astro luminoso que tem uma atmosfera dividida em três camadas e não apresenta uma superfície definida como planetas roshosos." ,
+        "level": 0,
+        "quiz": [
+            {
+                "text": "",
+                "rightAnswer": "",
+                "answer": ["","",""]
+            }
+        ]
     },
     {
-        "customer_id" : 2,
-        "customer_name" : "Paulo",
-        "customer_type" : "programador",
-        "age" : 21,
-        "units_sold" : 2
-    }
+        "name": "Mercúrio",
+        "information": "Mercúrio é o primeiro planeta do Sistema Solar a partir do Sol, sendo também o menor. Tem uma superfície rochosa, sendo parecida com a da Lua. Não posssui atmosfera nem satélites naturais.",
+        "level": 1,
+        "quiz": [
+            {
+                "text": "",
+                "rightAnswer": "",
+                "answer": ["","",""]
+            }
+        ]
+    },
+    {
+        "name": "Vênus",
+        "information": "Vênus é o segundo planeta do Sistema Solar a partir do Sol. Tem tamanho parecido com a Terra, porém devido a suas condições não sustenta vida. Tem uma superfíciel rochosa, uma atmosfera muito densa e não tem satélites naturais.",
+        "level": 2,
+        "quiz": [
+            {
+                "text": "",
+                "rightAnswer": "",
+                "answer": ["","",""]
+            }
+        ]
+    },
+    {
+        "name": "Terra",
+        "information": "Terra é o terceiro planeta do Sistema Solar a partir do Sol e o quinto maior. É um planeta habitado por diversas formas de vida, tem uma superficie rochosa, possui atmosfera e tem um satélite natural, a Lua."
+        "level": 3,
+        "quiz": [
+            {
+                "text": "",
+                "rightAnswer": "",
+                "answer": ["","",""]
+            }
+        ]
+    },
+    {
+        "name": "Lua",
+        "information": "É o único satélite natural da Terra e o único corpo celeste além da Terra no qual os seres humanos pisaram. Tem uma superfície rochosa e possui uma atmosfera muito fina. Sua aparência vista da Terra é dividia em fase, sendo essas: Lua Nova, Crescente, Quarto Crescente, Lua Cheia, Minguante, Quarto Minguante.",
+        "level": 3,
+        "quiz": [
+            {
+                "text": "",
+                "rightAnswer": "",
+                "answer": ["","",""]
+            }
+        ]
+    },
+    {
+        "name": "Marte",
+        "information": "Marte é o quarto planeta do Sistema Solar a partir do Sol, sendo o segundo menor planeta. Tem uma superfície rochosa, uma fina atmosfera e possui dois satélites naturais, Fobos e Deimos.",
+        "level": 4,
+        "quiz": [
+            {
+                "text": "",
+                "rightAnswer": "",
+                "answer": ["","",""]
+            }
+        ]
+    },
+    {
+        "name": "Júpiter",
+        "information": "Júpiter é o quinto planeta do Sistema Solar a partir do Sol, sendo o maior planeta. É um planeta gasoso, possui um sistema de anéis e a maior atmosfera dentre os planetas, possui 79 satélites naturais, sendo as principais, a Io, Europa, Ganimedes e Calisto.",
+        "level": 5,
+        "quiz": [
+            {
+                "text": "",
+                "rightAnswer": "",
+                "answer": ["","",""]
+            }
+        ]
+    },
+    {
+        "name": "Saturno",
+        "information": "Saturno é o sexto planeta a partir do Sol e o segundo maior do Sistema Solar. É um planeta gasoso, possui atmosfera e um grande sistema de anéis que o rodeiam, também conta com 82 satélites naturais, sendo alguns dos principais Titã, Encélado e Mimas.",
+        "level": 6,
+        "quiz": [
+            {
+                "text": "",
+                "rightAnswer": "",
+                "answer": ["","",""]
+            }
+        ]
+    },
+    {
+        "name": "Urano",
+        "information": "Urano é o sétimo planeta a partir do Sol e é o terceiro maior do Sistema Solar. É um planeta gasoso e conta com um sistema de anéis, possui atmosfera e é acompanhado por 27 satélites naturais, sendo os principais Miranda, Ariel, Umbriel, Titânia e Oberon.",
+        "level": 7,
+        "quiz": [
+            {
+                "text": "",
+                "rightAnswer": "",
+                "answer": ["","",""]
+            }
+        ]
+    },
+    {
+        "name": "Netuno",
+        "information": "Netuno é o oitavo planeta do Sistema Solar a partir do Sol. É um planeta gasoso, possui atmosfera e um pequeno sistema de anéis, é acompanhado por 14 satélites naturais, sendo o maior deles Tritão.",
+        "level": 8,
+        "quiz": [
+            {
+                "text": "",
+                "rightAnswer": "",
+                "answer": ["","",""]
+            }
+        ]
+    },
     
 ]
