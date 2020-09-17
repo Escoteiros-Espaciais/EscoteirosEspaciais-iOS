@@ -19,11 +19,12 @@
 		27F5BC8225011E8A00AD5531 /* EscoteiroEspacialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8125011E8A00AD5531 /* EscoteiroEspacialTests.swift */; };
 		27F5BC8D25011E8A00AD5531 /* EscoteiroEspacialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */; };
 		27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27F5BCA0250121BA00AD5531 /* .swiftlint.yml */; };
-		A4BB8C84250FA1C300A2CAB1 /* Test1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BB8C83250FA1C300A2CAB1 /* Test1.storyboard */; };
+		A4BB8C84250FA1C300A2CAB1 /* TestOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BB8C83250FA1C300A2CAB1 /* TestOne.storyboard */; };
 		A4BB8C8A250FA95900A2CAB1 /* Descriptions.json in Resources */ = {isa = PBXBuildFile; fileRef = A4BB8C89250FA95900A2CAB1 /* Descriptions.json */; };
 		A4BB8C8C250FA9A200A2CAB1 /* LoaderDescriptionJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C8B250FA9A200A2CAB1 /* LoaderDescriptionJson.swift */; };
 		A4BB8C8E2510E7C200A2CAB1 /* Planets .swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C8D2510E7C100A2CAB1 /* Planets .swift */; };
 		A4BB8C902510EC6400A2CAB1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C8F2510EC6400A2CAB1 /* Question.swift */; };
+		A4BB8C9225139AD000A2CAB1 /* TestOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C9125139AD000A2CAB1 /* TestOneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +63,12 @@
 		27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscoteiroEspacialUITests.swift; sourceTree = "<group>"; };
 		27F5BC8E25011E8A00AD5531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F5BCA0250121BA00AD5531 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		A4BB8C83250FA1C300A2CAB1 /* Test1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test1.storyboard; sourceTree = "<group>"; };
+		A4BB8C83250FA1C300A2CAB1 /* TestOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestOne.storyboard; sourceTree = "<group>"; };
 		A4BB8C89250FA95900A2CAB1 /* Descriptions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Descriptions.json; path = EscoteiroEspacial/Descriptions.json; sourceTree = SOURCE_ROOT; };
 		A4BB8C8B250FA9A200A2CAB1 /* LoaderDescriptionJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoaderDescriptionJson.swift; path = EscoteiroEspacial/View/LoaderDescriptionJson.swift; sourceTree = SOURCE_ROOT; };
 		A4BB8C8D2510E7C100A2CAB1 /* Planets .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Planets .swift"; path = "EscoteiroEspacial/View/Planets .swift"; sourceTree = SOURCE_ROOT; };
 		A4BB8C8F2510EC6400A2CAB1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Question.swift; path = EscoteiroEspacial/View/Question.swift; sourceTree = SOURCE_ROOT; };
+		A4BB8C9125139AD000A2CAB1 /* TestOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +165,7 @@
 			children = (
 				27F5BC7025011E8800AD5531 /* HomeSpace.storyboard */,
 				27ED6903250A563700E5A67E /* InfoScreenView.storyboard */,
-				A4BB8C83250FA1C300A2CAB1 /* Test1.storyboard */,
+				A4BB8C83250FA1C300A2CAB1 /* TestOne.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +185,7 @@
 			children = (
 				27F5BC6E25011E8800AD5531 /* HomeSpaceController.swift */,
 				27ED6905250A59AB00E5A67E /* InfoScreenController.swift */,
+				A4BB8C9125139AD000A2CAB1 /* TestOneViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,7 +321,7 @@
 			files = (
 				27ED6904250A563700E5A67E /* InfoScreenView.storyboard in Resources */,
 				27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */,
-				A4BB8C84250FA1C300A2CAB1 /* Test1.storyboard in Resources */,
+				A4BB8C84250FA1C300A2CAB1 /* TestOne.storyboard in Resources */,
 				273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */,
 				27F5BC7725011E8A00AD5531 /* LaunchScreen.storyboard in Resources */,
 				27F5BC7425011E8A00AD5531 /* Assets.xcassets in Resources */,
@@ -368,8 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BB8C9225139AD000A2CAB1 /* TestOneViewController.swift in Sources */,
 				A4BB8C902510EC6400A2CAB1 /* Question.swift in Sources */,
-				27F5BC6F25011E8800AD5531 /* ViewController.swift in Sources */,
+				27F5BC6F25011E8800AD5531 /* HomeSpaceController.swift in Sources */,
 				27F5BC6F25011E8800AD5531 /* HomeSpaceController.swift in Sources */,
 				27ED6906250A59AB00E5A67E /* InfoScreenController.swift in Sources */,
 				A4BB8C8C250FA9A200A2CAB1 /* LoaderDescriptionJson.swift in Sources */,
