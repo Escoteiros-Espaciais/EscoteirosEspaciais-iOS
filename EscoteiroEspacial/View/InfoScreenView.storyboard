@@ -79,7 +79,7 @@
                                 </constraints>
                             </view>
                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ih-YP-Sug">
-                                <rect key="frame" x="44" y="50" width="368" height="343"/>
+                                <rect key="frame" x="44" y="50" width="368" height="295"/>
                             </sceneKitView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRo-Wr-BUp">
                                 <rect key="frame" x="60" y="8" width="36" height="36"/>
@@ -99,8 +99,8 @@
                             <constraint firstItem="340-wq-UXW" firstAttribute="top" secondItem="N30-xs-4Zt" secondAttribute="top" id="JgP-sI-s7T"/>
                             <constraint firstItem="F0y-KV-Uno" firstAttribute="leading" secondItem="WBE-97-qCR" secondAttribute="centerX" constant="-36" id="KKQ-N0-wzC"/>
                             <constraint firstItem="0ih-YP-Sug" firstAttribute="leading" secondItem="WBE-97-qCR" secondAttribute="leading" id="LCa-Bp-daa"/>
+                            <constraint firstItem="0ih-YP-Sug" firstAttribute="bottom" secondItem="Q0F-xt-pWZ" secondAttribute="bottom" id="TGX-yr-c5m"/>
                             <constraint firstAttribute="bottom" secondItem="340-wq-UXW" secondAttribute="bottom" id="ToX-BV-iME"/>
-                            <constraint firstItem="WBE-97-qCR" firstAttribute="bottom" secondItem="0ih-YP-Sug" secondAttribute="bottom" id="dTk-9z-qun"/>
                             <constraint firstItem="WBE-97-qCR" firstAttribute="trailing" secondItem="F0y-KV-Uno" secondAttribute="trailing" id="deC-Rv-StK"/>
                             <constraint firstAttribute="trailing" secondItem="340-wq-UXW" secondAttribute="trailing" id="djY-Ky-SQY"/>
                             <constraint firstItem="WBE-97-qCR" firstAttribute="bottom" secondItem="F0y-KV-Uno" secondAttribute="bottom" id="lfg-OZ-btU"/>
