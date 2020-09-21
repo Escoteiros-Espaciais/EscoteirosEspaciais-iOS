@@ -23,6 +23,38 @@ class HomeSpaceController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- }
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destVC = segue.destination as? InfoScreenController else { return }
+        guard let identifier = segue.identifier else { return }
+        destVC.astroIdentifier = segueStringToAstro(with: identifier)
+    }
+    
+    func segueStringToAstro(with: String) -> Astro {
+        switch with {
+        case "PassSunInfo":
+            return .sunn
+        case "PassMercuryInfo":
+            return .mercury
+        case "PassVenusInfo":
+            return .venus
+        case "PassMoonInfo":
+            return .moon
+        case "PassEarthInfo":
+            return .earth
+        case "PassMarsInfo":
+            return .mars
+        case "PassJupiterInfo":
+            return .jupiter
+        case "PassSaturnInfo":
+            return .saturn
+        case "PassUranInfo":
+            return .uran
+        case "PassNeptunInfo":
+            return .neptun
+        default:
+            return .unknown
+        }
+    }
 }

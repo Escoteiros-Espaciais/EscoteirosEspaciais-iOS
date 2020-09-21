@@ -11,6 +11,8 @@
 		0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD219D92510F7DD00F95B93 /* Notification.swift */; };
 		270DC2132513A41100E8781F /* PlanetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270DC2122513A41000E8781F /* PlanetNode.swift */; };
 		273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 273DAD5B25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf */; };
+		279E1C2A2518E8D80048C7F5 /* Astro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E1C292518E8D80048C7F5 /* Astro.swift */; };
+		279E1C2F2518ECB00048C7F5 /* HomeSpaceControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E1C2E2518ECB00048C7F5 /* HomeSpaceControllerTests.swift */; };
 		27ED6904250A563700E5A67E /* InfoScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27ED6903250A563700E5A67E /* InfoScreenView.storyboard */; };
 		27ED6906250A59AB00E5A67E /* InfoScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ED6905250A59AB00E5A67E /* InfoScreenController.swift */; };
 		27F5BC6B25011E8800AD5531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC6A25011E8800AD5531 /* AppDelegate.swift */; };
@@ -53,6 +55,8 @@
 		0BD219D92510F7DD00F95B93 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		270DC2122513A41000E8781F /* PlanetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNode.swift; sourceTree = "<group>"; };
 		273DAD5B25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PatrickHandSC-Regular.ttf"; sourceTree = "<group>"; };
+		279E1C292518E8D80048C7F5 /* Astro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astro.swift; sourceTree = "<group>"; };
+		279E1C2E2518ECB00048C7F5 /* HomeSpaceControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSpaceControllerTests.swift; sourceTree = "<group>"; };
 		27ED6903250A563700E5A67E /* InfoScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoScreenView.storyboard; sourceTree = "<group>"; };
 		27ED6905250A59AB00E5A67E /* InfoScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoScreenController.swift; sourceTree = "<group>"; };
 		27F5BC6725011E8800AD5531 /* EscoteiroEspacial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EscoteiroEspacial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +160,7 @@
 			children = (
 				27F5BC8125011E8A00AD5531 /* EscoteiroEspacialTests.swift */,
 				27F5BC8325011E8A00AD5531 /* Info.plist */,
+				279E1C2E2518ECB00048C7F5 /* HomeSpaceControllerTests.swift */,
 			);
 			path = EscoteiroEspacialTests;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 			children = (
 				A4BB8C8D2510E7C100A2CAB1 /* Planets .swift */,
 				A4BB8C8F2510EC6400A2CAB1 /* Question.swift */,
+				279E1C292518E8D80048C7F5 /* Astro.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 				0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */,
 				A4BB8C8C250FA9A200A2CAB1 /* LoaderDescriptionJson.swift in Sources */,
 				27F5BC6B25011E8800AD5531 /* AppDelegate.swift in Sources */,
+				279E1C2A2518E8D80048C7F5 /* Astro.swift in Sources */,
 				A4BB8C8E2510E7C200A2CAB1 /* Planets .swift in Sources */,
 				27F5BC6D25011E8800AD5531 /* SceneDelegate.swift in Sources */,
 				270DC2132513A41100E8781F /* PlanetNode.swift in Sources */,
@@ -404,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F5BC8225011E8A00AD5531 /* EscoteiroEspacialTests.swift in Sources */,
+				279E1C2F2518ECB00048C7F5 /* HomeSpaceControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
