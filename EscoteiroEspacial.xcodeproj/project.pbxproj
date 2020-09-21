@@ -26,6 +26,7 @@
 		A4BB8C8E2510E7C200A2CAB1 /* Planets .swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C8D2510E7C100A2CAB1 /* Planets .swift */; };
 		A4BB8C902510EC6400A2CAB1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C8F2510EC6400A2CAB1 /* Question.swift */; };
 		A4BB8C9225139AD000A2CAB1 /* TestOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C9125139AD000A2CAB1 /* TestOneViewController.swift */; };
+		A4BB8C942514DCD200A2CAB1 /* Warnings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BB8C932514DCD200A2CAB1 /* Warnings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		A4BB8C8D2510E7C100A2CAB1 /* Planets .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Planets .swift"; path = "EscoteiroEspacial/View/Planets .swift"; sourceTree = SOURCE_ROOT; };
 		A4BB8C8F2510EC6400A2CAB1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Question.swift; path = EscoteiroEspacial/View/Question.swift; sourceTree = SOURCE_ROOT; };
 		A4BB8C9125139AD000A2CAB1 /* TestOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOneViewController.swift; sourceTree = "<group>"; };
+		A4BB8C932514DCD200A2CAB1 /* Warnings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Warnings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,9 +169,9 @@
 			children = (
 				27F5BC7025011E8800AD5531 /* HomeSpace.storyboard */,
 				27ED6903250A563700E5A67E /* InfoScreenView.storyboard */,
-				A4BB8C83250FA1C300A2CAB1 /* Test1.storyboard */,
 				270DC2122513A41000E8781F /* PlanetNode.swift */,
 				A4BB8C83250FA1C300A2CAB1 /* TestOne.storyboard */,
+				A4BB8C932514DCD200A2CAB1 /* Warnings.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -325,6 +327,7 @@
 			files = (
 				27ED6904250A563700E5A67E /* InfoScreenView.storyboard in Resources */,
 				27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */,
+				A4BB8C942514DCD200A2CAB1 /* Warnings.storyboard in Resources */,
 				A4BB8C84250FA1C300A2CAB1 /* TestOne.storyboard in Resources */,
 				273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */,
 				27F5BC7725011E8A00AD5531 /* LaunchScreen.storyboard in Resources */,

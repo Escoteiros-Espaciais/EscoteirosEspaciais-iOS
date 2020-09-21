@@ -12,5 +12,5 @@ struct Planets: Codable {
     var name: String?
     var information: String?
     var level: Int?
-    var quiz: [Question]
+    var quiz: [Question] = []
 }
