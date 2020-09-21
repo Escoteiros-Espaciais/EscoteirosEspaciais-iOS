@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Astro {
+enum Astro: Equatable {
     case sunn
     case mercury
     case venus
@@ -19,4 +19,5 @@ enum Astro {
     case saturn
     case uran
     case neptun
+    case unknown
 }

@@ -54,7 +54,7 @@ class HomeSpaceController: UIViewController {
         case "PassNeptunInfo":
             return .neptun
         default:
-            return .sunn
+            return .unknown
         }
     }
 }
