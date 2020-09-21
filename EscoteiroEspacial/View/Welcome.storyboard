@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cHO-TI-CQO">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PatrickHandSC-Regular.ttf">
+            <string>PatrickHandSC-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="O0X-04-5zl">
+            <objects>
+                <viewController id="cHO-TI-CQO" customClass="WelcomeViewController" customModule="EscoteiroEspacial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ArE-lV-TGQ">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="BackWhite" translatesAutoresizingMaskIntoConstraints="NO" id="vkP-zZ-D7J">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMf-iD-rJ7">
+                                <rect key="frame" x="417.5" y="135.5" width="61" height="43.5"/>
+                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F33-pF-dIT">
+                                <rect key="frame" x="393.5" y="275" width="109" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="EDp-ZS-J6R"/>
+                                    <constraint firstAttribute="height" constant="47" id="Vfw-WM-Nrj"/>
+                                </constraints>
+                                <state key="normal" image="Skip"/>
+                                <connections>
+                                    <action selector="skipButton:" destination="cHO-TI-CQO" eventType="touchUpInside" id="fh1-3D-OHJ"/>
+                                    <segue destination="nLL-gW-qx4" kind="show" identifier="WelcomeForHome" id="gel-3q-qwE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qMf-iD-rJ7" firstAttribute="centerY" secondItem="ArE-lV-TGQ" secondAttribute="centerY" constant="-50" id="73c-Jr-NSS"/>
+                            <constraint firstItem="vkP-zZ-D7J" firstAttribute="centerX" secondItem="ArE-lV-TGQ" secondAttribute="centerX" id="CUp-yO-otJ"/>
+                            <constraint firstItem="qMf-iD-rJ7" firstAttribute="centerX" secondItem="ArE-lV-TGQ" secondAttribute="centerX" id="EQ2-It-uKB"/>
+                            <constraint firstItem="94q-wm-adI" firstAttribute="bottom" secondItem="F33-pF-dIT" secondAttribute="bottom" constant="71" id="Jzj-ay-u1s"/>
+                            <constraint firstItem="vkP-zZ-D7J" firstAttribute="centerY" secondItem="ArE-lV-TGQ" secondAttribute="centerY" id="Koy-MB-rlr"/>
+                            <constraint firstAttribute="trailing" secondItem="vkP-zZ-D7J" secondAttribute="trailing" id="dIT-d2-0Y5"/>
+                            <constraint firstItem="vkP-zZ-D7J" firstAttribute="top" secondItem="ArE-lV-TGQ" secondAttribute="top" id="dXB-MK-EUJ"/>
+                            <constraint firstItem="vkP-zZ-D7J" firstAttribute="leading" secondItem="ArE-lV-TGQ" secondAttribute="leading" id="lWz-zN-Ml0"/>
+                            <constraint firstAttribute="bottom" secondItem="vkP-zZ-D7J" secondAttribute="bottom" id="nfQ-kH-HaB"/>
+                            <constraint firstItem="F33-pF-dIT" firstAttribute="centerX" secondItem="ArE-lV-TGQ" secondAttribute="centerX" id="yEm-1N-gI9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="94q-wm-adI"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="qMf-iD-rJ7" id="s5b-De-uMM"/>
+                        <outlet property="skip" destination="F33-pF-dIT" id="Z8D-sB-cxh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7k-eZ-i5z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.64285714285714" y="44.927536231884062"/>
+        </scene>
+        <!--HomeSpace-->
+        <scene sceneID="MCW-Dp-1Zu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeSpace" id="nLL-gW-qx4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PFO-AK-THy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UbY-bt-FVi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="509"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackWhite" width="1708" height="848"/>
+        <image name="Skip" width="109" height="47"/>
+    </resources>
+</document>

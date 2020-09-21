@@ -9,6 +9,9 @@
 import UIKit
 
 class HomeSpaceController: UIViewController {
+    
+    var planetData = LoaderDescriptionJson().planetData
+    var item = Planets()
 
     @IBOutlet weak var solButton: UIButton!
     @IBOutlet weak var mercurioButton: UIImageView!
