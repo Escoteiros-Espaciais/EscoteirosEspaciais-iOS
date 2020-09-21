@@ -23,6 +23,28 @@ class HomeSpaceController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- }
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destVC = segue.destination as? InfoScreenController else { return }
+        destVC.astroIdentifier = .earth
+    }
+    
+//    func segueStringToAstro(with: String): Astro {
+//        switch with {
+//        case "":
+//            return .sun
+//        case " 1":
+//            return .earth
+//        
+//        default:
+//            return .earth
+//        }
+//    }
+}
+
+
+enum Astro {
+    case sunn
+    case earth
 }
