@@ -10,9 +10,19 @@ import UIKit
 
 class HomeSpaceController: UIViewController {
 
+    @IBOutlet weak var solButton: UIButton!
+    @IBOutlet weak var mercurioButton: UIImageView!
+    @IBOutlet weak var venusButton: UIButton!
+    @IBOutlet weak var luaButton: UIButton!
+    @IBOutlet weak var terraButton: UIButton!
+    @IBOutlet weak var marteButton: UIButton!
+    @IBOutlet weak var jupiterButton: UIButton!
+    @IBOutlet weak var saturnoButton: UIButton!
+    @IBOutlet weak var uranoButton: UIButton!
+    @IBOutlet weak var netunoButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+ }
 
 }
