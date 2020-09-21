@@ -23,6 +23,25 @@ class EscoteiroEspacialTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    func testLoaderDescriptionJson()  {
+
+        let description = LoaderDescriptionJson()
+
+        let output = description.planetData[3]
+        let name = output.name
+        XCTAssertEqual(name, "Terra")
+    }
+
+    func testCountLoadeDescriptionJson() {
+        let description = LoaderDescriptionJson()
+
+        let output = description.planetData
+        let count = output.count
+
+        XCTAssertEqual(count, 10)
+    }
+
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
