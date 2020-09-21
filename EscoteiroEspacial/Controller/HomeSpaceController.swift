@@ -36,7 +36,7 @@ class HomeSpaceController: UIViewController {
         case "PassSunInfo":
             return .sunn
         case "PassMercuryInfo":
-            return .venus
+            return .mercury
         case "PassVenusInfo":
             return .venus
         case "PassMoonInfo":
