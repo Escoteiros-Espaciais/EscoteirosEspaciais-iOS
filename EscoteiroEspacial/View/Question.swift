@@ -12,10 +12,4 @@ struct Question: Codable {
     var text: String?
     var rightAnswer: String?
     var answers: [String]?
-    
-    init() {
-        text = ""
-        rightAnswer = ""
-        answers = []
-    }
 }

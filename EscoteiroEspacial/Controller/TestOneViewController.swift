@@ -9,7 +9,9 @@
 import UIKit
 
 class TestOneViewController: UIViewController {
-
+    
+    var dataPlanetDescription = Planets()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
