@@ -57,8 +57,18 @@
                                 <rect key="frame" x="406" y="0.0" width="342" height="354"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XrI-vX-HBb">
-                                        <rect key="frame" x="0.0" y="20" width="342" height="324"/>
+                                        <rect key="frame" x="5" y="20" width="332" height="324"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="pyP-OH-U4Y">
+                                                <rect key="frame" x="0.0" y="28" width="332" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pyP-OH-U4Y" id="xaZ-9T-rSh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="332" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.corner">
                                                 <integer key="value" value="12"/>
@@ -67,10 +77,10 @@
                                     </tableView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="XrI-vX-HBb" secondAttribute="trailing" id="b2s-zt-SmG"/>
+                                    <constraint firstAttribute="trailing" secondItem="XrI-vX-HBb" secondAttribute="trailing" constant="5" id="b2s-zt-SmG"/>
                                     <constraint firstItem="XrI-vX-HBb" firstAttribute="top" secondItem="TIq-W5-gjA" secondAttribute="top" constant="20" id="bDU-bc-BDk"/>
                                     <constraint firstAttribute="bottom" secondItem="XrI-vX-HBb" secondAttribute="bottom" constant="10" id="jlc-MD-fNb"/>
-                                    <constraint firstItem="XrI-vX-HBb" firstAttribute="leading" secondItem="TIq-W5-gjA" secondAttribute="leading" id="tUp-HX-W6Y"/>
+                                    <constraint firstItem="XrI-vX-HBb" firstAttribute="leading" secondItem="TIq-W5-gjA" secondAttribute="leading" constant="5" id="tUp-HX-W6Y"/>
                                 </constraints>
                             </view>
                         </subviews>

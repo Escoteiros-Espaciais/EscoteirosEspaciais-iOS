@@ -11,16 +11,19 @@ import SceneKit
 
 class TestOneViewController: UIViewController {
     
-    var dataPlanetDescription = Planets()
-    
     @IBOutlet weak var backButton: UIButton!
     
     @IBOutlet weak var animation: SCNView!
     
-    @IBOutlet weak var tableQuestion: UITableView!
+    @IBOutlet var tableQuestion: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        tableQuestion.delegate = self
+//        tableQuestion.dataSource = self
+//        tableQuestion.reloadData()
+        
         let scene = SCNScene()
         
         let cameraNode = SCNNode()
@@ -43,20 +46,25 @@ class TestOneViewController: UIViewController {
         animation.backgroundColor = UIColor.clear
         animation.allowsCameraControl = true
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+   
+        }
 }
 
 //extension TestOneViewController: UITableViewDataSource, UITableViewDelegate {
-//    
+//
 //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        <#code#>
+//
 //    }
-//    
+//
 //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        <#code#>
+//
 //    }
-//    
+//
 //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
+//
+//
 //    }
-//    
 //}
