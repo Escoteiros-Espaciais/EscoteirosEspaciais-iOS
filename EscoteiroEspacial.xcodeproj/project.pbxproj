@@ -23,6 +23,9 @@
 		27F5BC8225011E8A00AD5531 /* EscoteiroEspacialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8125011E8A00AD5531 /* EscoteiroEspacialTests.swift */; };
 		27F5BC8D25011E8A00AD5531 /* EscoteiroEspacialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */; };
 		27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27F5BCA0250121BA00AD5531 /* .swiftlint.yml */; };
+		A42CC34F2518D9B40007EC95 /* WarningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42CC34E2518D9B40007EC95 /* WarningsViewController.swift */; };
+		A42CC3512518DBAD0007EC95 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42CC3502518DBAD0007EC95 /* Welcome.storyboard */; };
+		A42CC3532518DFB20007EC95 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42CC3522518DFB20007EC95 /* WelcomeViewController.swift */; };
 		A4BB8C84250FA1C300A2CAB1 /* TestOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BB8C83250FA1C300A2CAB1 /* TestOne.storyboard */; };
 		A4BB8C8A250FA95900A2CAB1 /* Descriptions.json in Resources */ = {isa = PBXBuildFile; fileRef = A4BB8C89250FA95900A2CAB1 /* Descriptions.json */; };
 		A4BB8C8C250FA9A200A2CAB1 /* LoaderDescriptionJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C8B250FA9A200A2CAB1 /* LoaderDescriptionJson.swift */; };
@@ -72,6 +75,9 @@
 		27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscoteiroEspacialUITests.swift; sourceTree = "<group>"; };
 		27F5BC8E25011E8A00AD5531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F5BCA0250121BA00AD5531 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		A42CC34E2518D9B40007EC95 /* WarningsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningsViewController.swift; sourceTree = "<group>"; };
+		A42CC3502518DBAD0007EC95 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		A42CC3522518DFB20007EC95 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		A4BB8C83250FA1C300A2CAB1 /* TestOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestOne.storyboard; sourceTree = "<group>"; };
 		A4BB8C89250FA95900A2CAB1 /* Descriptions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Descriptions.json; path = EscoteiroEspacial/Descriptions.json; sourceTree = SOURCE_ROOT; };
 		A4BB8C8B250FA9A200A2CAB1 /* LoaderDescriptionJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoaderDescriptionJson.swift; path = EscoteiroEspacial/View/LoaderDescriptionJson.swift; sourceTree = SOURCE_ROOT; };
@@ -179,6 +185,7 @@
 				270DC2122513A41000E8781F /* PlanetNode.swift */,
 				A4BB8C83250FA1C300A2CAB1 /* TestOne.storyboard */,
 				A4BB8C932514DCD200A2CAB1 /* Warnings.storyboard */,
+				A42CC3502518DBAD0007EC95 /* Welcome.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +207,8 @@
 				27ED6905250A59AB00E5A67E /* InfoScreenController.swift */,
 				0BD219D92510F7DD00F95B93 /* Notification.swift */,
 				A4BB8C9125139AD000A2CAB1 /* TestOneViewController.swift */,
+				A42CC34E2518D9B40007EC95 /* WarningsViewController.swift */,
+				A42CC3522518DFB20007EC95 /* WelcomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -339,6 +348,7 @@
 				A4BB8C942514DCD200A2CAB1 /* Warnings.storyboard in Resources */,
 				A4BB8C84250FA1C300A2CAB1 /* TestOne.storyboard in Resources */,
 				273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */,
+				A42CC3512518DBAD0007EC95 /* Welcome.storyboard in Resources */,
 				27F5BC7725011E8A00AD5531 /* LaunchScreen.storyboard in Resources */,
 				27F5BC7425011E8A00AD5531 /* Assets.xcassets in Resources */,
 				27F5BC7225011E8800AD5531 /* HomeSpace.storyboard in Resources */,
@@ -392,11 +402,13 @@
 				27F5BC6F25011E8800AD5531 /* HomeSpaceController.swift in Sources */,
 				27F5BC6F25011E8800AD5531 /* HomeSpaceController.swift in Sources */,
 				27ED6906250A59AB00E5A67E /* InfoScreenController.swift in Sources */,
+				A42CC34F2518D9B40007EC95 /* WarningsViewController.swift in Sources */,
 				0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */,
 				A4BB8C8C250FA9A200A2CAB1 /* LoaderDescriptionJson.swift in Sources */,
 				27F5BC6B25011E8800AD5531 /* AppDelegate.swift in Sources */,
 				279E1C2A2518E8D80048C7F5 /* Astro.swift in Sources */,
 				A4BB8C8E2510E7C200A2CAB1 /* Planets .swift in Sources */,
+				A42CC3532518DFB20007EC95 /* WelcomeViewController.swift in Sources */,
 				27F5BC6D25011E8800AD5531 /* SceneDelegate.swift in Sources */,
 				270DC2132513A41100E8781F /* PlanetNode.swift in Sources */,
 			);
