@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B82B036251387FC00BA3273 /* foguete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B82B035251387FC00BA3273 /* foguete.jpg */; };
+		0BC7206425191A5B00F9D82C /* TestTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC7206325191A5B00F9D82C /* TestTwo.storyboard */; };
 		0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD219D92510F7DD00F95B93 /* Notification.swift */; };
 		270DC2132513A41100E8781F /* PlanetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270DC2122513A41000E8781F /* PlanetNode.swift */; };
 		273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 273DAD5B25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf */; };
@@ -51,7 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B82B035251387FC00BA3273 /* foguete.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = foguete.jpg; path = ../../../../Downloads/foguete.jpg; sourceTree = "<group>"; };
+		0BC7206325191A5B00F9D82C /* TestTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestTwo.storyboard; sourceTree = "<group>"; };
 		0BD219D92510F7DD00F95B93 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		270DC2122513A41000E8781F /* PlanetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNode.swift; sourceTree = "<group>"; };
 		273DAD5B25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PatrickHandSC-Regular.ttf"; sourceTree = "<group>"; };
@@ -140,7 +140,6 @@
 		27F5BC6925011E8800AD5531 /* EscoteiroEspacial */ = {
 			isa = PBXGroup;
 			children = (
-				0B82B035251387FC00BA3273 /* foguete.jpg */,
 				273DAD5925123D5E00CCC9C3 /* Fonts */,
 				27F5BC9C25011FCB00AD5531 /* Controller */,
 				27F5BC9B25011FC500AD5531 /* Model */,
@@ -182,6 +181,7 @@
 				270DC2122513A41000E8781F /* PlanetNode.swift */,
 				A4BB8C83250FA1C300A2CAB1 /* TestOne.storyboard */,
 				A4BB8C932514DCD200A2CAB1 /* Warnings.storyboard */,
+				0BC7206325191A5B00F9D82C /* TestTwo.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -337,8 +337,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B82B036251387FC00BA3273 /* foguete.jpg in Resources */,
 				27ED6904250A563700E5A67E /* InfoScreenView.storyboard in Resources */,
+				0BC7206425191A5B00F9D82C /* TestTwo.storyboard in Resources */,
 				27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */,
 				A4BB8C942514DCD200A2CAB1 /* Warnings.storyboard in Resources */,
 				A4BB8C84250FA1C300A2CAB1 /* TestOne.storyboard in Resources */,
