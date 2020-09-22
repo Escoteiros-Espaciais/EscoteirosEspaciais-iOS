@@ -15,6 +15,7 @@ class InfoScreenController: UIViewController {
     @IBOutlet weak var testeButton: UIButton!
     @IBOutlet weak var onOffButton: UIButton!
     @IBOutlet weak var sceneView: SCNView!
+    var astroIdentifier: Astro?
     
     override func viewDidLoad() {
         super.viewDidLoad()
