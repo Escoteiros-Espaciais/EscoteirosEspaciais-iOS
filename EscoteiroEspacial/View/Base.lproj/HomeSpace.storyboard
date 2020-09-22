@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -18,27 +16,27 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeSpaceController" customModule="EscoteiroEspacial" sceneMemberID="viewController">
-                    <view key="view" clipsSubviews="YES" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="BackStars" translatesAutoresizingMaskIntoConstraints="NO" id="9zy-r0-Os1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="BackStars" translatesAutoresizingMaskIntoConstraints="NO" id="9zy-r0-Os1">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <viewLayoutGuide key="safeArea" id="dUZ-fH-qQg"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="280" verticalCompressionResistancePriority="760" distribution="equalCentering" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="mL3-cS-SJT">
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="280" verticalCompressionResistancePriority="760" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="mL3-cS-SJT">
                                 <rect key="frame" x="44" y="0.0" width="852" height="414"/>
                                 <subviews>
-                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPW-qA-ZSi" userLabel="View Sol e Mercurio">
-                                        <rect key="frame" x="0.0" y="0.0" width="149" height="414"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPW-qA-ZSi" userLabel="View Sol e Mercurio">
+                                        <rect key="frame" x="0.0" y="0.0" width="149.5" height="414"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas1" translatesAutoresizingMaskIntoConstraints="NO" id="fCG-zU-51h">
-                                                <rect key="frame" x="0.0" y="0.0" width="149" height="414"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas1" translatesAutoresizingMaskIntoConstraints="NO" id="fCG-zU-51h" userLabel="Orbitas">
+                                                <rect key="frame" x="0.0" y="0.0" width="149.5" height="414"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="peh-j8-Dlc" userLabel="Sol">
                                                 <rect key="frame" x="0.0" y="145" width="119.5" height="165.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fb6-kI-fBb" userLabel="Sol">
+                                                    <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fb6-kI-fBb" userLabel="Sol">
                                                         <rect key="frame" x="2.5" y="0.0" width="114.5" height="130.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Fb6-kI-fBb" secondAttribute="height" multiplier="120:137" id="9Gb-2C-0Pp"/>
@@ -65,14 +63,14 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="eC9-Cq-xO4" userLabel="Mercurio">
-                                                <rect key="frame" x="72" y="67" width="82" height="87"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="eC9-Cq-xO4" userLabel="Mercurio">
+                                                <rect key="frame" x="82" y="35" width="82" height="87"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercúrio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZp-Bx-aOV">
                                                         <rect key="frame" x="0.0" y="0.0" width="82" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="bCH-uk-EnY"/>
-                                                            <constraint firstAttribute="width" constant="82" id="yb5-kS-2ZS"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="yb5-kS-2ZS"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -94,33 +92,33 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="peh-j8-Dlc" secondAttribute="trailing" constant="30" id="240-Qi-ctD"/>
                                             <constraint firstAttribute="bottom" secondItem="fCG-zU-51h" secondAttribute="bottom" id="3z3-y6-CBE"/>
-                                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="eC9-Cq-xO4" secondAttribute="trailing" constant="10" id="5pd-J2-oJd"/>
-                                            <constraint firstItem="eC9-Cq-xO4" firstAttribute="leading" secondItem="aPW-qA-ZSi" secondAttribute="leading" constant="72" id="EM3-1b-IbG"/>
-                                            <constraint firstItem="eC9-Cq-xO4" firstAttribute="top" secondItem="aPW-qA-ZSi" secondAttribute="top" constant="67" id="EkX-3p-dlY"/>
                                             <constraint firstItem="eC9-Cq-xO4" firstAttribute="height" secondItem="fCG-zU-51h" secondAttribute="height" multiplier="0.21" id="G9t-es-ai5"/>
                                             <constraint firstItem="peh-j8-Dlc" firstAttribute="width" secondItem="fCG-zU-51h" secondAttribute="width" multiplier="0.8" id="J0t-kC-FkN"/>
                                             <constraint firstItem="fCG-zU-51h" firstAttribute="leading" secondItem="aPW-qA-ZSi" secondAttribute="leading" id="LC0-QJ-1qG"/>
+                                            <constraint firstItem="eC9-Cq-xO4" firstAttribute="top" secondItem="aPW-qA-ZSi" secondAttribute="top" constant="35" id="NN1-F3-DfY"/>
+                                            <constraint firstItem="eC9-Cq-xO4" firstAttribute="leading" secondItem="aPW-qA-ZSi" secondAttribute="leading" constant="82" id="Sgs-RH-Yji"/>
                                             <constraint firstItem="peh-j8-Dlc" firstAttribute="leading" secondItem="aPW-qA-ZSi" secondAttribute="leading" id="c1x-ob-ypi"/>
                                             <constraint firstItem="fCG-zU-51h" firstAttribute="top" secondItem="aPW-qA-ZSi" secondAttribute="top" id="cBE-vC-GJa"/>
                                             <constraint firstItem="eC9-Cq-xO4" firstAttribute="width" secondItem="fCG-zU-51h" secondAttribute="width" multiplier="0.55" id="fjq-Li-LxZ"/>
+                                            <constraint firstItem="peh-j8-Dlc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eC9-Cq-xO4" secondAttribute="bottom" constant="21" id="izT-bL-6YU"/>
                                             <constraint firstAttribute="trailing" secondItem="fCG-zU-51h" secondAttribute="trailing" id="mxh-sd-sli"/>
+                                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="eC9-Cq-xO4" secondAttribute="trailing" id="pJr-ZR-9aw"/>
                                             <constraint firstItem="peh-j8-Dlc" firstAttribute="height" secondItem="fCG-zU-51h" secondAttribute="height" multiplier="0.4" id="rXz-FY-DeZ"/>
                                             <constraint firstItem="peh-j8-Dlc" firstAttribute="top" secondItem="aPW-qA-ZSi" secondAttribute="top" constant="145" id="tOc-Xt-6JM"/>
                                             <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="peh-j8-Dlc" secondAttribute="bottom" constant="103" id="uPo-8c-t1N"/>
-                                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="eC9-Cq-xO4" secondAttribute="bottom" constant="261" id="w49-uQ-4gh"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGB-6F-bjJ" userLabel="View Venus">
-                                        <rect key="frame" x="150" y="0.0" width="88" height="414"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGB-6F-bjJ" userLabel="View Venus">
+                                        <rect key="frame" x="150.5" y="0.0" width="88.5" height="414"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas3" translatesAutoresizingMaskIntoConstraints="NO" id="ILk-Oc-cWO">
-                                                <rect key="frame" x="0.0" y="0.0" width="88" height="414"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas3" translatesAutoresizingMaskIntoConstraints="NO" id="ILk-Oc-cWO" userLabel="Orbita">
+                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="414"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="fun-NY-kP7" userLabel="Venus">
-                                                <rect key="frame" x="28" y="246" width="58" height="91"/>
+                                                <rect key="frame" x="28" y="246" width="58.5" height="91"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="476-h4-3Bt" userLabel="Venus">
-                                                        <rect key="frame" x="0.0" y="0.0" width="58" height="60"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="476-h4-3Bt" userLabel="Venus">
+                                                        <rect key="frame" x="0.0" y="0.0" width="58.5" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="476-h4-3Bt" secondAttribute="height" multiplier="30:31" id="vLJ-mG-Wch"/>
                                                         </constraints>
@@ -155,27 +153,27 @@
                                             <constraint firstItem="ILk-Oc-cWO" firstAttribute="top" secondItem="jGB-6F-bjJ" secondAttribute="top" id="yL5-7z-QTb"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDl-iB-TmC" userLabel="View Terra e Lua">
-                                        <rect key="frame" x="239" y="0.0" width="66" height="414"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDl-iB-TmC" userLabel="View Terra e Lua">
+                                        <rect key="frame" x="240" y="0.0" width="66" height="414"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas4" translatesAutoresizingMaskIntoConstraints="NO" id="0Ri-ve-rzU">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas4" translatesAutoresizingMaskIntoConstraints="NO" id="0Ri-ve-rzU" userLabel="Orbitas">
                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="414"/>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="k8L-b5-GkR" userLabel="Terra">
-                                                <rect key="frame" x="0.0" y="128" width="66" height="124"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="k8L-b5-GkR" userLabel="Terra">
+                                                <rect key="frame" x="0.0" y="128" width="66" height="103.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFM-7B-b5h" userLabel="Terra">
-                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="93"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFM-7B-b5h" userLabel="Terra">
+                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="72.5"/>
                                                         <state key="normal" image="Terra"/>
                                                         <connections>
                                                             <segue destination="zIB-c3-l1a" kind="show" identifier="PassEarthInfo" id="Czv-BL-wGe"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEX-8O-MJJ">
-                                                        <rect key="frame" x="6.5" y="94" width="53" height="30"/>
+                                                        <rect key="frame" x="6.5" y="73.5" width="53" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="7zw-is-myN"/>
-                                                            <constraint firstAttribute="width" constant="53" id="j8y-CI-ol2"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="j8y-CI-ol2"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -183,11 +181,11 @@
                                                     </label>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="LFM-7B-b5h" firstAttribute="height" secondItem="k8L-b5-GkR" secondAttribute="height" multiplier="0.75" id="z4l-Ro-ccX"/>
+                                                    <constraint firstItem="LFM-7B-b5h" firstAttribute="height" secondItem="k8L-b5-GkR" secondAttribute="height" multiplier="0.7" id="z4l-Ro-ccX"/>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Qp-Sx-Q5d" userLabel="Lua">
-                                                <rect key="frame" x="0.0" y="51" width="33" height="70.5"/>
+                                                <rect key="frame" x="0.0" y="51" width="33" height="66.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROo-eD-JmK">
                                                         <rect key="frame" x="0.5" y="0.0" width="32" height="29"/>
@@ -199,8 +197,8 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0J-XL-DV0" userLabel="Lua">
-                                                        <rect key="frame" x="0.0" y="29" width="33" height="41.5"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0J-XL-DV0" userLabel="Lua">
+                                                        <rect key="frame" x="0.0" y="29" width="33" height="37.5"/>
                                                         <state key="normal" image="Lua"/>
                                                         <connections>
                                                             <segue destination="zIB-c3-l1a" kind="show" identifier="PassMoonInfo" id="lMf-aO-Hhw"/>
@@ -221,33 +219,33 @@
                                             <constraint firstItem="k8L-b5-GkR" firstAttribute="leading" secondItem="uDl-iB-TmC" secondAttribute="leading" id="a7G-gx-kj6"/>
                                             <constraint firstItem="k8L-b5-GkR" firstAttribute="top" secondItem="uDl-iB-TmC" secondAttribute="top" constant="128" id="aao-l3-tbq"/>
                                             <constraint firstItem="0Ri-ve-rzU" firstAttribute="top" secondItem="uDl-iB-TmC" secondAttribute="top" id="d0h-h8-VaZ"/>
-                                            <constraint firstItem="B0J-XL-DV0" firstAttribute="height" relation="lessThanOrEqual" secondItem="0Ri-ve-rzU" secondAttribute="height" multiplier="0.25" id="eMX-N1-aYI"/>
+                                            <constraint firstItem="B0J-XL-DV0" firstAttribute="height" relation="lessThanOrEqual" secondItem="0Ri-ve-rzU" secondAttribute="height" multiplier="0.15" id="eMX-N1-aYI"/>
                                             <constraint firstItem="B0J-XL-DV0" firstAttribute="width" secondItem="0Ri-ve-rzU" secondAttribute="width" multiplier="0.5" id="hKM-g3-Lha"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="k8L-b5-GkR" secondAttribute="trailing" id="i5N-SO-nxH"/>
                                             <constraint firstItem="LFM-7B-b5h" firstAttribute="width" secondItem="0Ri-ve-rzU" secondAttribute="width" id="jwf-Tj-Aqy"/>
                                             <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="k8L-b5-GkR" secondAttribute="bottom" constant="185" id="pYi-d4-IXA"/>
                                             <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="0Qp-Sx-Q5d" secondAttribute="trailing" constant="33" id="pc2-8f-FD5"/>
-                                            <constraint firstItem="0Qp-Sx-Q5d" firstAttribute="height" secondItem="0Ri-ve-rzU" secondAttribute="height" multiplier="0.17" id="yEN-Sb-9b7"/>
+                                            <constraint firstItem="0Qp-Sx-Q5d" firstAttribute="height" secondItem="0Ri-ve-rzU" secondAttribute="height" multiplier="0.16" id="yEN-Sb-9b7"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3H-5d-dOc" userLabel="View Marte">
-                                        <rect key="frame" x="306" y="0.0" width="90.5" height="414"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3H-5d-dOc" userLabel="View Marte">
+                                        <rect key="frame" x="307" y="0.0" width="85.5" height="414"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas3" translatesAutoresizingMaskIntoConstraints="NO" id="yHN-L2-Lb7">
-                                                <rect key="frame" x="0.0" y="0.0" width="90.5" height="414"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas3" translatesAutoresizingMaskIntoConstraints="NO" id="yHN-L2-Lb7" userLabel="Orbitas">
+                                                <rect key="frame" x="0.0" y="0.0" width="85.5" height="414"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iYh-jr-38b" userLabel="Marte">
-                                                <rect key="frame" x="30.5" y="271" width="59.5" height="91"/>
+                                                <rect key="frame" x="28.5" y="271" width="56.5" height="91"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-0s-fAv" userLabel="Marte">
-                                                        <rect key="frame" x="0.0" y="0.0" width="59.5" height="57"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-0s-fAv" userLabel="Marte">
+                                                        <rect key="frame" x="0.0" y="0.0" width="56.5" height="57"/>
                                                         <state key="normal" image="Marte"/>
                                                         <connections>
                                                             <segue destination="zIB-c3-l1a" kind="show" identifier="PassMarsInfo" id="ycF-yn-dTo"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxE-p5-dcL">
-                                                        <rect key="frame" x="1.5" y="57" width="56.5" height="34"/>
+                                                        <rect key="frame" x="0.0" y="57" width="56.5" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="56.5" id="BAo-gz-dnY"/>
                                                             <constraint firstAttribute="height" constant="34" id="Mrt-zP-HCi"/>
@@ -274,27 +272,27 @@
                                             <constraint firstItem="hUa-0s-fAv" firstAttribute="height" secondItem="yHN-L2-Lb7" secondAttribute="height" multiplier="0.137681" id="w0T-iL-bAz"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="6vO-nK-V8k" userLabel="View Jupiter">
-                                        <rect key="frame" x="397.5" y="0.0" width="107.5" height="414"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6vO-nK-V8k" userLabel="View Jupiter">
+                                        <rect key="frame" x="393.5" y="0.0" width="133" height="414"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas4" translatesAutoresizingMaskIntoConstraints="NO" id="QaZ-VE-AVK">
-                                                <rect key="frame" x="0.0" y="0.0" width="107.5" height="414"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas3" translatesAutoresizingMaskIntoConstraints="NO" id="QaZ-VE-AVK" userLabel="Orbitas">
+                                                <rect key="frame" x="0.0" y="0.0" width="133" height="414"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="AIo-lq-FiZ" userLabel="Jupiter">
-                                                <rect key="frame" x="0.0" y="138" width="107.5" height="132.5"/>
+                                                <rect key="frame" x="0.0" y="138" width="133" height="132.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjE-Uk-45m" userLabel="Jupiter">
-                                                        <rect key="frame" x="0.0" y="0.0" width="107.5" height="103.5"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="740" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjE-Uk-45m" userLabel="Jupiter">
+                                                        <rect key="frame" x="10" y="0.0" width="113" height="106.5"/>
                                                         <state key="normal" image="Jupiter"/>
                                                         <connections>
                                                             <segue destination="zIB-c3-l1a" kind="show" identifier="PassJupiterInfo" id="1ZY-bl-Kxr"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jupiter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5D-rX-9Uo">
-                                                        <rect key="frame" x="21.5" y="104.5" width="64" height="28"/>
+                                                        <rect key="frame" x="34.5" y="107.5" width="64" height="25"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="64" id="W54-mD-Otu"/>
-                                                            <constraint firstAttribute="height" constant="28" id="aKN-EV-pTC"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="W54-mD-Otu"/>
+                                                            <constraint firstAttribute="height" constant="25" id="aKN-EV-pTC"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -305,40 +303,38 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="AIo-lq-FiZ" firstAttribute="leading" secondItem="6vO-nK-V8k" secondAttribute="leading" id="370-Qv-0WX"/>
-                                            <constraint firstItem="AIo-lq-FiZ" firstAttribute="top" secondItem="6vO-nK-V8k" secondAttribute="top" constant="138" id="4iq-NZ-Wy8"/>
-                                            <constraint firstItem="xjE-Uk-45m" firstAttribute="width" secondItem="QaZ-VE-AVK" secondAttribute="width" id="Gbw-W9-K3J"/>
+                                            <constraint firstItem="xjE-Uk-45m" firstAttribute="width" secondItem="QaZ-VE-AVK" secondAttribute="width" multiplier="0.85" id="Gbw-W9-K3J"/>
+                                            <constraint firstItem="AIo-lq-FiZ" firstAttribute="top" secondItem="6vO-nK-V8k" secondAttribute="top" constant="138" id="HhU-c4-lhy"/>
                                             <constraint firstAttribute="bottom" secondItem="QaZ-VE-AVK" secondAttribute="bottom" id="MBl-iC-zJa"/>
-                                            <constraint firstAttribute="trailing" secondItem="QaZ-VE-AVK" secondAttribute="trailing" id="Sef-Bm-Qn7"/>
                                             <constraint firstItem="AIo-lq-FiZ" firstAttribute="width" secondItem="QaZ-VE-AVK" secondAttribute="width" id="SpW-ee-Gf0"/>
-                                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="AIo-lq-FiZ" secondAttribute="trailing" id="VUQ-On-h7W"/>
-                                            <constraint firstItem="xjE-Uk-45m" firstAttribute="height" secondItem="QaZ-VE-AVK" secondAttribute="height" multiplier="0.27" id="jxf-3G-jnh"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AIo-lq-FiZ" secondAttribute="trailing" id="ade-O3-chn"/>
+                                            <constraint firstItem="xjE-Uk-45m" firstAttribute="height" secondItem="QaZ-VE-AVK" secondAttribute="height" multiplier="0.25" id="jxf-3G-jnh"/>
                                             <constraint firstItem="AIo-lq-FiZ" firstAttribute="height" secondItem="QaZ-VE-AVK" secondAttribute="height" multiplier="0.32" id="nNQ-KN-RHZ"/>
-                                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="AIo-lq-FiZ" secondAttribute="bottom" constant="145" id="qPW-f3-n6V"/>
                                             <constraint firstItem="QaZ-VE-AVK" firstAttribute="leading" secondItem="6vO-nK-V8k" secondAttribute="leading" id="sDr-8A-Ze7"/>
                                             <constraint firstItem="QaZ-VE-AVK" firstAttribute="top" secondItem="6vO-nK-V8k" secondAttribute="top" id="t6X-hO-UAt"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvk-ea-8FG" userLabel="View Saturno">
-                                        <rect key="frame" x="506" y="0.0" width="90" height="414"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvk-ea-8FG" userLabel="View Saturno">
+                                        <rect key="frame" x="527.5" y="0.0" width="105.5" height="414"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas4" translatesAutoresizingMaskIntoConstraints="NO" id="kZW-ra-ycn">
-                                                <rect key="frame" x="0.0" y="0.0" width="90" height="414"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas4" translatesAutoresizingMaskIntoConstraints="NO" id="kZW-ra-ycn" userLabel="Orbitas">
+                                                <rect key="frame" x="0.0" y="0.0" width="105.5" height="414"/>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="15z-eu-aea" userLabel="Saturno">
-                                                <rect key="frame" x="0.0" y="262" width="90" height="107.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="15z-eu-aea" userLabel="Saturno">
+                                                <rect key="frame" x="0.0" y="262" width="105.5" height="107.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5H3-MA-vqT" userLabel="Saturno">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="74.5"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5H3-MA-vqT" userLabel="Saturno">
+                                                        <rect key="frame" x="0.0" y="0.0" width="105.5" height="74.5"/>
                                                         <state key="normal" image="Saturno"/>
                                                         <connections>
                                                             <segue destination="zIB-c3-l1a" kind="show" identifier="PassSaturnInfo" id="Aax-fI-D8c"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSB-ge-9eF">
-                                                        <rect key="frame" x="6.5" y="74.5" width="77" height="33"/>
+                                                        <rect key="frame" x="14.5" y="74.5" width="77" height="33"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="33" id="4jA-zd-dQ6"/>
-                                                            <constraint firstAttribute="width" constant="77" id="lHr-BY-uOk"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="77" id="lHr-BY-uOk"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -362,27 +358,27 @@
                                             <constraint firstItem="15z-eu-aea" firstAttribute="height" secondItem="kZW-ra-ycn" secondAttribute="height" multiplier="0.26" id="z0F-B2-kCa"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vps-jf-49b" userLabel="View Urano">
-                                        <rect key="frame" x="597" y="0.0" width="126" height="414"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vps-jf-49b" userLabel="View Urano">
+                                        <rect key="frame" x="634" y="0.0" width="89" height="414"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas4" translatesAutoresizingMaskIntoConstraints="NO" id="6pl-ei-yav">
-                                                <rect key="frame" x="0.0" y="0.0" width="126" height="414"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas4" translatesAutoresizingMaskIntoConstraints="NO" id="6pl-ei-yav" userLabel="Orbitas">
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="414"/>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="nk2-0E-cmN" userLabel="Urano">
-                                                <rect key="frame" x="0.0" y="68" width="126" height="124"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="nk2-0E-cmN" userLabel="Urano">
+                                                <rect key="frame" x="0.0" y="68" width="89" height="124"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZa-vb-3my" userLabel="Urano">
-                                                        <rect key="frame" x="0.0" y="0.0" width="126" height="103"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZa-vb-3my" userLabel="Urano">
+                                                        <rect key="frame" x="0.0" y="0.0" width="89" height="103"/>
                                                         <state key="normal" image="Urano"/>
                                                         <connections>
                                                             <segue destination="zIB-c3-l1a" kind="show" identifier="PassUranInfo" id="hOZ-j1-lhT"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Urano" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dow-pJ-dFr">
-                                                        <rect key="frame" x="34.5" y="104" width="57" height="20"/>
+                                                        <rect key="frame" x="16" y="104" width="57" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="8P8-1w-M29"/>
-                                                            <constraint firstAttribute="width" constant="57" id="UWy-IA-oOi"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="57" id="UWy-IA-oOi"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -394,28 +390,27 @@
                                         <constraints>
                                             <constraint firstItem="6pl-ei-yav" firstAttribute="top" secondItem="Vps-jf-49b" secondAttribute="top" id="1uo-7x-q2x"/>
                                             <constraint firstAttribute="trailing" secondItem="6pl-ei-yav" secondAttribute="trailing" id="6zZ-TG-kx9"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nk2-0E-cmN" secondAttribute="trailing" id="JTU-4I-xuN"/>
                                             <constraint firstAttribute="bottom" secondItem="6pl-ei-yav" secondAttribute="bottom" id="M6o-aO-kYO"/>
                                             <constraint firstItem="xZa-vb-3my" firstAttribute="width" secondItem="6pl-ei-yav" secondAttribute="width" id="U5i-fb-IVo"/>
                                             <constraint firstItem="nk2-0E-cmN" firstAttribute="width" secondItem="6pl-ei-yav" secondAttribute="width" id="VsO-oA-w3O"/>
                                             <constraint firstItem="nk2-0E-cmN" firstAttribute="top" secondItem="Vps-jf-49b" secondAttribute="top" constant="68" id="d3l-ZV-Gv0"/>
-                                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="nk2-0E-cmN" secondAttribute="bottom" constant="234" id="kBG-IS-W7P"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nk2-0E-cmN" secondAttribute="trailing" id="ffP-c7-PXX"/>
                                             <constraint firstItem="nk2-0E-cmN" firstAttribute="leading" secondItem="Vps-jf-49b" secondAttribute="leading" id="nvf-rr-MgK"/>
                                             <constraint firstItem="6pl-ei-yav" firstAttribute="leading" secondItem="Vps-jf-49b" secondAttribute="leading" id="qWf-iq-ktc"/>
                                             <constraint firstItem="xZa-vb-3my" firstAttribute="height" secondItem="6pl-ei-yav" secondAttribute="height" multiplier="0.248792" id="to1-Is-O34"/>
                                             <constraint firstItem="nk2-0E-cmN" firstAttribute="height" secondItem="6pl-ei-yav" secondAttribute="height" multiplier="0.3" id="tv6-9F-99z"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJI-gH-aDF" userLabel="View Netuno">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJI-gH-aDF" userLabel="View Netuno">
                                         <rect key="frame" x="724" y="0.0" width="128" height="414"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas5" translatesAutoresizingMaskIntoConstraints="NO" id="HOP-2F-5Qr">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas5" translatesAutoresizingMaskIntoConstraints="NO" id="HOP-2F-5Qr" userLabel="Orbitas">
                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="414"/>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="M2y-Gz-gBt" userLabel="Netuno">
+                                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="M2y-Gz-gBt" userLabel="Netuno">
                                                 <rect key="frame" x="9" y="237.5" width="84.5" height="128.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OL-Bs-DZo" userLabel="Netuno">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OL-Bs-DZo" userLabel="Netuno">
                                                         <rect key="frame" x="0.0" y="0.0" width="84.5" height="91.5"/>
                                                         <state key="normal" image="Netuno"/>
                                                         <connections>
@@ -425,7 +420,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Netuno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nN6-sS-DFQ">
                                                         <rect key="frame" x="8.5" y="92.5" width="67.5" height="36"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="67.5" id="RS1-ol-2yf"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="67.5" id="RS1-ol-2yf"/>
                                                             <constraint firstAttribute="height" constant="36" id="nI5-cO-sgu"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="25"/>
@@ -436,7 +431,6 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="M2y-Gz-gBt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="HOP-2F-5Qr" secondAttribute="top" constant="235" id="1DL-Fl-Ydy"/>
                                             <constraint firstItem="HOP-2F-5Qr" firstAttribute="leading" secondItem="dJI-gH-aDF" secondAttribute="leading" id="5EJ-zP-6Co"/>
                                             <constraint firstItem="M2y-Gz-gBt" firstAttribute="width" secondItem="HOP-2F-5Qr" secondAttribute="width" multiplier="0.66" id="5ym-M1-z4H"/>
                                             <constraint firstAttribute="bottom" secondItem="HOP-2F-5Qr" secondAttribute="bottom" id="69v-KY-xyf"/>
@@ -453,8 +447,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="mL3-cS-SJT" secondAttribute="bottom" id="6VY-8m-o3J"/>
                             <constraint firstItem="9zy-r0-Os1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8ux-k1-r7J"/>
@@ -465,6 +458,7 @@
                             <constraint firstItem="9zy-r0-Os1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lig-XF-KE7"/>
                             <constraint firstAttribute="trailing" secondItem="9zy-r0-Os1" secondAttribute="trailing" id="xLR-nG-SVk"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="jupiterButton" destination="xjE-Uk-45m" id="w1c-3J-Mcc"/>
@@ -513,8 +507,5 @@
         <image name="Terra" width="124" height="130"/>
         <image name="Urano" width="126" height="117"/>
         <image name="Venus" width="61" height="60"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
