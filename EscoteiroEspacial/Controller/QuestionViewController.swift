@@ -23,7 +23,7 @@ class QuestionViewController: UIViewController, QuestionDelegate {
     var questionNumber = 0
     var score = 0
     
-    var questions = [Question]()
+    var planets = [Planets]()
     var model = ApiManager()
     
     override func viewDidLoad() {
@@ -53,73 +53,75 @@ class QuestionViewController: UIViewController, QuestionDelegate {
         model.delegate = self
         model.getQuestions()
         
-        updateUI()
+       updateUI()
     }
     
     // MARK: - Model Delegate Methods
-    func questionFetched(_ questions: [Question]) {
+    func questionFetched(_ questions: [Planets]) {
         
-        self.questions = questions
+        self.planets = questions
     }
-    
+
     // MARK: - Update UI with planet
-    
+
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         let userAnswer = sender.currentTitle!
-        
+
         let userGotItRight = checkAnswer(userAnswer: userAnswer)
-        
+
         if userGotItRight {
             sender.backgroundColor = UIColor.systemGreen
         } else {
             sender.backgroundColor = UIColor.red
         }
-        
+
         nextQuestion()
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
     }
-    
+
     @objc func updateUI() {
         questionText.text = getQuestionText()
-        
+
         //Need to fetch the answers and update the button titles using the setTitle method.
         let answerChoices = getAnswers()
         choice1.setTitle(answerChoices[0], for: .normal)
         choice2.setTitle(answerChoices[1], for: .normal)
         choice3.setTitle(answerChoices[2], for: .normal)
-        
+
         progressBar.progress = getProgress()
-        
+
         choice1.backgroundColor = UIColor.clear
         choice2.backgroundColor = UIColor.clear
         choice3.backgroundColor = UIColor.clear
     }
-    
-    func getQuestionText() -> String? {
-        return questions[1].text
+
+    func getQuestionText() -> String {
+        guard let text = planets[0].questions![0].text else {return ""}
+        return text
+
     }
-    
+
     //Need a way of fetching the answer choices.
     func getAnswers() -> [String] {
-        guard let answers = questions[1].answer else {return []}
+        guard let answers = planets[0].questions![0].answer else {return []}
         return answers
     }
-    
+
     func getProgress() -> Float {
-        return Float(questionNumber) / Float(questions.count)
+        return Float(questionNumber) / Float(planets[0].questions!.count)
     }
-    
+
     func nextQuestion() {
-        if questionNumber + 1 < questions.count {
+        if questionNumber + 1 < planets[0].questions!.count {
             questionNumber += 1
         } else {
             questionNumber = 0
         }
     }
-    
+
     func checkAnswer(userAnswer: String) -> Bool {
         //Need to change answer to rightAnswer here.
-        if userAnswer == questions[questionNumber].rightAnswer {
+        if userAnswer == planets[0].questions![questionNumber].rightAnswer {
             score += 1
             return true
         } else {

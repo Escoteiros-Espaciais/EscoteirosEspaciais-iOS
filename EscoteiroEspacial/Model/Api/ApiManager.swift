@@ -9,7 +9,7 @@
 import Foundation
 
 protocol QuestionDelegate: AnyObject {
-    func questionFetched(_ questions:[Question])
+    func questionFetched(_ questions:[Planets])
 }
 
 class ApiManager {
@@ -17,8 +17,6 @@ class ApiManager {
     weak var delegate: QuestionDelegate?
     
     func getQuestions() {
-        
-        var allQuestions: [Question] = []
         
         let questionFile = RepositoryQuestion(filename: "question")
         let arrayAllQuestions = questionFile.load()
@@ -49,14 +47,11 @@ class ApiManager {
             //Parsing the data into question objects
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
-            if let response = try? decoder.decode(ResponseApiQuestion.self, from: data) {
+            if let response = try? decoder.decode([Planets].self, from: data) {
                 DispatchQueue.main.async {
                     //  Call the "questionsFetched" method of the delegate
-                    if let response = response.items {
-                        allQuestions += response
-                        questionFile.save(allQuestions)
-                        self.delegate?.questionFetched(allQuestions)
-                    }
+                    questionFile.save(response)
+                    self.delegate?.questionFetched(response)
                 }
             } else {
                 print(ApiError.unknowEroor(statuscode: response.statusCode))

@@ -7,12 +7,8 @@
 //
 import Foundation
 
-struct ResponseApiQuestion: Codable {
-    var items: [Question]?
-    }
-
 struct Question: Codable {
-    var planet: String?
+    
     var text: String?
     var rightAnswer: String?
     var answer: [String]?

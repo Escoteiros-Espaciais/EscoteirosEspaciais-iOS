@@ -20,7 +20,7 @@ class RepositoryQuestion {
         self.fileURL = fileURL
     }
         
-        func save(_ questions: [Question]) {
+        func save(_ questions: [Planets]) {
             do {
                 let jsonData = try JSONEncoder().encode(questions)
                 try jsonData.write(to: fileURL)
@@ -29,11 +29,11 @@ class RepositoryQuestion {
             }
         }
         
-     func load() -> [Question] {
-            var questions: [Question] = []
+     func load() -> [Planets] {
+            var questions: [Planets] = []
             do {
                 let jsonData = try Data(contentsOf: fileURL)
-                questions = try JSONDecoder().decode([Question].self, from: jsonData)
+                questions = try JSONDecoder().decode([Planets].self, from: jsonData)
                 return questions
             } catch {
                 print("It was not possible to load the questions.")
