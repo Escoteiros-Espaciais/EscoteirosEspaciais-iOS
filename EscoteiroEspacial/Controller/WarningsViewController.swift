@@ -10,7 +10,6 @@ import UIKit
 
 class WarningsViewController: UIViewController {
 
-  
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var buttonSolarSystem: UIButton!
     @IBOutlet weak var remakeTest: UIButton!

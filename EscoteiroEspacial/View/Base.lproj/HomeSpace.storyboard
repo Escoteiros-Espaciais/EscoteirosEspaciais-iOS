@@ -278,20 +278,20 @@
                                         <rect key="frame" x="393.5" y="0.0" width="133" height="413.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas3" translatesAutoresizingMaskIntoConstraints="NO" id="QaZ-VE-AVK" userLabel="Orbitas">
-                                                <rect key="frame" x="0.0" y="0.0" width="140" height="413.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="124" height="413.5"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="AIo-lq-FiZ" userLabel="Jupiter">
-                                                <rect key="frame" x="0.0" y="138" width="133" height="132.5"/>
+                                                <rect key="frame" x="15" y="138" width="118" height="132.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="740" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjE-Uk-45m" userLabel="Jupiter">
-                                                        <rect key="frame" x="7" y="0.0" width="119" height="106.5"/>
+                                                        <rect key="frame" x="6" y="0.0" width="106" height="106.5"/>
                                                         <state key="normal" image="Jupiter"/>
                                                         <connections>
                                                             <segue destination="zIB-c3-l1a" kind="show" identifier="PassJupiterInfo" id="1ZY-bl-Kxr"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jupiter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5D-rX-9Uo">
-                                                        <rect key="frame" x="34.5" y="107.5" width="64" height="25"/>
+                                                        <rect key="frame" x="27" y="107.5" width="64" height="25"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="W54-mD-Otu"/>
                                                             <constraint firstAttribute="height" constant="25" id="aKN-EV-pTC"/>
@@ -304,7 +304,7 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="AIo-lq-FiZ" firstAttribute="leading" secondItem="6vO-nK-V8k" secondAttribute="leading" id="370-Qv-0WX"/>
+                                            <constraint firstItem="AIo-lq-FiZ" firstAttribute="leading" secondItem="6vO-nK-V8k" secondAttribute="leading" constant="15" id="370-Qv-0WX"/>
                                             <constraint firstItem="xjE-Uk-45m" firstAttribute="width" secondItem="QaZ-VE-AVK" secondAttribute="width" multiplier="0.85" id="Gbw-W9-K3J"/>
                                             <constraint firstItem="AIo-lq-FiZ" firstAttribute="top" secondItem="6vO-nK-V8k" secondAttribute="top" constant="138" id="HhU-c4-lhy"/>
                                             <constraint firstAttribute="bottom" secondItem="QaZ-VE-AVK" secondAttribute="bottom" id="MBl-iC-zJa"/>
@@ -490,7 +490,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ycF-yn-dTo"/>
+        <segue reference="Hrk-cj-XBS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BackStars" width="897" height="414"/>
