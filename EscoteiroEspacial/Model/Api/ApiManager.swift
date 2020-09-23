@@ -49,14 +49,14 @@ class ApiManager {
             //Parsing the data into question objects
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
-            if let response = try? decoder.decode(ResponseApiQuestion.self, from: data) {
+            if let response = try? decoder.decode([Question].self, from: data) {
                 DispatchQueue.main.async {
                     //  Call the "questionsFetched" method of the delegate
-                    if let response = response.items {
-                        allQuestions += response
-                        questionFile.save(allQuestions)
-                        self.delegate?.questionFetched(allQuestions)
-                    }
+                    //if let response = response {
+//                        allQuestions += response
+                        questionFile.save(response)
+                        self.delegate?.questionFetched(response)
+                    //}
                 }
             } else {
                 print(ApiError.unknowEroor(statuscode: response.statusCode))
