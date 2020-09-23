@@ -68,6 +68,9 @@
                                             <constraint firstAttribute="height" constant="36" id="uIO-9v-N8V"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="teste-button"/>
+                                        <connections>
+                                            <segue destination="CL9-5h-ba3" kind="show" identifier="toQuiz" id="MzE-WN-HWs"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -132,7 +135,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMw-9C-M03" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-251" y="555"/>
+            <point key="canvasLocation" x="-517" y="554"/>
+        </scene>
+        <!--Questions-->
+        <scene sceneID="k3c-IK-C8f">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Questions" id="CL9-5h-ba3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kVl-De-Rd0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vKe-rK-NOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18" y="554"/>
         </scene>
     </scenes>
     <resources>

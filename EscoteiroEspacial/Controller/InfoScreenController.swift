@@ -42,5 +42,12 @@ class InfoScreenController: UIViewController {
         sceneView.allowsCameraControl = true
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "toQuiz") {
+            guard let destVC = segue.destination as? QuestionViewController else { return }
+            destVC.astroIdentifier = self.astroIdentifier
+        }
+    }
 
 }

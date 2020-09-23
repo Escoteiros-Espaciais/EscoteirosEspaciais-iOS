@@ -19,7 +19,7 @@ class QuestionViewController: UIViewController, QuestionDelegate {
     @IBOutlet weak var choice3: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
     
-    //var astroIdentifier: Astro?
+    var astroIdentifier: Astro?
     var questionNumber = 0
     var score = 0
     
@@ -53,7 +53,7 @@ class QuestionViewController: UIViewController, QuestionDelegate {
         model.delegate = self
         model.getQuestions()
         
-        updateUI()
+        //updateUI()
     }
     
     // MARK: - Model Delegate Methods
@@ -96,7 +96,7 @@ class QuestionViewController: UIViewController, QuestionDelegate {
     }
     
     func getQuestionText() -> String? {
-        return questions[1].text
+        return ""//questions[1].text
     }
     
     //Need a way of fetching the answer choices.
