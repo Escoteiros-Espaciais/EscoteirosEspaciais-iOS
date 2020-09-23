@@ -53,7 +53,9 @@ class QuestionViewController: UIViewController, QuestionDelegate {
         model.delegate = self
         model.getQuestions()
         
-        updateUI()
+        backButton.addTarget(self, action: #selector(backButtonAction), for: .touchUpInside)
+        
+        //updateUI()
     }
     
     // MARK: - Model Delegate Methods
@@ -125,6 +127,11 @@ class QuestionViewController: UIViewController, QuestionDelegate {
         } else {
             return false
         }
+    }
+    
+    @objc
+    func backButtonAction() {
+        print(self.navigationController)
     }
     
 }

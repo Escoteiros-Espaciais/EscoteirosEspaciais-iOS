@@ -120,6 +120,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButon" destination="vTM-Bc-v52" id="EHL-am-pbo"/>
                         <outlet property="sceneView" destination="0ih-YP-Sug" id="fjb-Ny-80U"/>
                     </connections>
                 </viewController>

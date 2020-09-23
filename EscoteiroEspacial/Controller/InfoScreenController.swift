@@ -41,6 +41,8 @@ class InfoScreenController: UIViewController {
         sceneView.backgroundColor = UIColor.clear
         sceneView.allowsCameraControl = true
         
+        backButon.addTarget(self, action: #selector(setter: backButon), for: .touchUpInside)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

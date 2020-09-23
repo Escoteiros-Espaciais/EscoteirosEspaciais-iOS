@@ -61,7 +61,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6F-oR-VOo">
-                                <rect key="frame" x="381" y="41" width="404" height="293"/>
+                                <rect key="frame" x="381" y="41" width="371" height="293"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enR-OI-K5W">
                                         <rect key="frame" x="8" y="261" width="24" height="24"/>
@@ -72,16 +72,16 @@
                                         <state key="normal" backgroundImage="audio-on"/>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7xk-8F-wqM">
-                                        <rect key="frame" x="8" y="8" width="371" height="247"/>
+                                        <rect key="frame" x="8" y="8" width="355" height="247"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yab-eg-eR0" userLabel="Question Text">
-                                                <rect key="frame" x="0.0" y="0.0" width="371" height="32.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="32.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-0O-hcd">
-                                                <rect key="frame" x="0.0" y="42.666666666666671" width="371" height="60"/>
+                                                <rect key="frame" x="0.0" y="42.666666666666671" width="355" height="60"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="17"/>
                                                 <state key="normal" title="Choice1" backgroundImage="Rectangle"/>
                                                 <connections>
@@ -89,7 +89,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-Vu-pkf">
-                                                <rect key="frame" x="0.0" y="112.66666666666667" width="371" height="59.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="112.66666666666667" width="355" height="59.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="17"/>
                                                 <state key="normal" title="Choice2" backgroundImage="Rectangle"/>
                                                 <connections>
@@ -97,7 +97,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMc-dX-SMV">
-                                                <rect key="frame" x="0.0" y="182.33333333333334" width="371" height="54.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="182.33333333333334" width="355" height="54.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="17"/>
                                                 <state key="normal" title="Choise3" backgroundImage="Rectangle"/>
                                                 <connections>
@@ -105,7 +105,7 @@
                                                 </connections>
                                             </button>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LmE-dl-ega">
-                                                <rect key="frame" x="0.0" y="247" width="371" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="247" width="355" height="0.0"/>
                                                 <color key="progressTintColor" red="1" green="0.34509803919999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="trackTintColor" systemColor="opaqueSeparatorColor"/>
                                             </progressView>
@@ -141,7 +141,7 @@
                             <constraint firstItem="z6F-oR-VOo" firstAttribute="top" secondItem="Ueh-0U-5pR" secondAttribute="top" constant="41" id="faW-eQ-Jtp"/>
                             <constraint firstItem="fO0-nA-sYa" firstAttribute="top" secondItem="Ueh-0U-5pR" secondAttribute="top" id="hzO-TY-hGq"/>
                             <constraint firstAttribute="bottom" secondItem="Lqf-zh-W6I" secondAttribute="bottom" id="k2e-kV-MnT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="z6F-oR-VOo" secondAttribute="trailing" constant="-33" id="pae-wU-42L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z6F-oR-VOo" secondAttribute="trailing" id="pae-wU-42L"/>
                             <constraint firstItem="Lqf-zh-W6I" firstAttribute="leading" secondItem="PKR-RI-AQq" secondAttribute="leading" id="svR-Rk-uOE"/>
                         </constraints>
                     </view>
