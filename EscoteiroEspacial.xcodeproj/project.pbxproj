@@ -21,7 +21,7 @@
 		27F5BC7425011E8A00AD5531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F5BC7325011E8A00AD5531 /* Assets.xcassets */; };
 		27F5BC7725011E8A00AD5531 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F5BC7525011E8A00AD5531 /* LaunchScreen.storyboard */; };
 		27F5BC8225011E8A00AD5531 /* EscoteiroEspacialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8125011E8A00AD5531 /* EscoteiroEspacialTests.swift */; };
-		27F5BC8D25011E8A00AD5531 /* EscoteiroEspacialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */; };
+		27F5BC8D25011E8A00AD5531 /* HomeStoryboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8C25011E8A00AD5531 /* HomeStoryboardUITests.swift */; };
 		27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27F5BCA0250121BA00AD5531 /* .swiftlint.yml */; };
 		7B38B7E0251ABE060041900A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7DF251ABE060041900A /* ApiManager.swift */; };
 		7B38B7E5251ABE130041900A /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7E4251ABE130041900A /* ApiError.swift */; };
@@ -75,7 +75,7 @@
 		27F5BC8125011E8A00AD5531 /* EscoteiroEspacialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscoteiroEspacialTests.swift; sourceTree = "<group>"; };
 		27F5BC8325011E8A00AD5531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F5BC8825011E8A00AD5531 /* EscoteiroEspacialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EscoteiroEspacialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscoteiroEspacialUITests.swift; sourceTree = "<group>"; };
+		27F5BC8C25011E8A00AD5531 /* HomeStoryboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStoryboardUITests.swift; sourceTree = "<group>"; };
 		27F5BC8E25011E8A00AD5531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F5BCA0250121BA00AD5531 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		7B38B7DF251ABE060041900A /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		27F5BC8B25011E8A00AD5531 /* EscoteiroEspacialUITests */ = {
 			isa = PBXGroup;
 			children = (
-				27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */,
+				27F5BC8C25011E8A00AD5531 /* HomeStoryboardUITests.swift */,
 				27F5BC8E25011E8A00AD5531 /* Info.plist */,
 			);
 			path = EscoteiroEspacialUITests;
@@ -446,7 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27F5BC8D25011E8A00AD5531 /* EscoteiroEspacialUITests.swift in Sources */,
+				27F5BC8D25011E8A00AD5531 /* HomeStoryboardUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

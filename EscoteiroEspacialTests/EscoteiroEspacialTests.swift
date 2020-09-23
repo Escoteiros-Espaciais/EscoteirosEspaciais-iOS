@@ -33,14 +33,14 @@ class EscoteiroEspacialTests: XCTestCase {
 //        XCTAssertEqual(name, "Terra")
     }
 
-    func testCountLoadeDescriptionJson() {
-        let description = LoaderDescriptionJson()
-
-        let output = description.planetData
-        let count = output.count
-
-        XCTAssertEqual(count, 10)
-    }
+//    func testCountLoadeDescriptionJson() {
+//        let description = LoaderDescriptionJson()
+//
+//        let output = description.planetData
+//        let count = output.count
+//
+//        XCTAssertEqual(count, 10)
+//    }
 
 
     func testPerformanceExample() throws {

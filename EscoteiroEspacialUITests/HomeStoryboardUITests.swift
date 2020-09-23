@@ -23,11 +23,23 @@ class EscoteiroEspacialUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func test_if_are_all_buttons_on_home() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
+        
+        XCTAssertTrue(app.buttons["Mercurio"].exists)
+        XCTAssertTrue(app.buttons["Sol"].exists)
+        XCTAssertTrue(app.buttons["Venus"].exists)
+        XCTAssertTrue(app.buttons["Lua"].exists)
+        XCTAssertTrue(app.buttons["Terra"].exists)
+        XCTAssertTrue(app.buttons["Marte"].exists)
+        XCTAssertTrue(app.buttons["Jupiter"].exists)
+        XCTAssertTrue(app.buttons["Saturno"].exists)
+        XCTAssertTrue(app.buttons["Urano"].exists)
+        XCTAssertTrue(app.buttons["Netuno"].exists)
+        
+        XCTAssertFalse(app.buttons["Nada"].exists)
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

@@ -19,6 +19,10 @@ class InfoScreenController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureScene()
+    }
+    
+    func configureScene() {
         let scene = SCNScene()
         
         let cameraNode = SCNNode()
@@ -40,9 +44,6 @@ class InfoScreenController: UIViewController {
         sceneView.scene = scene
         sceneView.backgroundColor = UIColor.clear
         sceneView.allowsCameraControl = true
-        
-        backButon.addTarget(self, action: #selector(setter: backButon), for: .touchUpInside)
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
