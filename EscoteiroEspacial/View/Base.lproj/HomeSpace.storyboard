@@ -35,7 +35,7 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas1" translatesAutoresizingMaskIntoConstraints="NO" id="fCG-zU-51h" userLabel="Orbitas">
                                                 <rect key="frame" x="0.0" y="0.0" width="149.5" height="413.5"/>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="peh-j8-Dlc" userLabel="Sol">
+                                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="peh-j8-Dlc" userLabel="Sol">
                                                 <rect key="frame" x="0.0" y="145" width="119.5" height="165.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fb6-kI-fBb" userLabel="Sol">
