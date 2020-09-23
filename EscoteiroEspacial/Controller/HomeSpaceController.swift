@@ -14,7 +14,7 @@ class HomeSpaceController: UIViewController {
     var item = Planets()
 
     @IBOutlet weak var solButton: UIButton!
-    @IBOutlet weak var mercurioButton: UIImageView!
+    @IBOutlet weak var mercurioButton: UIButton!
     @IBOutlet weak var venusButton: UIButton!
     @IBOutlet weak var luaButton: UIButton!
     @IBOutlet weak var terraButton: UIButton!
