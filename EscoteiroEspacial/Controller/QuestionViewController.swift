@@ -18,13 +18,14 @@ class QuestionViewController: UIViewController, QuestionDelegate {
     @IBOutlet weak var choice2: UIButton!
     @IBOutlet weak var choice3: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
-    
-    //var astroIdentifier: Astro?
+
+    var astroString: String = ""
     var questionNumber = 0
-    var score = 0
+    var planetNumber = 0
     
-    var questions = [Question]()
+    var planets = [Planets]()
     var model = ApiManager()
+    var astroQuestions:[Planets] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,7 @@ class QuestionViewController: UIViewController, QuestionDelegate {
         scene.rootNode.addChildNode(lightNode)
 
         let planetNode = PlanetNode()
+        planetNode.getPlanet(planet: astroString)
         scene.rootNode.addChildNode(planetNode)
 
         animation.scene = scene
@@ -52,36 +54,47 @@ class QuestionViewController: UIViewController, QuestionDelegate {
         
         model.delegate = self
         model.getQuestions()
+        selectQuestionsAstro(selectAstro(with: astroString))
         
         updateUI()
     }
     
     // MARK: - Model Delegate Methods
-    func questionFetched(_ questions: [Question]) {
-        
-        self.questions = questions
+    func questionFetched(_ questions: [Planets]) {
+        self.planets = questions
     }
     
+    func selectQuestionsAstro(_ astro: String) {
+        for astroSelected in 0...(planets.count - 1) where planets[astroSelected].planet == astro {
+                self.astroQuestions.append(planets[astroSelected])
+        }
+    }
+
     // MARK: - Update UI with planet
-    
+
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         let userAnswer = sender.currentTitle!
-        
+
         let userGotItRight = checkAnswer(userAnswer: userAnswer)
-        
+
         if userGotItRight {
             sender.backgroundColor = UIColor.systemGreen
         } else {
             sender.backgroundColor = UIColor.red
         }
-        
+
         nextQuestion()
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
     }
     
+    @IBAction func backInfo(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @objc func updateUI() {
-        questionText.text = getQuestionText()
         
+        questionText.text = getQuestionText()
+
         //Need to fetch the answers and update the button titles using the setTitle method.
         let answerChoices = getAnswers()
         choice1.setTitle(answerChoices[0], for: .normal)
@@ -95,36 +108,67 @@ class QuestionViewController: UIViewController, QuestionDelegate {
         choice3.backgroundColor = UIColor.clear
     }
     
-    func getQuestionText() -> String? {
-        return questions[1].text
+    func getQuestionText() -> String {
+        guard let text = astroQuestions[0].questions![questionNumber].text else {return ""}
+        return text
     }
     
     //Need a way of fetching the answer choices.
     func getAnswers() -> [String] {
-        guard let answers = questions[1].answer else {return []}
+        guard let answers = astroQuestions[0].questions![questionNumber].answer else {return []}
         return answers
     }
-    
+
     func getProgress() -> Float {
-        return Float(questionNumber) / Float(questions.count)
+        return Float(questionNumber) / Float(astroQuestions.count)
     }
-    
+
     func nextQuestion() {
-        if questionNumber + 1 < questions.count {
+        print(questionNumber)
+        if questionNumber < (astroQuestions[0].questions!.count - 1) {
             questionNumber += 1
         } else {
             questionNumber = 0
         }
     }
-    
+
     func checkAnswer(userAnswer: String) -> Bool {
         //Need to change answer to rightAnswer here.
-        if userAnswer == questions[questionNumber].rightAnswer {
-            score += 1
+        guard let answerOk = astroQuestions[0].questions![questionNumber].rightAnswer else {return false}
+        print(answerOk)
+        print(userAnswer)
+        if userAnswer == answerOk {
             return true
         } else {
             return false
         }
     }
     
+    // swiftlint:disable:next cyclomatic_complexity
+    func selectAstro(with: String) -> String {
+        switch with {
+        case "PassSunInfo":
+            return "sun"
+        case "PassMercuryInfo":
+            return "mercury"
+        case "PassVenusInfo":
+            return "venus"
+        case "PassMoonInfo":
+            return "moon"
+        case "PassEarthInfo":
+            return "earth"
+        case "PassMarsInfo":
+            return "mars"
+        case "PassJupiterInfo":
+            return "jupiter"
+        case "PassSaturnInfo":
+            return "saturn"
+        case "PassUranInfo":
+            return "uran"
+        case "PassNeptunInfo":
+            return "neptun"
+        default:
+            return ""
+        }
+    }
 }

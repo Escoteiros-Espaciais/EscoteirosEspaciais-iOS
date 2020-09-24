@@ -68,6 +68,9 @@
                                             <constraint firstAttribute="height" constant="36" id="uIO-9v-N8V"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="teste-button"/>
+                                        <connections>
+                                            <segue destination="r8p-9S-5d9" kind="show" identifier="PassQuestion" id="Ypa-KK-4LH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -124,6 +127,16 @@
             </objects>
             <point key="canvasLocation" x="-251.11607142857142" y="-7.2463768115942031"/>
         </scene>
+        <!--Questions-->
+        <scene sceneID="HsQ-UK-1rG">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Questions" storyboardName="Questions" id="r8p-9S-5d9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ca8-gm-T1U"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cfs-Vu-XvJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183" y="577"/>
+        </scene>
         <!--HomeSpace-->
         <scene sceneID="LOa-8B-R2H">
             <objects>
@@ -132,7 +145,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMw-9C-M03" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-251" y="555"/>
+            <point key="canvasLocation" x="-324" y="578"/>
         </scene>
     </scenes>
     <resources>
