@@ -9,8 +9,8 @@
 import UIKit
 import SceneKit
 
-class QuestionViewController: UIViewController, QuestionDelegate {
-   
+class QuestionViewController: UIViewController {
+    
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var animation: SCNView!
     @IBOutlet weak var questionText: UILabel!
@@ -23,9 +23,9 @@ class QuestionViewController: UIViewController, QuestionDelegate {
     var questionNumber = 0
     var score = 0
     
-    var planets = [Planets]()
     var model = ApiManager()
     var astroQuestions:[Planets] = []
+    var planets: [Planets] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,21 +52,17 @@ class QuestionViewController: UIViewController, QuestionDelegate {
         animation.backgroundColor = UIColor.clear
         animation.allowsCameraControl = true
         
-        model.delegate = self
-        model.getQuestions()
+        let questionFile = RepositoryQuestion(filename: "question")
+        self.planets = questionFile.load()
+        
         selectQuestionsAstro(selectAstro(with: astroString))
         
         updateUI()
     }
     
-    // MARK: - Model Delegate Methods
-    func questionFetched(_ questions: [Planets]) {
-        self.planets = questions
-    }
-    
     func selectQuestionsAstro(_ astro: String) {
         for astroSelected in 0...(planets.count - 1) where planets[astroSelected].planet == astro {
-                self.astroQuestions.append(planets[astroSelected])
+            self.astroQuestions.append(planets[astroSelected])
         }
     }
 
@@ -121,8 +117,6 @@ class QuestionViewController: UIViewController, QuestionDelegate {
     }
 
     func getProgress() -> Float {
-        print(score)
-        
         return Float(score) / Float(astroQuestions.count)
     }
 
