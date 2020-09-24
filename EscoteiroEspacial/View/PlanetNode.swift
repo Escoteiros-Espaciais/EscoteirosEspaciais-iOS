@@ -22,10 +22,6 @@ class PlanetNode: SCNNode {
         }
         self.geometry = SCNSphere(radius: 1.7)
         self.geometry?.firstMaterial?.diffuse.contents = UIImage(named: planet)
-//        self.geometry?.firstMaterial?.specular.contents = UIImage(named: "Specular")
-//        self.geometry?.firstMaterial?.emission.contents = UIImage(named: "Emission")
-//        self.geometry?.firstMaterial?.normal.contents = UIImage(named: "Normal")
-        
         self.geometry?.firstMaterial?.shininess = 50
         
         let action = SCNAction.rotate(by: 360 * CGFloat(Double.pi/180), around: SCNVector3(0, 1, 0), duration: 12)
