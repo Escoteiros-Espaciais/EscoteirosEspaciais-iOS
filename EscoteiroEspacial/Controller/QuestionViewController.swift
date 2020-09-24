@@ -18,13 +18,14 @@ class QuestionViewController: UIViewController, QuestionDelegate {
     @IBOutlet weak var choice2: UIButton!
     @IBOutlet weak var choice3: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
-    
-    //var astroIdentifier: Astro?
+
+    var astroString: String = ""
     var questionNumber = 0
-    var score = 0
+    var planetNumber = 0
     
     var planets = [Planets]()
     var model = ApiManager()
+    var astroQuestions:[Planets] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,7 @@ class QuestionViewController: UIViewController, QuestionDelegate {
         scene.rootNode.addChildNode(lightNode)
 
         let planetNode = PlanetNode()
+        planetNode.getPlanet(planet: astroString)
         scene.rootNode.addChildNode(planetNode)
 
         animation.scene = scene
@@ -52,14 +54,20 @@ class QuestionViewController: UIViewController, QuestionDelegate {
         
         model.delegate = self
         model.getQuestions()
+        selectQuestionsAstro(selectAstro(with: astroString))
         
-       updateUI()
+        updateUI()
     }
     
     // MARK: - Model Delegate Methods
     func questionFetched(_ questions: [Planets]) {
-        
         self.planets = questions
+    }
+    
+    func selectQuestionsAstro(_ astro: String) {
+        for astroSelected in 0...(planets.count - 1) where planets[astroSelected].planet == astro {
+                self.astroQuestions.append(planets[astroSelected])
+        }
     }
 
     // MARK: - Update UI with planet
@@ -78,8 +86,13 @@ class QuestionViewController: UIViewController, QuestionDelegate {
         nextQuestion()
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
     }
-
+    
+    @IBAction func backInfo(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @objc func updateUI() {
+        
         questionText.text = getQuestionText()
 
         //Need to fetch the answers and update the button titles using the setTitle method.
@@ -87,32 +100,32 @@ class QuestionViewController: UIViewController, QuestionDelegate {
         choice1.setTitle(answerChoices[0], for: .normal)
         choice2.setTitle(answerChoices[1], for: .normal)
         choice3.setTitle(answerChoices[2], for: .normal)
-
+        
         progressBar.progress = getProgress()
-
+        
         choice1.backgroundColor = UIColor.clear
         choice2.backgroundColor = UIColor.clear
         choice3.backgroundColor = UIColor.clear
     }
-
+    
     func getQuestionText() -> String {
-        guard let text = planets[0].questions![0].text else {return ""}
+        guard let text = astroQuestions[0].questions![questionNumber].text else {return ""}
         return text
-
     }
-
+    
     //Need a way of fetching the answer choices.
     func getAnswers() -> [String] {
-        guard let answers = planets[0].questions![0].answer else {return []}
+        guard let answers = astroQuestions[0].questions![questionNumber].answer else {return []}
         return answers
     }
 
     func getProgress() -> Float {
-        return Float(questionNumber) / Float(planets[0].questions!.count)
+        return Float(questionNumber) / Float(astroQuestions.count)
     }
 
     func nextQuestion() {
-        if questionNumber + 1 < planets[0].questions!.count {
+        print(questionNumber)
+        if questionNumber < (astroQuestions[0].questions!.count - 1) {
             questionNumber += 1
         } else {
             questionNumber = 0
@@ -121,12 +134,41 @@ class QuestionViewController: UIViewController, QuestionDelegate {
 
     func checkAnswer(userAnswer: String) -> Bool {
         //Need to change answer to rightAnswer here.
-        if userAnswer == planets[0].questions![questionNumber].rightAnswer {
-            score += 1
+        guard let answerOk = astroQuestions[0].questions![questionNumber].rightAnswer else {return false}
+        print(answerOk)
+        print(userAnswer)
+        if userAnswer == answerOk {
             return true
         } else {
             return false
         }
     }
     
+    // swiftlint:disable:next cyclomatic_complexity
+    func selectAstro(with: String) -> String {
+        switch with {
+        case "PassSunInfo":
+            return "sun"
+        case "PassMercuryInfo":
+            return "mercury"
+        case "PassVenusInfo":
+            return "venus"
+        case "PassMoonInfo":
+            return "moon"
+        case "PassEarthInfo":
+            return "earth"
+        case "PassMarsInfo":
+            return "mars"
+        case "PassJupiterInfo":
+            return "jupiter"
+        case "PassSaturnInfo":
+            return "saturn"
+        case "PassUranInfo":
+            return "uran"
+        case "PassNeptunInfo":
+            return "neptun"
+        default:
+            return ""
+        }
+    }
 }

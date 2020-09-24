@@ -32,14 +32,14 @@
                                         <rect key="frame" x="48" y="64" width="266" height="226"/>
                                         <subviews>
                                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aew-b6-u8Z">
-                                                <rect key="frame" x="0.0" y="0.0" width="266" height="226"/>
+                                                <rect key="frame" x="-24" y="-20" width="303" height="281"/>
                                             </sceneKitView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="Aew-b6-u8Z" firstAttribute="top" secondItem="4KU-OH-OdD" secondAttribute="top" id="MYT-2Z-eyu"/>
-                                            <constraint firstAttribute="bottom" secondItem="Aew-b6-u8Z" secondAttribute="bottom" id="aKA-hf-QgI"/>
-                                            <constraint firstAttribute="trailing" secondItem="Aew-b6-u8Z" secondAttribute="trailing" id="dfE-Vu-xJn"/>
-                                            <constraint firstItem="Aew-b6-u8Z" firstAttribute="leading" secondItem="4KU-OH-OdD" secondAttribute="leading" id="j6L-5R-jVr"/>
+                                            <constraint firstItem="Aew-b6-u8Z" firstAttribute="top" secondItem="4KU-OH-OdD" secondAttribute="top" constant="-20" id="MYT-2Z-eyu"/>
+                                            <constraint firstAttribute="bottom" secondItem="Aew-b6-u8Z" secondAttribute="bottom" constant="-35" id="aKA-hf-QgI"/>
+                                            <constraint firstAttribute="trailing" secondItem="Aew-b6-u8Z" secondAttribute="trailing" constant="-13" id="dfE-Vu-xJn"/>
+                                            <constraint firstItem="Aew-b6-u8Z" firstAttribute="leading" secondItem="4KU-OH-OdD" secondAttribute="leading" constant="-24" id="j6L-5R-jVr"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujo-E3-kKm">
@@ -49,6 +49,9 @@
                                             <constraint firstAttribute="width" constant="30" id="Yf0-UC-mbB"/>
                                         </constraints>
                                         <state key="normal" image="back-button"/>
+                                        <connections>
+                                            <action selector="backInfo:" destination="iey-go-QXB" eventType="touchUpInside" id="PWq-W3-2Lc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -82,7 +85,7 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-0O-hcd">
                                                 <rect key="frame" x="0.0" y="42.666666666666671" width="371" height="60"/>
-                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choice1" backgroundImage="Rectangle"/>
                                                 <connections>
                                                     <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="dIt-XP-xRZ"/>
@@ -90,7 +93,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-Vu-pkf">
                                                 <rect key="frame" x="0.0" y="112.66666666666667" width="371" height="59.666666666666671"/>
-                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choice2" backgroundImage="Rectangle"/>
                                                 <connections>
                                                     <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="PY8-Xq-kNn"/>
@@ -98,7 +101,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMc-dX-SMV">
                                                 <rect key="frame" x="0.0" y="182.33333333333334" width="371" height="54.666666666666657"/>
-                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choise3" backgroundImage="Rectangle"/>
                                                 <connections>
                                                     <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="tdw-cE-sqd"/>
@@ -147,7 +150,7 @@
                     </view>
                     <connections>
                         <outlet property="animation" destination="Aew-b6-u8Z" id="kr7-i0-guH"/>
-                        <outlet property="backButton" destination="Ujo-E3-kKm" id="1D1-vM-T3p"/>
+                        <outlet property="backButton" destination="Ujo-E3-kKm" id="GrX-Ok-6sm"/>
                         <outlet property="choice1" destination="e7h-0O-hcd" id="eS8-WP-a6u"/>
                         <outlet property="choice2" destination="qVx-Vu-pkf" id="BOn-84-QNw"/>
                         <outlet property="choice3" destination="HMc-dX-SMV" id="WJj-bV-Qua"/>
@@ -157,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVE-eq-Hgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.17733990147784" y="136.80000000000001"/>
+            <point key="canvasLocation" x="-2.2167487684729066" y="136.80000000000001"/>
         </scene>
     </scenes>
     <resources>

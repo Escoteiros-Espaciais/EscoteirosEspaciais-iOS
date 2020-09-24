@@ -10,7 +10,6 @@ import UIKit
 
 class HomeSpaceController: UIViewController {
     
-    var planetData = LoaderDescriptionJson().planetData
     var item = Planets()
 
     @IBOutlet weak var solButton: UIButton!
@@ -33,7 +32,7 @@ class HomeSpaceController: UIViewController {
         guard let identifier = segue.identifier else { return }
         destVC.astroIdentifier = segueStringToAstro(with: identifier)
     }
-    
+    // swiftlint:disable:next cyclomatic_complexity
     func segueStringToAstro(with: String) -> Astro {
         switch with {
         case "PassSunInfo":
