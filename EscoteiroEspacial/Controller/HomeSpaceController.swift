@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SceneKit
 
 class HomeSpaceController: UIViewController {
     
@@ -22,9 +23,63 @@ class HomeSpaceController: UIViewController {
     @IBOutlet weak var saturnoButton: UIButton!
     @IBOutlet weak var uranoButton: UIButton!
     @IBOutlet weak var netunoButton: UIButton!
+
+    @IBOutlet weak var star1View: SCNView!
+    @IBOutlet weak var star2View: SCNView!
+    @IBOutlet weak var star3View: SCNView!
+    @IBOutlet weak var star4View: SCNView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let scene = SCNScene()
+        
+        let cameraNode = SCNNode()
+        cameraNode.camera = SCNCamera()
+        cameraNode.position = SCNVector3(x: 0, y: 0, z: 5)
+
+        scene.rootNode.addChildNode(cameraNode)
+
+        let lightNode = SCNNode()
+        lightNode.light = SCNLight()
+        lightNode.light?.type = .ambient
+        lightNode.position = SCNVector3(x: 0, y: 10, z: 2)
+
+        scene.rootNode.addChildNode(lightNode)
+        
+        star1View.scene = scene
+        star1View.backgroundColor = UIColor.clear
+        star1View.allowsCameraControl = true
+        
+        star2View.scene = scene
+        star2View.backgroundColor = UIColor.clear
+        star2View.allowsCameraControl = true
+        
+        star3View.scene = scene
+        star3View.backgroundColor = UIColor.clear
+        star3View.allowsCameraControl = true
+        
+        star4View.scene = scene
+        star4View.backgroundColor = UIColor.clear
+        star4View.allowsCameraControl = true
+        
+        let particleSystem = SCNParticleSystem()
+        particleSystem.particleImage = UIImage(named: "star")
+        particleSystem.birthDirection = .constant
+        particleSystem.birthRate = 50
+        particleSystem.particleLifeSpan = 1
+        particleSystem.particleColor = .white
+        particleSystem.particleSize = 0.06
+        particleSystem.speedFactor = 0.8
+        particleSystem.emittingDirection = SCNVector3(1,1,1)
+        particleSystem.emitterShape = .some(SCNSphere(radius: 5))
+
+        let particlesNode = SCNNode()
+        particlesNode.scale = SCNVector3(2,2,2)
+        particlesNode.addParticleSystem(particleSystem)
+        star1View.scene!.rootNode.addChildNode(particlesNode)
+        star2View.scene!.rootNode.addChildNode(particlesNode)
+        star3View.scene!.rootNode.addChildNode(particlesNode)
+        star4View.scene!.rootNode.addChildNode(particlesNode)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
