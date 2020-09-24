@@ -21,7 +21,7 @@ class QuestionViewController: UIViewController, QuestionDelegate {
 
     var astroString: String = ""
     var questionNumber = 0
-    var planetNumber = 0
+    var score = 0
     
     var planets = [Planets]()
     var model = ApiManager()
@@ -79,6 +79,7 @@ class QuestionViewController: UIViewController, QuestionDelegate {
 
         if userGotItRight {
             sender.backgroundColor = UIColor.systemGreen
+            score += 1
         } else {
             sender.backgroundColor = UIColor.red
         }
@@ -120,7 +121,9 @@ class QuestionViewController: UIViewController, QuestionDelegate {
     }
 
     func getProgress() -> Float {
-        return Float(questionNumber) / Float(astroQuestions.count)
+        print(score)
+        
+        return Float(score) / Float(astroQuestions.count)
     }
 
     func nextQuestion() {
@@ -135,8 +138,6 @@ class QuestionViewController: UIViewController, QuestionDelegate {
     func checkAnswer(userAnswer: String) -> Bool {
         //Need to change answer to rightAnswer here.
         guard let answerOk = astroQuestions[0].questions![questionNumber].rightAnswer else {return false}
-        print(answerOk)
-        print(userAnswer)
         if userAnswer == answerOk {
             return true
         } else {
