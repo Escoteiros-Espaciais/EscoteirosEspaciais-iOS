@@ -19,6 +19,7 @@ class TestTwoViewController: UIViewController { //Mudar nome para QuestionTwo
     @IBOutlet weak var option4: UIImageView!
     @IBOutlet weak var answer: UIImageView!
     
+    var options: [UIImageView] = []
     var answerRight: String = ""
     
     var dynamicAnimator: UIDynamicAnimator!
@@ -31,24 +32,25 @@ class TestTwoViewController: UIViewController { //Mudar nome para QuestionTwo
         option3.image = UIImage(named: "Netuno")
         option4.image = UIImage(named: "Jupiter")
         answer.image = UIImage(named: "EsferaVazia")
+        options = [option1, option2, option3, option4]
         
         question.text = "Alguma pergunta para arrastar um planeta"
         answerRight = "Netuno"
         
         dynamicAnimator = UIDynamicAnimator(referenceView: view)
         answer.isUserInteractionEnabled = false
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        snapBehaviorInImage(image: option1)
-        snapBehaviorInImage(image: option2)
-        snapBehaviorInImage(image: option3)
-        snapBehaviorInImage(image: option4)
+        for option in options {
+            //if options != [] {
+                snapBehaviorInImage(image: option)
+            //\}
+        }
     }
     
     func snapBehaviorInImage(image: UIImageView) {
-        snapBehavior = UISnapBehavior(item: image, snapTo: image.center) //Change position
+        snapBehavior = UISnapBehavior(item: image, snapTo: image.center)
         image.isUserInteractionEnabled = true
         dynamicAnimator.addBehavior(snapBehavior)
 
