@@ -24,7 +24,7 @@ class EscoteiroEspacialUITests: XCTestCase {
     }
 
     func test_if_are_all_buttons_on_home() throws {
-        // UI tests must launch the application that they test.
+        
         let app = XCUIApplication()
         app.launch()
         
@@ -39,9 +39,6 @@ class EscoteiroEspacialUITests: XCTestCase {
         XCTAssertTrue(app.buttons["Urano"].exists)
         XCTAssertTrue(app.buttons["Netuno"].exists)
         
-        XCTAssertFalse(app.buttons["Nada"].exists)
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
     func testLaunchPerformance() throws {
