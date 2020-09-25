@@ -12,7 +12,7 @@ import SceneKit
 class PlanetNode: SCNNode {
     
     func getPlanet(planet: String) {
-        if planet == "PassSaturnInfo"{
+        if planet == "saturn"{
             let ringPlanet = SCNTorus(ringRadius: 2.1, pipeRadius: 0.03)
             let ringNode = SCNNode(geometry: ringPlanet)
             ringPlanet.firstMaterial?.diffuse.contents = UIImage(named: "saturnringcolor")

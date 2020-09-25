@@ -55,7 +55,7 @@ class QuestionViewController: UIViewController {
         let questionFile = RepositoryQuestion(filename: "question")
         self.planets = questionFile.load()
         
-        selectQuestionsAstro(selectAstro(with: astroString))
+        selectQuestionsAstro(astroString)
         
         updateUI()
     }
@@ -136,34 +136,6 @@ class QuestionViewController: UIViewController {
             return true
         } else {
             return false
-        }
-    }
-    
-    // swiftlint:disable:next cyclomatic_complexity
-    func selectAstro(with: String) -> String {
-        switch with {
-        case "PassSunInfo":
-            return "sun"
-        case "PassMercuryInfo":
-            return "mercury"
-        case "PassVenusInfo":
-            return "venus"
-        case "PassMoonInfo":
-            return "moon"
-        case "PassEarthInfo":
-            return "earth"
-        case "PassMarsInfo":
-            return "mars"
-        case "PassJupiterInfo":
-            return "jupiter"
-        case "PassSaturnInfo":
-            return "saturn"
-        case "PassUranInfo":
-            return "uran"
-        case "PassNeptunInfo":
-            return "neptun"
-        default:
-            return ""
         }
     }
 }

@@ -30,5 +30,13 @@ class EscoteiroEspacialTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func test_comet_have_particle_system() {
+        let cometNode = CometNode()
+        
+        cometNode.getComet()
+        
+        XCTAssertEqual(cometNode.particleSystems?.count, 1)
+    }
 
 }

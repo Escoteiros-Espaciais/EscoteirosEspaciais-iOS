@@ -37,7 +37,7 @@ class InfoScreenController: UIViewController {
         
         let planetNode = PlanetNode()
         guard let astroIdentifier = astroIdentifier else {return}
-        planetNode.getPlanet(planet: segueAstroToString(with: astroIdentifier))
+        planetNode.getPlanet(planet: astroIdentifier.rawValue)
         scene.rootNode.addChildNode(planetNode)
 
         sceneView.scene = scene
@@ -49,35 +49,7 @@ class InfoScreenController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destVC = segue.destination as? QuestionViewController else { return }
         guard let astroIdentifier = astroIdentifier else {return}
-        destVC.astroString = segueAstroToString(with: astroIdentifier)
-    }
-    
-    // swiftlint:disable:next cyclomatic_complexity
-    func segueAstroToString(with: Astro) -> String {
-        switch with {
-        case .sunn:
-            return "PassSunInfo"
-        case .mercury:
-            return "PassMercuryInfo"
-        case .venus:
-            return "PassVenusInfo"
-        case .moon:
-            return "PassMoonInfo"
-        case .earth:
-            return "PassEarthInfo"
-        case .mars:
-            return "PassMarsInfo"
-        case .jupiter:
-            return "PassJupiterInfo"
-        case .saturn:
-            return "PassSaturnInfo"
-        case .uran:
-            return "PassUranInfo"
-        case .neptun:
-            return "PassNeptunInfo"
-        default:
-            return ""
-        }
+        destVC.astroString = astroIdentifier.rawValue//segueAstroToString(with: astroIdentifier)
     }
 
 }

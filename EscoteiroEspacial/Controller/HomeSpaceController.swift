@@ -71,6 +71,7 @@ class HomeSpaceController: UIViewController {
         guard let identifier = segue.identifier else { return }
         destVC.astroIdentifier = segueStringToAstro(with: identifier)
     }
+    
     // swiftlint:disable:next cyclomatic_complexity
     func segueStringToAstro(with: String) -> Astro {
         switch with {
