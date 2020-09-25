@@ -29,7 +29,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="280" verticalCompressionResistancePriority="760" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="mL3-cS-SJT">
                                 <rect key="frame" x="44" y="0.0" width="852" height="413.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPW-qA-ZSi" userLabel="View Sol e Mercurio">
+                                    <view contentMode="scaleToFill" verticalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="aPW-qA-ZSi" userLabel="View Sol e Mercurio">
                                         <rect key="frame" x="0.0" y="0.0" width="149.5" height="413.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orbitas1" translatesAutoresizingMaskIntoConstraints="NO" id="fCG-zU-51h" userLabel="Orbitas">
@@ -141,15 +141,25 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJG-hy-swZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="238"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="88.5" id="DGe-wm-Did"/>
+                                                </constraints>
+                                            </sceneKitView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="fun-NY-kP7" secondAttribute="trailing" constant="3" id="32u-Ml-v0A"/>
+                                            <constraint firstItem="fun-NY-kP7" firstAttribute="top" secondItem="VJG-hy-swZ" secondAttribute="bottom" constant="7.5" id="8mb-93-yer"/>
+                                            <constraint firstItem="VJG-hy-swZ" firstAttribute="top" secondItem="jGB-6F-bjJ" secondAttribute="top" id="BH6-wy-lrt"/>
+                                            <constraint firstItem="VJG-hy-swZ" firstAttribute="leading" secondItem="jGB-6F-bjJ" secondAttribute="leading" id="M7d-lG-no3"/>
                                             <constraint firstItem="fun-NY-kP7" firstAttribute="width" secondItem="ILk-Oc-cWO" secondAttribute="width" multiplier="0.66" id="T5h-SP-BMY"/>
                                             <constraint firstAttribute="trailing" secondItem="ILk-Oc-cWO" secondAttribute="trailing" id="TBP-Ow-U2k"/>
                                             <constraint firstAttribute="bottom" secondItem="fun-NY-kP7" secondAttribute="bottom" constant="77" id="VXK-wm-fR6"/>
                                             <constraint firstItem="ILk-Oc-cWO" firstAttribute="leading" secondItem="jGB-6F-bjJ" secondAttribute="leading" id="X0Z-Og-o9O"/>
                                             <constraint firstAttribute="bottom" secondItem="ILk-Oc-cWO" secondAttribute="bottom" id="gLW-iY-dyj"/>
                                             <constraint firstItem="fun-NY-kP7" firstAttribute="top" relation="lessThanOrEqual" secondItem="jGB-6F-bjJ" secondAttribute="top" constant="246" id="oLC-w5-5ud"/>
+                                            <constraint firstAttribute="trailing" secondItem="VJG-hy-swZ" secondAttribute="trailing" id="pef-3V-8ph"/>
                                             <constraint firstItem="fun-NY-kP7" firstAttribute="height" secondItem="ILk-Oc-cWO" secondAttribute="height" multiplier="0.22" id="pgJ-mi-TDN"/>
                                             <constraint firstItem="fun-NY-kP7" firstAttribute="leading" secondItem="jGB-6F-bjJ" secondAttribute="leading" constant="28" id="uIN-qK-FpL"/>
                                             <constraint firstItem="ILk-Oc-cWO" firstAttribute="top" secondItem="jGB-6F-bjJ" secondAttribute="top" id="yL5-7z-QTb"/>
@@ -302,14 +312,24 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boN-ch-Fm8">
+                                                <rect key="frame" x="0.0" y="0.0" width="133" height="116"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="133" id="E1D-ge-XnD"/>
+                                                </constraints>
+                                            </sceneKitView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="AIo-lq-FiZ" firstAttribute="leading" secondItem="6vO-nK-V8k" secondAttribute="leading" constant="15" id="370-Qv-0WX"/>
                                             <constraint firstItem="xjE-Uk-45m" firstAttribute="width" secondItem="QaZ-VE-AVK" secondAttribute="width" multiplier="0.85" id="Gbw-W9-K3J"/>
                                             <constraint firstItem="AIo-lq-FiZ" firstAttribute="top" secondItem="6vO-nK-V8k" secondAttribute="top" constant="138" id="HhU-c4-lhy"/>
                                             <constraint firstAttribute="bottom" secondItem="QaZ-VE-AVK" secondAttribute="bottom" id="MBl-iC-zJa"/>
+                                            <constraint firstItem="boN-ch-Fm8" firstAttribute="top" secondItem="6vO-nK-V8k" secondAttribute="top" id="Rwu-DP-vNR"/>
                                             <constraint firstItem="AIo-lq-FiZ" firstAttribute="width" secondItem="QaZ-VE-AVK" secondAttribute="width" multiplier="0.95" id="SpW-ee-Gf0"/>
+                                            <constraint firstItem="boN-ch-Fm8" firstAttribute="trailing" secondItem="AIo-lq-FiZ" secondAttribute="trailing" id="U6h-MZ-LAP"/>
+                                            <constraint firstItem="AIo-lq-FiZ" firstAttribute="top" secondItem="boN-ch-Fm8" secondAttribute="bottom" constant="22" id="ZN3-Tx-07h"/>
                                             <constraint firstAttribute="trailing" secondItem="AIo-lq-FiZ" secondAttribute="trailing" id="ade-O3-chn"/>
+                                            <constraint firstItem="boN-ch-Fm8" firstAttribute="leading" secondItem="6vO-nK-V8k" secondAttribute="leading" id="hPG-xg-tvb"/>
                                             <constraint firstItem="xjE-Uk-45m" firstAttribute="height" secondItem="QaZ-VE-AVK" secondAttribute="height" multiplier="0.25" id="jxf-3G-jnh"/>
                                             <constraint firstItem="AIo-lq-FiZ" firstAttribute="height" secondItem="QaZ-VE-AVK" secondAttribute="height" multiplier="0.32" id="nNQ-KN-RHZ"/>
                                             <constraint firstItem="QaZ-VE-AVK" firstAttribute="leading" secondItem="6vO-nK-V8k" secondAttribute="leading" id="sDr-8A-Ze7"/>
@@ -388,18 +408,28 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqw-eb-reR">
+                                                <rect key="frame" x="0.0" y="195" width="89" height="218.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="89" id="0wb-rA-FcZ"/>
+                                                </constraints>
+                                            </sceneKitView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="6pl-ei-yav" firstAttribute="top" secondItem="Vps-jf-49b" secondAttribute="top" id="1uo-7x-q2x"/>
                                             <constraint firstAttribute="trailing" secondItem="6pl-ei-yav" secondAttribute="trailing" id="6zZ-TG-kx9"/>
+                                            <constraint firstAttribute="bottom" secondItem="fqw-eb-reR" secondAttribute="bottom" id="7xq-2S-C1B"/>
+                                            <constraint firstItem="fqw-eb-reR" firstAttribute="top" secondItem="nk2-0E-cmN" secondAttribute="bottom" constant="19.5" id="AO1-Ug-Glb"/>
                                             <constraint firstAttribute="bottom" secondItem="6pl-ei-yav" secondAttribute="bottom" id="M6o-aO-kYO"/>
                                             <constraint firstItem="xZa-vb-3my" firstAttribute="width" secondItem="6pl-ei-yav" secondAttribute="width" id="U5i-fb-IVo"/>
                                             <constraint firstItem="nk2-0E-cmN" firstAttribute="width" secondItem="6pl-ei-yav" secondAttribute="width" id="VsO-oA-w3O"/>
                                             <constraint firstItem="nk2-0E-cmN" firstAttribute="top" secondItem="Vps-jf-49b" secondAttribute="top" constant="68" id="d3l-ZV-Gv0"/>
+                                            <constraint firstItem="fqw-eb-reR" firstAttribute="leading" secondItem="Vps-jf-49b" secondAttribute="leading" id="dYH-fd-pAV"/>
                                             <constraint firstItem="nk2-0E-cmN" firstAttribute="leading" secondItem="Vps-jf-49b" secondAttribute="leading" id="nvf-rr-MgK"/>
                                             <constraint firstItem="6pl-ei-yav" firstAttribute="leading" secondItem="Vps-jf-49b" secondAttribute="leading" id="qWf-iq-ktc"/>
                                             <constraint firstItem="xZa-vb-3my" firstAttribute="height" secondItem="6pl-ei-yav" secondAttribute="height" multiplier="0.15" id="to1-Is-O34"/>
                                             <constraint firstItem="nk2-0E-cmN" firstAttribute="height" secondItem="6pl-ei-yav" secondAttribute="height" multiplier="0.26" id="tv6-9F-99z"/>
+                                            <constraint firstItem="fqw-eb-reR" firstAttribute="trailing" secondItem="nk2-0E-cmN" secondAttribute="trailing" id="xGz-DM-vA7"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJI-gH-aDF" userLabel="View Netuno">
@@ -430,6 +460,13 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9P-7U-u29">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="229"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="221" id="Hgo-ih-ZBu"/>
+                                                    <constraint firstAttribute="width" constant="128" id="tYB-9A-Img"/>
+                                                </constraints>
+                                            </sceneKitView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="HOP-2F-5Qr" firstAttribute="leading" secondItem="dJI-gH-aDF" secondAttribute="leading" id="5EJ-zP-6Co"/>
@@ -438,10 +475,14 @@
                                             <constraint firstItem="HOP-2F-5Qr" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="M2y-Gz-gBt" secondAttribute="trailing" constant="37" id="AAa-rx-WqO"/>
                                             <constraint firstAttribute="trailing" secondItem="HOP-2F-5Qr" secondAttribute="trailing" id="EmX-H6-Rl6"/>
                                             <constraint firstItem="1OL-Bs-DZo" firstAttribute="width" secondItem="HOP-2F-5Qr" secondAttribute="width" multiplier="0.5" constant="20.5" id="I02-sL-Lfy"/>
+                                            <constraint firstItem="I9P-7U-u29" firstAttribute="leading" secondItem="dJI-gH-aDF" secondAttribute="leading" id="MZr-qd-Vsg"/>
                                             <constraint firstItem="HOP-2F-5Qr" firstAttribute="top" secondItem="dJI-gH-aDF" secondAttribute="top" id="Q9s-3p-NPq"/>
+                                            <constraint firstAttribute="trailing" secondItem="I9P-7U-u29" secondAttribute="trailing" id="QpN-rT-npe"/>
                                             <constraint firstItem="M2y-Gz-gBt" firstAttribute="height" secondItem="HOP-2F-5Qr" secondAttribute="height" multiplier="0.31" id="a0v-z5-SQK"/>
                                             <constraint firstItem="M2y-Gz-gBt" firstAttribute="leading" secondItem="HOP-2F-5Qr" secondAttribute="leading" constant="9" id="nAH-eb-WjM"/>
                                             <constraint firstItem="1OL-Bs-DZo" firstAttribute="height" secondItem="HOP-2F-5Qr" secondAttribute="height" multiplier="0.22" id="rNl-8u-HA1"/>
+                                            <constraint firstItem="I9P-7U-u29" firstAttribute="top" secondItem="dJI-gH-aDF" secondAttribute="top" id="vKf-W6-j9V"/>
+                                            <constraint firstItem="M2y-Gz-gBt" firstAttribute="top" secondItem="I9P-7U-u29" secondAttribute="bottom" constant="8" symbolic="YES" id="vMv-ul-rOL"/>
                                             <constraint firstItem="HOP-2F-5Qr" firstAttribute="bottom" secondItem="M2y-Gz-gBt" secondAttribute="bottom" constant="48" id="wwc-ei-ItR"/>
                                         </constraints>
                                     </view>
@@ -469,6 +510,10 @@
                         <outlet property="netunoButton" destination="1OL-Bs-DZo" id="cFj-g4-zsb"/>
                         <outlet property="saturnoButton" destination="5H3-MA-vqT" id="mkL-T9-qBN"/>
                         <outlet property="solButton" destination="Fb6-kI-fBb" id="Kz2-2z-MdC"/>
+                        <outlet property="star1View" destination="boN-ch-Fm8" id="0pV-SP-EkP"/>
+                        <outlet property="star2View" destination="fqw-eb-reR" id="uq1-Ut-RAL"/>
+                        <outlet property="star3View" destination="I9P-7U-u29" id="wwl-S9-1F6"/>
+                        <outlet property="star4View" destination="VJG-hy-swZ" id="x0V-kG-4ie"/>
                         <outlet property="terraButton" destination="LFM-7B-b5h" id="7Y2-kM-1N3"/>
                         <outlet property="uranoButton" destination="xZa-vb-3my" id="0tN-I7-A9D"/>
                         <outlet property="venusButton" destination="476-h4-3Bt" id="ddo-As-Lys"/>

@@ -23,6 +23,8 @@
 		27F5BC8225011E8A00AD5531 /* EscoteiroEspacialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8125011E8A00AD5531 /* EscoteiroEspacialTests.swift */; };
 		27F5BC8D25011E8A00AD5531 /* EscoteiroEspacialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */; };
 		27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27F5BCA0250121BA00AD5531 /* .swiftlint.yml */; };
+		7B1F9085251D89A300FF1B44 /* CometNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1F9084251D89A300FF1B44 /* CometNode.swift */; };
+		7B1F908A251D8B4700FF1B44 /* StarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1F9089251D8B4700FF1B44 /* StarNode.swift */; };
 		7B38B7E0251ABE060041900A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7DF251ABE060041900A /* ApiManager.swift */; };
 		7B38B7E5251ABE130041900A /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7E4251ABE130041900A /* ApiError.swift */; };
 		7B38B7F0251AC8100041900A /* RepositoryQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7EF251AC8100041900A /* RepositoryQuestions.swift */; };
@@ -76,6 +78,8 @@
 		27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscoteiroEspacialUITests.swift; sourceTree = "<group>"; };
 		27F5BC8E25011E8A00AD5531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F5BCA0250121BA00AD5531 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		7B1F9084251D89A300FF1B44 /* CometNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CometNode.swift; sourceTree = "<group>"; };
+		7B1F9089251D8B4700FF1B44 /* StarNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarNode.swift; sourceTree = "<group>"; };
 		7B38B7DF251ABE060041900A /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		7B38B7E4251ABE130041900A /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		7B38B7EF251AC8100041900A /* RepositoryQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryQuestions.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 				27F5BC7025011E8800AD5531 /* HomeSpace.storyboard */,
 				27ED6903250A563700E5A67E /* InfoScreenView.storyboard */,
 				270DC2122513A41000E8781F /* PlanetNode.swift */,
+				7B1F9089251D8B4700FF1B44 /* StarNode.swift */,
+				7B1F9084251D89A300FF1B44 /* CometNode.swift */,
 				A4BB8C83250FA1C300A2CAB1 /* Questions.storyboard */,
 				A4BB8C932514DCD200A2CAB1 /* Warnings.storyboard */,
 				A42CC3502518DBAD0007EC95 /* Welcome.storyboard */,
@@ -396,9 +402,11 @@
 				27F5BC6F25011E8800AD5531 /* HomeSpaceController.swift in Sources */,
 				27ED6906250A59AB00E5A67E /* InfoScreenController.swift in Sources */,
 				A42CC34F2518D9B40007EC95 /* WarningsViewController.swift in Sources */,
+				7B1F908A251D8B4700FF1B44 /* StarNode.swift in Sources */,
 				0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */,
 				7B38B7E0251ABE060041900A /* ApiManager.swift in Sources */,
 				27F5BC6B25011E8800AD5531 /* AppDelegate.swift in Sources */,
+				7B1F9085251D89A300FF1B44 /* CometNode.swift in Sources */,
 				279E1C2A2518E8D80048C7F5 /* Astro.swift in Sources */,
 				A4BB8C8E2510E7C200A2CAB1 /* Planets .swift in Sources */,
 				7B38B7F0251AC8100041900A /* RepositoryQuestions.swift in Sources */,
