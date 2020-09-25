@@ -15,7 +15,7 @@ enum Astro: String, Equatable {
     case moon = "moon"
     case earth = "earth"
     case mars = "mars"
-    case jupiter = "jupite"
+    case jupiter = "jupiter"
     case saturn = "saturn"
     case uran = "uran"
     case neptun = "neptun"
