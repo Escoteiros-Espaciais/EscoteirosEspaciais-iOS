@@ -20,6 +20,15 @@ class InfoScreenController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        sceneView.scene = addPlanet()
+        
+        sceneView.backgroundColor = UIColor.clear
+        sceneView.allowsCameraControl = true
+        
+    }
+    
+    func addPlanet() -> SCNScene {
         let scene = SCNScene()
         
         let cameraNode = SCNNode()
@@ -36,13 +45,11 @@ class InfoScreenController: UIViewController {
         scene.rootNode.addChildNode(lightNode)
         
         let planetNode = PlanetNode()
-        guard let astroIdentifier = astroIdentifier else {return}
+        guard let astroIdentifier = astroIdentifier else {return scene}
         planetNode.getPlanet(planet: astroIdentifier.rawValue)
         scene.rootNode.addChildNode(planetNode)
 
-        sceneView.scene = scene
-        sceneView.backgroundColor = UIColor.clear
-        sceneView.allowsCameraControl = true
+        return scene
         
     }
     
