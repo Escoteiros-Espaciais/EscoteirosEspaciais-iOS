@@ -30,10 +30,9 @@ class HomeSpaceController: UIViewController {
     @IBOutlet weak var star3View: SCNView!
     @IBOutlet weak var star4View: SCNView!
     
-    override func viewDidLoad() {
+    override func viewDidLoad() { 
         super.viewDidLoad()
         let scene = SCNScene()
-        
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
         cameraNode.position = SCNVector3(x: 0, y: 0, z: 5)
@@ -51,52 +50,20 @@ class HomeSpaceController: UIViewController {
         
         star2View.scene = scene
         star2View.backgroundColor = UIColor.clear
-        star2View.allowsCameraControl = true
         
         star3View.scene = scene
         star3View.backgroundColor = UIColor.clear
-        star3View.allowsCameraControl = true
         
         star4View.scene = scene
         star4View.backgroundColor = UIColor.clear
-        star4View.allowsCameraControl = true
         
-        let particleSystem = SCNParticleSystem()
-        particleSystem.particleImage = UIImage(named: "star")
-        particleSystem.birthDirection = .random
-        particleSystem.birthRate = 50
-        particleSystem.particleLifeSpan = 1
-        particleSystem.particleColor = .white
-        particleSystem.particleSize = 0.06
-        particleSystem.speedFactor = 0.8
-        particleSystem.emittingDirection = SCNVector3(1,1,1)
-        particleSystem.emitterShape = .some(SCNSphere(radius: 5))
+        let starNode = StarNode()
+        starNode.getStar()
+        star1View.scene!.rootNode.addChildNode(starNode)
         
-        let cometParticleSystem = SCNParticleSystem()
-        cometParticleSystem.particleImage = UIImage(named: "comet")
-        cometParticleSystem.birthDirection = .random
-        cometParticleSystem.birthRate = 1
-        cometParticleSystem.particleLifeSpan = 2
-        cometParticleSystem.particleVelocity = 0.1
-        cometParticleSystem.particleSize = 0.2
-        
-        let cometNode = SCNNode()
-        cometNode.scale = SCNVector3(2,2,2)
-        cometNode.addParticleSystem(cometParticleSystem)
-        
-        let actionFadeOut = SCNAction.fadeOut(duration: 1.0)
-        let action = SCNAction.moveBy(x: 2, y: 2, z: 2, duration: 2.0)
-        let actionFadeIn = SCNAction.fadeIn(duration: 1.0)
-        let actionReverse = SCNAction.moveBy(x: -2, y: -2, z: -2, duration: 2.0)
-        let actionSequence = SCNAction.sequence([actionFadeOut, action, actionFadeIn, actionReverse])
-        let actionRepeat = SCNAction.repeatForever(actionSequence)
-        cometNode.runAction(actionRepeat)
+        let cometNode = CometNode()
+        cometNode.getComet()
         star1View.scene!.rootNode.addChildNode(cometNode)
-        
-        let particlesNode = SCNNode()
-        particlesNode.scale = SCNVector3(2,2,2)
-        particlesNode.addParticleSystem(particleSystem)
-        star1View.scene!.rootNode.addChildNode(particlesNode)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
