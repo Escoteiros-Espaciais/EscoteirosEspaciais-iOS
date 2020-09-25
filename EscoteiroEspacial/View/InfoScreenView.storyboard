@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XY6-rH-Cgn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XY6-rH-Cgn">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -30,12 +32,12 @@
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Olá amigos! Aqui vamos contar uma história bem legal sobre o planeta terra" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gid-j6-MZf">
                                                 <rect key="frame" x="8" y="8" width="388" height="249"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ub5-Jo-ehK">
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ub5-Jo-ehK">
                                                 <rect key="frame" x="8" y="261" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="24" id="JAn-AF-86G"/>
@@ -59,13 +61,16 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTM-Bc-v52">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTM-Bc-v52">
                                         <rect key="frame" x="279.5" y="8" width="136.5" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="vTM-Bc-v52" secondAttribute="height" multiplier="106:28" id="Yra-7v-pLk"/>
                                             <constraint firstAttribute="height" constant="36" id="uIO-9v-N8V"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="teste-button"/>
+                                        <connections>
+                                            <segue destination="r8p-9S-5d9" kind="show" identifier="PassQuestion" id="Ypa-KK-4LH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -88,10 +93,14 @@
                                     <constraint firstAttribute="width" secondItem="bRo-Wr-BUp" secondAttribute="height" multiplier="1:1" id="uQC-Ci-UnQ"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="back-button">
-                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="I8u-r6-BYd" kind="show" id="hXi-sz-5sN"/>
+                                </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="WBE-97-qCR"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="F0y-KV-Uno" firstAttribute="top" secondItem="WBE-97-qCR" secondAttribute="top" id="7Xx-L1-myw"/>
@@ -109,7 +118,6 @@
                             <constraint firstItem="0ih-YP-Sug" firstAttribute="top" secondItem="WBE-97-qCR" secondAttribute="top" constant="50" id="tCJ-qT-5gg"/>
                             <constraint firstItem="bRo-Wr-BUp" firstAttribute="leading" secondItem="WBE-97-qCR" secondAttribute="leading" constant="16" id="xz2-uc-xvd"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="WBE-97-qCR"/>
                     </view>
                     <connections>
                         <outlet property="sceneView" destination="0ih-YP-Sug" id="fjb-Ny-80U"/>
@@ -119,11 +127,40 @@
             </objects>
             <point key="canvasLocation" x="-251.11607142857142" y="-7.2463768115942031"/>
         </scene>
+        <!--Questions-->
+        <scene sceneID="HsQ-UK-1rG">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Questions" storyboardName="Questions" id="r8p-9S-5d9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ca8-gm-T1U"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cfs-Vu-XvJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183" y="577"/>
+        </scene>
+        <!--HomeSpace-->
+        <scene sceneID="LOa-8B-R2H">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeSpace" id="I8u-r6-BYd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4rU-lv-WEI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMw-9C-M03" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-324" y="578"/>
+        </scene>
     </scenes>
     <resources>
         <image name="audio-on" width="23" height="19"/>
         <image name="back-button" width="30" height="30"/>
         <image name="background-sem-cometa" width="897" height="414"/>
         <image name="teste-button" width="106" height="28"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

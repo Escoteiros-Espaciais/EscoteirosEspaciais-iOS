@@ -8,15 +8,47 @@
 // swiftlint:disable line_length
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+    
+   var apiT = ApiManager()
+   let questionFile = RepositoryQuestion(filename: "question")
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+        Thread.sleep(forTimeInterval: 2.0)
+        
+        apiT.planetsApi { (result) in
+            switch result {
+            case .success(let apiPlanets):
+                self.questionFile.save(apiPlanets)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
+        // Override point for customization after application launch.
+        
+        UNUserNotificationCenter.current()
+        .requestAuthorization(options: [.alert, .sound]) {
+        (granted, error) in
+            if granted {
+                print("User gave permissions for local notifications")
+            }
+        }
+        
+        UNUserNotificationCenter.current().delegate = self
+
         
         return true
     }
-
+    
+//    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+//        completionHandler([.alert, .sound])
+//    }
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
