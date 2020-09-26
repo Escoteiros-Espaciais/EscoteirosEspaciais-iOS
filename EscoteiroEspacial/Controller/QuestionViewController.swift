@@ -98,7 +98,7 @@ class QuestionViewController: UIViewController {
         choice2.setTitle(answerChoices[1], for: .normal)
         choice3.setTitle(answerChoices[2], for: .normal)
         
-        progressBar.progress = getProgress()
+        progressBar.progress = getProgress(score: score)
         
         choice1.backgroundColor = UIColor.clear
         choice2.backgroundColor = UIColor.clear
@@ -116,26 +116,36 @@ class QuestionViewController: UIViewController {
         return answers
     }
 
-    func getProgress() -> Float {
+    func getProgress(score: Int) -> Float {
         return Float(score) / Float(astroQuestions.count)
     }
 
-    func nextQuestion() {
-        print(questionNumber)
+    func nextQuestion() -> Int {
         if questionNumber < (astroQuestions[0].questions!.count - 1) {
             questionNumber += 1
+            return questionNumber
         } else {
             questionNumber = 0
+            return questionNumber
         }
     }
 
+    func getRightAnswer(number: Int) -> String {
+        if let answerOk = astroQuestions[0].questions![number].rightAnswer {
+            return answerOk
+        } else {
+            return ""
+        }
+    }
+    
     func checkAnswer(userAnswer: String) -> Bool {
         //Need to change answer to rightAnswer here.
-        guard let answerOk = astroQuestions[0].questions![questionNumber].rightAnswer else {return false}
-        if userAnswer == answerOk {
+        let answerOk = getRightAnswer(number: questionNumber)
+        if (answerOk != "") && (userAnswer == answerOk) {
             return true
         } else {
             return false
         }
     }
+    
 }
