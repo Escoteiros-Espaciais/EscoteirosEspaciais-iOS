@@ -20,12 +20,13 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
     @IBOutlet weak var answer: UIImageView!
     
     var dynamicAnimator: UIDynamicAnimator!
-    var snapBehavior: UISnapBehavior!
-    
+
     var astros: [Planets] = []
     var options: [UIImageView] = []
     var answerRight: String = ""
-
+    
+    var behaviors: [Int : UISnapBehavior] = [:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,13 +52,15 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        for option in options {
+        for (index, option) in options.enumerated() {
+            option.tag = index
             snapBehaviorInImage(image: option)
         }
     }
     
     func snapBehaviorInImage(image: UIImageView) {
-        snapBehavior = UISnapBehavior(item: image, snapTo: image.center)
+
+        behaviors[image.tag] = UISnapBehavior(item: image, snapTo: image.center)
         image.isUserInteractionEnabled = true
         //dynamicAnimator.addBehavior(snapBehavior)
 
@@ -67,11 +70,13 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
     
     @objc func pannedView(recognizer: UIPanGestureRecognizer) {
         var element = recognizer.view?.center ?? .zero
-        var object = recognizer.view!
+        let object = recognizer.view!
+        
+        guard let behavior = behaviors[object.tag] else { return }
         
         switch recognizer.state {
         case .began:
-           dynamicAnimator.removeBehavior(snapBehavior)
+           dynamicAnimator.removeBehavior(behavior)
            element = object.center
         case .changed:
             let translation = recognizer.translation(in: view)
@@ -79,18 +84,18 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
             object.center = moved
            recognizer.setTranslation(.zero, in: view)
             
-           checkIntersectionWith(image: object)
+           checkIntersectionWith(image: object,behavior: behavior)
         case .ended, .cancelled, .failed:
-            dynamicAnimator.addBehavior(snapBehavior)
+            dynamicAnimator.addBehavior(behavior)
             
         case .possible:
             break
         }
     }
     
-    func checkIntersectionWith(image: UIView) {
+    func checkIntersectionWith(image: UIView, behavior: UISnapBehavior) {
         if answer.frame.contains(image.center) {
-            snapBehavior.snapPoint = answer.center
+            behavior.snapPoint = answer.center
         }
     }
     
