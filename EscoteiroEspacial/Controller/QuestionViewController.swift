@@ -21,10 +21,10 @@ class QuestionViewController: UIViewController {
 
     var astroString: String = ""
     var questionNumber = 0
-    var score = 0
+    //var score = 0
     
     var model = ApiManager()
-    var astroQuestions:[Planets] = []
+    var astroQuestions = Planets()
     var planets: [Planets] = []
     
     override func viewDidLoad() {
@@ -60,10 +60,12 @@ class QuestionViewController: UIViewController {
         updateUI()
     }
     
-    func selectQuestionsAstro(_ astro: String) {
+    func selectQuestionsAstro(_ astro: String) -> Planets? {
         for astroSelected in 0...(planets.count - 1) where planets[astroSelected].planet == astro {
-            self.astroQuestions.append(planets[astroSelected])
+            self.astroQuestions = planets[astroSelected]
+            return astroQuestions
         }
+        return nil
     }
 
     // MARK: - Update UI with planet
@@ -75,7 +77,7 @@ class QuestionViewController: UIViewController {
 
         if userGotItRight {
             sender.backgroundColor = UIColor.systemGreen
-            score += 1
+            //score += 1
         } else {
             sender.backgroundColor = UIColor.red
         }
@@ -98,7 +100,7 @@ class QuestionViewController: UIViewController {
         choice2.setTitle(answerChoices[1], for: .normal)
         choice3.setTitle(answerChoices[2], for: .normal)
         
-        progressBar.progress = getProgress(score: score)
+        //progressBar.progress = getProgress(score: score)
         
         choice1.backgroundColor = UIColor.clear
         choice2.backgroundColor = UIColor.clear
@@ -106,22 +108,22 @@ class QuestionViewController: UIViewController {
     }
     
     func getQuestionText() -> String {
-        guard let text = astroQuestions[0].questions![questionNumber].text else {return ""}
+        guard let text = astroQuestions.questions![questionNumber].text else {return ""}
         return text
     }
     
     //Need a way of fetching the answer choices.
     func getAnswers() -> [String] {
-        guard let answers = astroQuestions[0].questions![questionNumber].answer else {return []}
+        guard let answers = astroQuestions.questions![questionNumber].answer else {return []}
         return answers
     }
 
-    func getProgress(score: Int) -> Float {
-        return Float(score) / Float(astroQuestions.count)
-    }
+//    func getProgress(score: Int) -> Float {
+//        return Float(score) / Float(astroQuestions)
+//    }
 
     func nextQuestion() -> Int {
-        if questionNumber < (astroQuestions[0].questions!.count - 1) {
+        if questionNumber < (astroQuestions.questions!.count - 1) {
             questionNumber += 1
             return questionNumber
         } else {
@@ -131,7 +133,7 @@ class QuestionViewController: UIViewController {
     }
 
     func getRightAnswer(number: Int) -> String {
-        if let answerOk = astroQuestions[0].questions![number].rightAnswer {
+        if let answerOk = astroQuestions.questions![number].rightAnswer {
             return answerOk
         } else {
             return ""
