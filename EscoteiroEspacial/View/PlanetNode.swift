@@ -11,23 +11,23 @@ import SceneKit
 
 class PlanetNode: SCNNode {
     
-    override init() {
-        super.init()
+    func getPlanet(planet: String) {
+        if planet == "saturn"{
+            let ringPlanet = SCNTorus(ringRadius: 2.1, pipeRadius: 0.03)
+            let ringNode = SCNNode(geometry: ringPlanet)
+            ringPlanet.firstMaterial?.diffuse.contents = UIImage(named: "saturnringcolor")
+            ringPlanet.firstMaterial?.specular.contents = UIImage(named: "saturnringpattern")
+            ringNode.runAction(SCNAction.repeatForever(SCNAction.rotate(by: 360 * CGFloat(Double.pi/180), around: SCNVector3(0, 1, 0), duration: 12)))
+            addChildNode(ringNode)
+        }
         self.geometry = SCNSphere(radius: 1.7)
-        self.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "TerraMapaUpdatePNG")
-//        self.geometry?.firstMaterial?.specular.contents = UIImage(named: "Specular")
-//        self.geometry?.firstMaterial?.emission.contents = UIImage(named: "Emission")
-//        self.geometry?.firstMaterial?.normal.contents = UIImage(named: "Normal")
-        
+        self.geometry?.firstMaterial?.diffuse.contents = UIImage(named: planet)
         self.geometry?.firstMaterial?.shininess = 50
         
         let action = SCNAction.rotate(by: 360 * CGFloat(Double.pi/180), around: SCNVector3(0, 1, 0), duration: 12)
         let repeatAction = SCNAction.repeatForever(action)
         self.runAction(repeatAction)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        
     }
     
 }

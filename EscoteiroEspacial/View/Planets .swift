@@ -9,8 +9,7 @@
 import Foundation
 
 struct Planets: Codable {
-    var name: String?
-    var information: String?
-    var level: Int?
-    var quiz: [Question] = []
+    var planet: String?
+    var description: String?
+    var questions: [Question]?
 }

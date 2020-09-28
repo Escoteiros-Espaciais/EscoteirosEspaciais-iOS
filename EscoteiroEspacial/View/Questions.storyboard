@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iey-go-QXB">
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PatrickHandSC-Regular.ttf">
+            <string>PatrickHandSC-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Question View Controller-->
+        <scene sceneID="b6F-M4-1Jo">
+            <objects>
+                <viewController id="iey-go-QXB" customClass="QuestionViewController" customModule="EscoteiroEspacial" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PKR-RI-AQq">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="background-sem-cometa" translatesAutoresizingMaskIntoConstraints="NO" id="Lqf-zh-W6I">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fO0-nA-sYa">
+                                <rect key="frame" x="44" y="0.0" width="362" height="354"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4KU-OH-OdD">
+                                        <rect key="frame" x="48" y="64" width="266" height="226"/>
+                                        <subviews>
+                                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aew-b6-u8Z">
+                                                <rect key="frame" x="-24" y="-20" width="303" height="281"/>
+                                            </sceneKitView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Aew-b6-u8Z" firstAttribute="top" secondItem="4KU-OH-OdD" secondAttribute="top" constant="-20" id="MYT-2Z-eyu"/>
+                                            <constraint firstAttribute="bottom" secondItem="Aew-b6-u8Z" secondAttribute="bottom" constant="-35" id="aKA-hf-QgI"/>
+                                            <constraint firstAttribute="trailing" secondItem="Aew-b6-u8Z" secondAttribute="trailing" constant="-13" id="dfE-Vu-xJn"/>
+                                            <constraint firstItem="Aew-b6-u8Z" firstAttribute="leading" secondItem="4KU-OH-OdD" secondAttribute="leading" constant="-24" id="j6L-5R-jVr"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujo-E3-kKm">
+                                        <rect key="frame" x="24" y="8" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Ujo-E3-kKm" secondAttribute="height" multiplier="1:1" id="0xu-vP-Qsu"/>
+                                            <constraint firstAttribute="width" constant="30" id="Yf0-UC-mbB"/>
+                                        </constraints>
+                                        <state key="normal" image="back-button"/>
+                                        <connections>
+                                            <action selector="backInfo:" destination="iey-go-QXB" eventType="touchUpInside" id="PWq-W3-2Lc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ujo-E3-kKm" firstAttribute="top" secondItem="fO0-nA-sYa" secondAttribute="top" constant="8" id="3Hn-R5-ZWD"/>
+                                    <constraint firstAttribute="trailing" secondItem="4KU-OH-OdD" secondAttribute="trailing" constant="48" id="M71-YM-4rV"/>
+                                    <constraint firstItem="4KU-OH-OdD" firstAttribute="top" secondItem="fO0-nA-sYa" secondAttribute="top" constant="64" id="QnH-5t-JHW"/>
+                                    <constraint firstItem="Ujo-E3-kKm" firstAttribute="leading" secondItem="fO0-nA-sYa" secondAttribute="leading" constant="24" id="cAZ-Af-Xse"/>
+                                    <constraint firstItem="4KU-OH-OdD" firstAttribute="leading" secondItem="fO0-nA-sYa" secondAttribute="leading" constant="48" id="hJ8-nc-e7p"/>
+                                    <constraint firstAttribute="bottom" secondItem="4KU-OH-OdD" secondAttribute="bottom" constant="64" id="o25-xt-6kp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6F-oR-VOo">
+                                <rect key="frame" x="381" y="41" width="404" height="293"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enR-OI-K5W">
+                                        <rect key="frame" x="8" y="261" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="YIs-RB-Ris"/>
+                                            <constraint firstAttribute="width" constant="24" id="ndY-UX-4kK"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="audio-on"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7xk-8F-wqM">
+                                        <rect key="frame" x="8" y="8" width="371" height="247"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yab-eg-eR0" userLabel="Question Text">
+                                                <rect key="frame" x="0.0" y="0.0" width="371" height="32.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-0O-hcd">
+                                                <rect key="frame" x="0.0" y="42.666666666666671" width="371" height="60.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
+                                                <state key="normal" title="Choice1" backgroundImage="Rectangle"/>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="dIt-XP-xRZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-Vu-pkf">
+                                                <rect key="frame" x="0.0" y="112.99999999999999" width="371" height="60.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
+                                                <state key="normal" title="Choice2" backgroundImage="Rectangle"/>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="PY8-Xq-kNn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMc-dX-SMV">
+                                                <rect key="frame" x="0.0" y="183.33333333333334" width="371" height="53.666666666666657"/>
+                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
+                                                <state key="normal" title="Choise3" backgroundImage="Rectangle"/>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="tdw-cE-sqd"/>
+                                                </connections>
+                                            </button>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LmE-dl-ega">
+                                                <rect key="frame" x="0.0" y="247" width="371" height="0.0"/>
+                                                <color key="progressTintColor" red="1" green="0.34509803919999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="trackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </progressView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="enR-OI-K5W" firstAttribute="leading" secondItem="z6F-oR-VOo" secondAttribute="leading" constant="8" id="QQY-3M-FUu"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="7xk-8F-wqM" secondAttribute="trailing" id="Umq-HN-9HP"/>
+                                    <constraint firstItem="7xk-8F-wqM" firstAttribute="top" secondItem="z6F-oR-VOo" secondAttribute="topMargin" id="V4W-gD-2mh"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="7xk-8F-wqM" secondAttribute="bottom" constant="30" id="Zxq-ge-ity"/>
+                                    <constraint firstAttribute="bottom" secondItem="enR-OI-K5W" secondAttribute="bottom" constant="8" id="buf-TU-zHR"/>
+                                    <constraint firstItem="7xk-8F-wqM" firstAttribute="leading" secondItem="z6F-oR-VOo" secondAttribute="leadingMargin" id="uYK-4L-Mm6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Ueh-0U-5pR" firstAttribute="bottom" secondItem="fO0-nA-sYa" secondAttribute="bottom" id="2TK-Vb-elh"/>
+                            <constraint firstItem="fO0-nA-sYa" firstAttribute="leading" secondItem="Ueh-0U-5pR" secondAttribute="leading" id="AVL-oe-9xK"/>
+                            <constraint firstItem="Lqf-zh-W6I" firstAttribute="top" secondItem="PKR-RI-AQq" secondAttribute="top" id="AfQ-aB-ZTG"/>
+                            <constraint firstAttribute="centerX" secondItem="fO0-nA-sYa" secondAttribute="trailing" id="DYE-ce-7v8"/>
+                            <constraint firstItem="z6F-oR-VOo" firstAttribute="leading" secondItem="Ueh-0U-5pR" secondAttribute="leading" constant="337" id="X1K-rn-MPb"/>
+                            <constraint firstItem="Ueh-0U-5pR" firstAttribute="bottom" secondItem="fO0-nA-sYa" secondAttribute="bottom" id="XZW-lu-eUR"/>
+                            <constraint firstAttribute="trailing" secondItem="Lqf-zh-W6I" secondAttribute="trailing" id="ZcE-9a-h5A"/>
+                            <constraint firstItem="z6F-oR-VOo" firstAttribute="centerY" secondItem="Lqf-zh-W6I" secondAttribute="centerY" id="ea6-gr-5A1"/>
+                            <constraint firstItem="z6F-oR-VOo" firstAttribute="top" secondItem="Ueh-0U-5pR" secondAttribute="top" constant="41" id="faW-eQ-Jtp"/>
+                            <constraint firstItem="fO0-nA-sYa" firstAttribute="top" secondItem="Ueh-0U-5pR" secondAttribute="top" id="hzO-TY-hGq"/>
+                            <constraint firstAttribute="bottom" secondItem="Lqf-zh-W6I" secondAttribute="bottom" id="k2e-kV-MnT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z6F-oR-VOo" secondAttribute="trailing" constant="-33" id="pae-wU-42L"/>
+                            <constraint firstItem="Lqf-zh-W6I" firstAttribute="leading" secondItem="PKR-RI-AQq" secondAttribute="leading" id="svR-Rk-uOE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ueh-0U-5pR"/>
+                    </view>
+                    <connections>
+                        <outlet property="animation" destination="Aew-b6-u8Z" id="kr7-i0-guH"/>
+                        <outlet property="backButton" destination="Ujo-E3-kKm" id="GrX-Ok-6sm"/>
+                        <outlet property="choice1" destination="e7h-0O-hcd" id="eS8-WP-a6u"/>
+                        <outlet property="choice2" destination="qVx-Vu-pkf" id="BOn-84-QNw"/>
+                        <outlet property="choice3" destination="HMc-dX-SMV" id="WJj-bV-Qua"/>
+                        <outlet property="progressBar" destination="LmE-dl-ega" id="1rh-QL-IYC"/>
+                        <outlet property="questionText" destination="yab-eg-eR0" id="yym-iI-j0D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CVE-eq-Hgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.2167487684729066" y="136.80000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rectangle" width="322" height="68"/>
+        <image name="audio-on" width="23" height="19"/>
+        <image name="back-button" width="30" height="30"/>
+        <image name="background-sem-cometa" width="897" height="414"/>
+    </resources>
+</document>

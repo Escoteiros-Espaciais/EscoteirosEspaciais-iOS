@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B2486A9251A48DE0030BBA8 /* TestTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2486A8251A48DE0030BBA8 /* TestTwoViewController.swift */; };
-		0BC7206425191A5B00F9D82C /* TestTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC7206325191A5B00F9D82C /* TestTwo.storyboard */; };
+		0B2486A9251A48DE0030BBA8 /* QuestionTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2486A8251A48DE0030BBA8 /* QuestionTwoViewController.swift */; };
+		0BC7206425191A5B00F9D82C /* QuestionTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC7206325191A5B00F9D82C /* QuestionTwo.storyboard */; };
 		0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD219D92510F7DD00F95B93 /* Notification.swift */; };
 		270DC2132513A41100E8781F /* PlanetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270DC2122513A41000E8781F /* PlanetNode.swift */; };
 		273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 273DAD5B25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf */; };
+		275AA824251E2B970004CDED /* InfoControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275AA823251E2B970004CDED /* InfoControllerTests.swift */; };
 		279E1C2A2518E8D80048C7F5 /* Astro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E1C292518E8D80048C7F5 /* Astro.swift */; };
 		279E1C2F2518ECB00048C7F5 /* HomeSpaceControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E1C2E2518ECB00048C7F5 /* HomeSpaceControllerTests.swift */; };
 		27ED6904250A563700E5A67E /* InfoScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27ED6903250A563700E5A67E /* InfoScreenView.storyboard */; };
@@ -25,12 +26,18 @@
 		27F5BC8225011E8A00AD5531 /* EscoteiroEspacialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8125011E8A00AD5531 /* EscoteiroEspacialTests.swift */; };
 		27F5BC8D25011E8A00AD5531 /* EscoteiroEspacialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */; };
 		27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27F5BCA0250121BA00AD5531 /* .swiftlint.yml */; };
-		A4BB8C84250FA1C300A2CAB1 /* TestOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BB8C83250FA1C300A2CAB1 /* TestOne.storyboard */; };
-		A4BB8C8A250FA95900A2CAB1 /* Descriptions.json in Resources */ = {isa = PBXBuildFile; fileRef = A4BB8C89250FA95900A2CAB1 /* Descriptions.json */; };
-		A4BB8C8C250FA9A200A2CAB1 /* LoaderDescriptionJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C8B250FA9A200A2CAB1 /* LoaderDescriptionJson.swift */; };
+		7B1F9085251D89A300FF1B44 /* CometNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1F9084251D89A300FF1B44 /* CometNode.swift */; };
+		7B1F908A251D8B4700FF1B44 /* StarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1F9089251D8B4700FF1B44 /* StarNode.swift */; };
+		7B38B7E0251ABE060041900A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7DF251ABE060041900A /* ApiManager.swift */; };
+		7B38B7E5251ABE130041900A /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7E4251ABE130041900A /* ApiError.swift */; };
+		7B38B7F0251AC8100041900A /* RepositoryQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7EF251AC8100041900A /* RepositoryQuestions.swift */; };
+		A42CC34F2518D9B40007EC95 /* WarningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42CC34E2518D9B40007EC95 /* WarningsViewController.swift */; };
+		A42CC3512518DBAD0007EC95 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42CC3502518DBAD0007EC95 /* Welcome.storyboard */; };
+		A42CC3532518DFB20007EC95 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42CC3522518DFB20007EC95 /* WelcomeViewController.swift */; };
+		A4BB8C84250FA1C300A2CAB1 /* Questions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BB8C83250FA1C300A2CAB1 /* Questions.storyboard */; };
 		A4BB8C8E2510E7C200A2CAB1 /* Planets .swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C8D2510E7C100A2CAB1 /* Planets .swift */; };
 		A4BB8C902510EC6400A2CAB1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C8F2510EC6400A2CAB1 /* Question.swift */; };
-		A4BB8C9225139AD000A2CAB1 /* TestOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C9125139AD000A2CAB1 /* TestOneViewController.swift */; };
+		A4BB8C9225139AD000A2CAB1 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB8C9125139AD000A2CAB1 /* QuestionViewController.swift */; };
 		A4BB8C942514DCD200A2CAB1 /* Warnings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BB8C932514DCD200A2CAB1 /* Warnings.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -52,11 +59,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B2486A8251A48DE0030BBA8 /* TestTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTwoViewController.swift; sourceTree = "<group>"; };
-		0BC7206325191A5B00F9D82C /* TestTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestTwo.storyboard; sourceTree = "<group>"; };
+		0B2486A8251A48DE0030BBA8 /* QuestionTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTwoViewController.swift; sourceTree = "<group>"; };
+		0BC7206325191A5B00F9D82C /* QuestionTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuestionTwo.storyboard; sourceTree = "<group>"; };
 		0BD219D92510F7DD00F95B93 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		270DC2122513A41000E8781F /* PlanetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNode.swift; sourceTree = "<group>"; };
 		273DAD5B25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PatrickHandSC-Regular.ttf"; sourceTree = "<group>"; };
+		275AA823251E2B970004CDED /* InfoControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoControllerTests.swift; sourceTree = "<group>"; };
 		279E1C292518E8D80048C7F5 /* Astro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astro.swift; sourceTree = "<group>"; };
 		279E1C2E2518ECB00048C7F5 /* HomeSpaceControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSpaceControllerTests.swift; sourceTree = "<group>"; };
 		27ED6903250A563700E5A67E /* InfoScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoScreenView.storyboard; sourceTree = "<group>"; };
@@ -76,12 +84,18 @@
 		27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscoteiroEspacialUITests.swift; sourceTree = "<group>"; };
 		27F5BC8E25011E8A00AD5531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F5BCA0250121BA00AD5531 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		A4BB8C83250FA1C300A2CAB1 /* TestOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestOne.storyboard; sourceTree = "<group>"; };
-		A4BB8C89250FA95900A2CAB1 /* Descriptions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Descriptions.json; path = EscoteiroEspacial/Descriptions.json; sourceTree = SOURCE_ROOT; };
-		A4BB8C8B250FA9A200A2CAB1 /* LoaderDescriptionJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoaderDescriptionJson.swift; path = EscoteiroEspacial/View/LoaderDescriptionJson.swift; sourceTree = SOURCE_ROOT; };
+		7B1F9084251D89A300FF1B44 /* CometNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CometNode.swift; sourceTree = "<group>"; };
+		7B1F9089251D8B4700FF1B44 /* StarNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarNode.swift; sourceTree = "<group>"; };
+		7B38B7DF251ABE060041900A /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		7B38B7E4251ABE130041900A /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		7B38B7EF251AC8100041900A /* RepositoryQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryQuestions.swift; sourceTree = "<group>"; };
+		A42CC34E2518D9B40007EC95 /* WarningsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningsViewController.swift; sourceTree = "<group>"; };
+		A42CC3502518DBAD0007EC95 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		A42CC3522518DFB20007EC95 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		A4BB8C83250FA1C300A2CAB1 /* Questions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Questions.storyboard; sourceTree = "<group>"; };
 		A4BB8C8D2510E7C100A2CAB1 /* Planets .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Planets .swift"; path = "EscoteiroEspacial/View/Planets .swift"; sourceTree = SOURCE_ROOT; };
 		A4BB8C8F2510EC6400A2CAB1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Question.swift; path = EscoteiroEspacial/View/Question.swift; sourceTree = SOURCE_ROOT; };
-		A4BB8C9125139AD000A2CAB1 /* TestOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOneViewController.swift; sourceTree = "<group>"; };
+		A4BB8C9125139AD000A2CAB1 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		A4BB8C932514DCD200A2CAB1 /* Warnings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Warnings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,7 +160,6 @@
 				27F5BC9C25011FCB00AD5531 /* Controller */,
 				27F5BC9B25011FC500AD5531 /* Model */,
 				27F5BC9A25011FBA00AD5531 /* View */,
-				A4BB8C89250FA95900A2CAB1 /* Descriptions.json */,
 				27F5BC6A25011E8800AD5531 /* AppDelegate.swift */,
 				27F5BC6C25011E8800AD5531 /* SceneDelegate.swift */,
 				27F5BC7325011E8A00AD5531 /* Assets.xcassets */,
@@ -162,6 +175,7 @@
 				27F5BC8125011E8A00AD5531 /* EscoteiroEspacialTests.swift */,
 				27F5BC8325011E8A00AD5531 /* Info.plist */,
 				279E1C2E2518ECB00048C7F5 /* HomeSpaceControllerTests.swift */,
+				275AA823251E2B970004CDED /* InfoControllerTests.swift */,
 			);
 			path = EscoteiroEspacialTests;
 			sourceTree = "<group>";
@@ -181,9 +195,12 @@
 				27F5BC7025011E8800AD5531 /* HomeSpace.storyboard */,
 				27ED6903250A563700E5A67E /* InfoScreenView.storyboard */,
 				270DC2122513A41000E8781F /* PlanetNode.swift */,
-				A4BB8C83250FA1C300A2CAB1 /* TestOne.storyboard */,
+				7B1F9089251D8B4700FF1B44 /* StarNode.swift */,
+				7B1F9084251D89A300FF1B44 /* CometNode.swift */,
+				A4BB8C83250FA1C300A2CAB1 /* Questions.storyboard */,
 				A4BB8C932514DCD200A2CAB1 /* Warnings.storyboard */,
-				0BC7206325191A5B00F9D82C /* TestTwo.storyboard */,
+				0BC7206325191A5B00F9D82C /* QuestionTwo.storyboard */,
+				A42CC3502518DBAD0007EC95 /* Welcome.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,9 +208,8 @@
 		27F5BC9B25011FC500AD5531 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7B25A84F251A8C12000906F3 /* Api */,
 				27F5BC9D25011FD200AD5531 /* Entity */,
-				27F5BC9E25011FDA00AD5531 /* Service */,
-				27F5BC9F25011FE100AD5531 /* Persistence */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,8 +220,10 @@
 				27F5BC6E25011E8800AD5531 /* HomeSpaceController.swift */,
 				27ED6905250A59AB00E5A67E /* InfoScreenController.swift */,
 				0BD219D92510F7DD00F95B93 /* Notification.swift */,
-				A4BB8C9125139AD000A2CAB1 /* TestOneViewController.swift */,
-				0B2486A8251A48DE0030BBA8 /* TestTwoViewController.swift */,
+				0B2486A8251A48DE0030BBA8 /* QuestionTwoViewController.swift */,
+				A4BB8C9125139AD000A2CAB1 /* QuestionViewController.swift */,
+				A42CC34E2518D9B40007EC95 /* WarningsViewController.swift */,
+				A42CC3522518DFB20007EC95 /* WelcomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,19 +238,14 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
-		27F5BC9E25011FDA00AD5531 /* Service */ = {
+		7B25A84F251A8C12000906F3 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				7B38B7DF251ABE060041900A /* ApiManager.swift */,
+				7B38B7E4251ABE130041900A /* ApiError.swift */,
+				7B38B7EF251AC8100041900A /* RepositoryQuestions.swift */,
 			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		27F5BC9F25011FE100AD5531 /* Persistence */ = {
-			isa = PBXGroup;
-			children = (
-				A4BB8C8B250FA9A200A2CAB1 /* LoaderDescriptionJson.swift */,
-			);
-			path = Persistence;
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +312,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Mateus Nobre";
 				TargetAttributes = {
 					27F5BC6625011E8800AD5531 = {
@@ -341,15 +354,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				27ED6904250A563700E5A67E /* InfoScreenView.storyboard in Resources */,
-				0BC7206425191A5B00F9D82C /* TestTwo.storyboard in Resources */,
+				0BC7206425191A5B00F9D82C /* QuestionTwo.storyboard in Resources */,
 				27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */,
 				A4BB8C942514DCD200A2CAB1 /* Warnings.storyboard in Resources */,
-				A4BB8C84250FA1C300A2CAB1 /* TestOne.storyboard in Resources */,
+				A4BB8C84250FA1C300A2CAB1 /* Questions.storyboard in Resources */,
 				273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */,
+				A42CC3512518DBAD0007EC95 /* Welcome.storyboard in Resources */,
 				27F5BC7725011E8A00AD5531 /* LaunchScreen.storyboard in Resources */,
 				27F5BC7425011E8A00AD5531 /* Assets.xcassets in Resources */,
 				27F5BC7225011E8800AD5531 /* HomeSpace.storyboard in Resources */,
-				A4BB8C8A250FA95900A2CAB1 /* Descriptions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,17 +407,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4BB8C9225139AD000A2CAB1 /* TestOneViewController.swift in Sources */,
+				A4BB8C9225139AD000A2CAB1 /* QuestionViewController.swift in Sources */,
 				A4BB8C902510EC6400A2CAB1 /* Question.swift in Sources */,
 				27F5BC6F25011E8800AD5531 /* HomeSpaceController.swift in Sources */,
-				27F5BC6F25011E8800AD5531 /* HomeSpaceController.swift in Sources */,
 				27ED6906250A59AB00E5A67E /* InfoScreenController.swift in Sources */,
+				A42CC34F2518D9B40007EC95 /* WarningsViewController.swift in Sources */,
+				7B1F908A251D8B4700FF1B44 /* StarNode.swift in Sources */,
 				0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */,
-				A4BB8C8C250FA9A200A2CAB1 /* LoaderDescriptionJson.swift in Sources */,
+				7B38B7E0251ABE060041900A /* ApiManager.swift in Sources */,
 				27F5BC6B25011E8800AD5531 /* AppDelegate.swift in Sources */,
-				0B2486A9251A48DE0030BBA8 /* TestTwoViewController.swift in Sources */,
+				0B2486A9251A48DE0030BBA8 /* QuestionTwoViewController.swift in Sources */,
+				7B1F9085251D89A300FF1B44 /* CometNode.swift in Sources */,
 				279E1C2A2518E8D80048C7F5 /* Astro.swift in Sources */,
 				A4BB8C8E2510E7C200A2CAB1 /* Planets .swift in Sources */,
+				7B38B7F0251AC8100041900A /* RepositoryQuestions.swift in Sources */,
+				A42CC3532518DFB20007EC95 /* WelcomeViewController.swift in Sources */,
+				7B38B7E5251ABE130041900A /* ApiError.swift in Sources */,
 				27F5BC6D25011E8800AD5531 /* SceneDelegate.swift in Sources */,
 				270DC2132513A41100E8781F /* PlanetNode.swift in Sources */,
 			);
@@ -415,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F5BC8225011E8A00AD5531 /* EscoteiroEspacialTests.swift in Sources */,
+				275AA824251E2B970004CDED /* InfoControllerTests.swift in Sources */,
 				279E1C2F2518ECB00048C7F5 /* HomeSpaceControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +507,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -548,6 +568,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

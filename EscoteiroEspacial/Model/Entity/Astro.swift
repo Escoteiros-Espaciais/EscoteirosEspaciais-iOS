@@ -8,16 +8,16 @@
 
 import Foundation
 
-enum Astro: Equatable {
-    case sunn
-    case mercury
-    case venus
-    case moon
-    case earth
-    case mars
-    case jupiter
-    case saturn
-    case uran
-    case neptun
-    case unknown
+enum Astro: String, Equatable {
+    case sunn = "sun"
+    case mercury = "mercury"
+    case venus = "venus"
+    case moon = "moon"
+    case earth = "earth"
+    case mars = "mars"
+    case jupiter = "jupiter"
+    case saturn = "saturn"
+    case uran = "uran"
+    case neptun = "neptun"
+    case unknown = "unknown"
 }

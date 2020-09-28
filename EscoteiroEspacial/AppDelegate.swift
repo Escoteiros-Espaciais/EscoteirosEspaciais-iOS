@@ -12,8 +12,22 @@ import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+    
+   var apiT = ApiManager()
+   let questionFile = RepositoryQuestion(filename: "question")
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Thread.sleep(forTimeInterval: 2.0)
+        
+        apiT.planetsApi { (result) in
+            switch result {
+            case .success(let apiPlanets):
+                self.questionFile.save(apiPlanets)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
         // Override point for customization after application launch.
         
         UNUserNotificationCenter.current()
@@ -33,7 +47,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 //        completionHandler([.alert, .sound])
 //    }
     
-
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
