@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iey-go-QXB">
-    <device id="retina5_9" orientation="landscape" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iey-go-QXB">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,27 +17,27 @@
             <objects>
                 <viewController id="iey-go-QXB" customClass="QuestionViewController" customModule="EscoteiroEspacial" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PKR-RI-AQq">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="background-sem-cometa" translatesAutoresizingMaskIntoConstraints="NO" id="Lqf-zh-W6I">
-                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fO0-nA-sYa">
-                                <rect key="frame" x="44" y="0.0" width="362" height="354"/>
+                                <rect key="frame" x="44" y="0.0" width="404" height="393"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4KU-OH-OdD">
-                                        <rect key="frame" x="48" y="64" width="266" height="226"/>
+                                        <rect key="frame" x="0.0" y="50" width="368" height="295"/>
                                         <subviews>
                                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aew-b6-u8Z">
-                                                <rect key="frame" x="-24" y="-20" width="303" height="281"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="368" height="295"/>
                                             </sceneKitView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="Aew-b6-u8Z" firstAttribute="top" secondItem="4KU-OH-OdD" secondAttribute="top" constant="-20" id="MYT-2Z-eyu"/>
-                                            <constraint firstAttribute="bottom" secondItem="Aew-b6-u8Z" secondAttribute="bottom" constant="-35" id="aKA-hf-QgI"/>
-                                            <constraint firstAttribute="trailing" secondItem="Aew-b6-u8Z" secondAttribute="trailing" constant="-13" id="dfE-Vu-xJn"/>
-                                            <constraint firstItem="Aew-b6-u8Z" firstAttribute="leading" secondItem="4KU-OH-OdD" secondAttribute="leading" constant="-24" id="j6L-5R-jVr"/>
+                                            <constraint firstAttribute="bottom" secondItem="Aew-b6-u8Z" secondAttribute="bottom" id="KG8-hh-YPK"/>
+                                            <constraint firstItem="Aew-b6-u8Z" firstAttribute="top" secondItem="4KU-OH-OdD" secondAttribute="top" id="MYT-2Z-eyu"/>
+                                            <constraint firstAttribute="trailing" secondItem="Aew-b6-u8Z" secondAttribute="trailing" id="dfE-Vu-xJn"/>
+                                            <constraint firstItem="Aew-b6-u8Z" firstAttribute="leading" secondItem="4KU-OH-OdD" secondAttribute="leading" id="j6L-5R-jVr"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujo-E3-kKm">
@@ -54,18 +54,18 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Ujo-E3-kKm" firstAttribute="top" secondItem="fO0-nA-sYa" secondAttribute="top" constant="8" id="3Hn-R5-ZWD"/>
-                                    <constraint firstAttribute="trailing" secondItem="4KU-OH-OdD" secondAttribute="trailing" constant="48" id="M71-YM-4rV"/>
-                                    <constraint firstItem="4KU-OH-OdD" firstAttribute="top" secondItem="fO0-nA-sYa" secondAttribute="top" constant="64" id="QnH-5t-JHW"/>
+                                    <constraint firstAttribute="trailing" secondItem="4KU-OH-OdD" secondAttribute="trailing" constant="36" id="8jT-SH-4KY"/>
+                                    <constraint firstItem="4KU-OH-OdD" firstAttribute="top" secondItem="fO0-nA-sYa" secondAttribute="top" constant="50" id="QnH-5t-JHW"/>
                                     <constraint firstItem="Ujo-E3-kKm" firstAttribute="leading" secondItem="fO0-nA-sYa" secondAttribute="leading" constant="24" id="cAZ-Af-Xse"/>
-                                    <constraint firstItem="4KU-OH-OdD" firstAttribute="leading" secondItem="fO0-nA-sYa" secondAttribute="leading" constant="48" id="hJ8-nc-e7p"/>
-                                    <constraint firstAttribute="bottom" secondItem="4KU-OH-OdD" secondAttribute="bottom" constant="64" id="o25-xt-6kp"/>
+                                    <constraint firstItem="4KU-OH-OdD" firstAttribute="leading" secondItem="fO0-nA-sYa" secondAttribute="leading" id="hJ8-nc-e7p"/>
+                                    <constraint firstAttribute="bottom" secondItem="4KU-OH-OdD" secondAttribute="bottom" constant="48" id="o25-xt-6kp"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6F-oR-VOo">
-                                <rect key="frame" x="381" y="41" width="404" height="293"/>
+                                <rect key="frame" x="424" y="40" width="404" height="313"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enR-OI-K5W">
-                                        <rect key="frame" x="8" y="261" width="24" height="24"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enR-OI-K5W">
+                                        <rect key="frame" x="8" y="281" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="YIs-RB-Ris"/>
                                             <constraint firstAttribute="width" constant="24" id="ndY-UX-4kK"/>
@@ -73,44 +73,60 @@
                                         <state key="normal" backgroundImage="audio-on"/>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7xk-8F-wqM">
-                                        <rect key="frame" x="8" y="8" width="371" height="247"/>
+                                        <rect key="frame" x="8" y="8" width="388" height="267"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yab-eg-eR0" userLabel="Question Text">
-                                                <rect key="frame" x="0.0" y="0.0" width="371" height="32.666666666666664"/>
-                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="28"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="388" height="28"/>
+                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-0O-hcd">
-                                                <rect key="frame" x="0.0" y="42.666666666666671" width="371" height="60.333333333333329"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-0O-hcd">
+                                                <rect key="frame" x="0.0" y="38" width="388" height="69.5"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choice1" backgroundImage="Rectangle"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="dIt-XP-xRZ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-Vu-pkf">
-                                                <rect key="frame" x="0.0" y="112.99999999999999" width="371" height="60.333333333333329"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-Vu-pkf">
+                                                <rect key="frame" x="0.0" y="117.5" width="388" height="70"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choice2" backgroundImage="Rectangle"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="PY8-Xq-kNn"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMc-dX-SMV">
-                                                <rect key="frame" x="0.0" y="183.33333333333334" width="371" height="53.666666666666657"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMc-dX-SMV">
+                                                <rect key="frame" x="0.0" y="197.5" width="388" height="69.5"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choise3" backgroundImage="Rectangle"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="tdw-cE-sqd"/>
                                                 </connections>
                                             </button>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LmE-dl-ega">
-                                                <rect key="frame" x="0.0" y="247" width="371" height="0.0"/>
-                                                <color key="progressTintColor" red="1" green="0.34509803919999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="trackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </progressView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="HMc-dX-SMV" firstAttribute="width" secondItem="e7h-0O-hcd" secondAttribute="width" id="106-s2-Uj9"/>
+                                            <constraint firstItem="qVx-Vu-pkf" firstAttribute="height" secondItem="e7h-0O-hcd" secondAttribute="height" id="6v8-A1-6rk"/>
+                                            <constraint firstItem="qVx-Vu-pkf" firstAttribute="width" secondItem="e7h-0O-hcd" secondAttribute="width" id="7Mr-bX-oYS"/>
+                                            <constraint firstItem="HMc-dX-SMV" firstAttribute="height" secondItem="e7h-0O-hcd" secondAttribute="height" id="USs-YF-ugn"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -130,19 +146,18 @@
                             </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Ueh-0U-5pR" firstAttribute="bottom" secondItem="fO0-nA-sYa" secondAttribute="bottom" id="2TK-Vb-elh"/>
+                            <constraint firstItem="Ueh-0U-5pR" firstAttribute="bottom" secondItem="z6F-oR-VOo" secondAttribute="bottom" constant="40" id="6us-s4-EiL"/>
                             <constraint firstItem="fO0-nA-sYa" firstAttribute="leading" secondItem="Ueh-0U-5pR" secondAttribute="leading" id="AVL-oe-9xK"/>
                             <constraint firstItem="Lqf-zh-W6I" firstAttribute="top" secondItem="PKR-RI-AQq" secondAttribute="top" id="AfQ-aB-ZTG"/>
                             <constraint firstAttribute="centerX" secondItem="fO0-nA-sYa" secondAttribute="trailing" id="DYE-ce-7v8"/>
-                            <constraint firstItem="z6F-oR-VOo" firstAttribute="leading" secondItem="Ueh-0U-5pR" secondAttribute="leading" constant="337" id="X1K-rn-MPb"/>
-                            <constraint firstItem="Ueh-0U-5pR" firstAttribute="bottom" secondItem="fO0-nA-sYa" secondAttribute="bottom" id="XZW-lu-eUR"/>
+                            <constraint firstItem="z6F-oR-VOo" firstAttribute="trailing" secondItem="Ueh-0U-5pR" secondAttribute="trailing" constant="-24" id="R3u-yH-IKE"/>
+                            <constraint firstItem="z6F-oR-VOo" firstAttribute="leading" secondItem="fO0-nA-sYa" secondAttribute="trailing" constant="-24" id="XHw-sF-YZq"/>
                             <constraint firstAttribute="trailing" secondItem="Lqf-zh-W6I" secondAttribute="trailing" id="ZcE-9a-h5A"/>
-                            <constraint firstItem="z6F-oR-VOo" firstAttribute="centerY" secondItem="Lqf-zh-W6I" secondAttribute="centerY" id="ea6-gr-5A1"/>
-                            <constraint firstItem="z6F-oR-VOo" firstAttribute="top" secondItem="Ueh-0U-5pR" secondAttribute="top" constant="41" id="faW-eQ-Jtp"/>
+                            <constraint firstItem="z6F-oR-VOo" firstAttribute="top" secondItem="Ueh-0U-5pR" secondAttribute="top" constant="40" id="faW-eQ-Jtp"/>
                             <constraint firstItem="fO0-nA-sYa" firstAttribute="top" secondItem="Ueh-0U-5pR" secondAttribute="top" id="hzO-TY-hGq"/>
                             <constraint firstAttribute="bottom" secondItem="Lqf-zh-W6I" secondAttribute="bottom" id="k2e-kV-MnT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="z6F-oR-VOo" secondAttribute="trailing" constant="-33" id="pae-wU-42L"/>
                             <constraint firstItem="Lqf-zh-W6I" firstAttribute="leading" secondItem="PKR-RI-AQq" secondAttribute="leading" id="svR-Rk-uOE"/>
+                            <constraint firstItem="Ueh-0U-5pR" firstAttribute="bottom" secondItem="fO0-nA-sYa" secondAttribute="bottom" id="yTt-UN-l6H"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ueh-0U-5pR"/>
                     </view>
@@ -152,7 +167,6 @@
                         <outlet property="choice1" destination="e7h-0O-hcd" id="eS8-WP-a6u"/>
                         <outlet property="choice2" destination="qVx-Vu-pkf" id="BOn-84-QNw"/>
                         <outlet property="choice3" destination="HMc-dX-SMV" id="WJj-bV-Qua"/>
-                        <outlet property="progressBar" destination="LmE-dl-ega" id="1rh-QL-IYC"/>
                         <outlet property="questionText" destination="yab-eg-eR0" id="yym-iI-j0D"/>
                     </connections>
                 </viewController>

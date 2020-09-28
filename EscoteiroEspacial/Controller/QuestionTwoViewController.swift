@@ -121,12 +121,12 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
         }
     }
     
-    func getQuestions(astro: String) -> Planets {
-        let questionVC = QuestionViewController()
-        let quiz = questionVC.astroQuestions[0]
-
-        return quiz
-    }
+//    func getQuestions(astro: String) -> Planets {
+//        let questionVC = QuestionViewController()
+//        let quiz = questionVC.astroQuestions[0]
+//
+//        return quiz
+//    }
     
 //    func getOptions() {
 //        var questions = getQuestions(astro: <#T##String#>)
