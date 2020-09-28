@@ -17,7 +17,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var choice1: UIButton!
     @IBOutlet weak var choice2: UIButton!
     @IBOutlet weak var choice3: UIButton!
-    @IBOutlet weak var progressBar: UIProgressView!
+//    @IBOutlet weak var progressBar: UIProgressView!
 
     var astroString: String = ""
     var questionNumber = 0
@@ -99,8 +99,6 @@ class QuestionViewController: UIViewController {
         choice1.setTitle(answerChoices[0], for: .normal)
         choice2.setTitle(answerChoices[1], for: .normal)
         choice3.setTitle(answerChoices[2], for: .normal)
-        
-        //progressBar.progress = getProgress(score: score)
         
         choice1.backgroundColor = UIColor.clear
         choice2.backgroundColor = UIColor.clear
