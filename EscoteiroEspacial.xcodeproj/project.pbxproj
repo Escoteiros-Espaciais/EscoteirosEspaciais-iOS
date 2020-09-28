@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BAF9006251FC3A200CD4FAD /* QuestionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF9005251FC3A200CD4FAD /* QuestionViewControllerTests.swift */; };
 		0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD219D92510F7DD00F95B93 /* Notification.swift */; };
 		270DC2132513A41100E8781F /* PlanetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270DC2122513A41000E8781F /* PlanetNode.swift */; };
 		273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 273DAD5B25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BAF9005251FC3A200CD4FAD /* QuestionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerTests.swift; sourceTree = "<group>"; };
 		0BD219D92510F7DD00F95B93 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		270DC2122513A41000E8781F /* PlanetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNode.swift; sourceTree = "<group>"; };
 		273DAD5B25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PatrickHandSC-Regular.ttf"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				27F5BC8325011E8A00AD5531 /* Info.plist */,
 				279E1C2E2518ECB00048C7F5 /* HomeSpaceControllerTests.swift */,
 				275AA823251E2B970004CDED /* InfoControllerTests.swift */,
+				0BAF9005251FC3A200CD4FAD /* QuestionViewControllerTests.swift */,
 			);
 			path = EscoteiroEspacialTests;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 			files = (
 				27F5BC8225011E8A00AD5531 /* EscoteiroEspacialTests.swift in Sources */,
 				275AA824251E2B970004CDED /* InfoControllerTests.swift in Sources */,
+				0BAF9006251FC3A200CD4FAD /* QuestionViewControllerTests.swift in Sources */,
 				279E1C2F2518ECB00048C7F5 /* HomeSpaceControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
