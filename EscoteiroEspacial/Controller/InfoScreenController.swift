@@ -9,6 +9,7 @@
 import UIKit
 import SceneKit
 import Lottie
+import AVFoundation
 
 class InfoScreenController: UIViewController {
    
@@ -21,6 +22,9 @@ class InfoScreenController: UIViewController {
     
     var astroIdentifier: Astro?
     var planets: [Planets] = []
+    
+    var soundPlanet = Sounds()
+    var audioOn: Bool = true
     
     override func viewDidLoad() {
         
@@ -37,14 +41,23 @@ class InfoScreenController: UIViewController {
         guard let astroIdentifier = astroIdentifier else {return}
         descriptionText.text = selectDescriptionAstro(astroIdentifier.rawValue)
         
-        
         microAnimation.frame = view.bounds
         microAnimation.contentMode = .scaleToFill
-        microAnimation.loopMode = .loop
+        microAnimation.isUserInteractionEnabled = true
         microAnimation.animationSpeed = 0.5
-        microAnimation.play()
-        
+        microAnimation.currentFrame = 28
+        addToggleRecognizer(microAnimation)
     }
+    
+    func addToggleRecognizer(_ animationView: AnimationView) {
+            let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(toggleMenu(recognizer:)))
+            animationView.addGestureRecognizer(tapRecognizer)
+        }
+   
+    @objc func toggleMenu(recognizer: UITapGestureRecognizer) {
+            audioOn ? startSound() : finishSound()
+            audioOn = !audioOn
+        }
     
     func addPlanet() -> SCNScene {
         let scene = SCNScene()
@@ -83,5 +96,18 @@ class InfoScreenController: UIViewController {
         }
         return ""
     }
-
+    
+    private func startSound() {
+        microAnimation.play(fromFrame: ProgressKeyFrames.start.rawValue, toFrame: ProgressKeyFrames.finished.rawValue, loopMode: .none) { [weak self] (_) in
+            guard let astroIdentifier = self!.astroIdentifier else {return}
+            self?.soundPlanet.myAudio(astroIdentifier).play()
+        }
+    }
+    private func finishSound() {
+        microAnimation?.play(fromFrame: ProgressKeyFrames.first.rawValue, toFrame: ProgressKeyFrames.clouse.rawValue, loopMode: .none) { [weak self] (_) in
+            guard let astroIdentifier = self!.astroIdentifier else {return}
+            self?.soundPlanet.myAudio(astroIdentifier).pause()
+        }
+    }
+    
 }

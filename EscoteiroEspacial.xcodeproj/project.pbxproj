@@ -34,16 +34,18 @@
 		7B38B7E5251ABE130041900A /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7E4251ABE130041900A /* ApiError.swift */; };
 		7B38B7F0251AC8100041900A /* RepositoryQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7EF251AC8100041900A /* RepositoryQuestions.swift */; };
 		7B73F17D2523513F005DBD28 /* speak.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B73F17C2523513F005DBD28 /* speak.json */; };
-		7BA5D9092522D4120003C239 /* Lua.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D8FF2522D4110003C239 /* Lua.wav */; };
-		7BA5D90A2522D4120003C239 /* Mercurio.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9002522D4110003C239 /* Mercurio.wav */; };
-		7BA5D90B2522D4120003C239 /* Terra.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9012522D4110003C239 /* Terra.wav */; };
-		7BA5D90C2522D4120003C239 /* Venus.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9022522D4110003C239 /* Venus.wav */; };
-		7BA5D90D2522D4120003C239 /* Netuno.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9032522D4110003C239 /* Netuno.wav */; };
-		7BA5D90E2522D4120003C239 /* Jupiter.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9042522D4120003C239 /* Jupiter.wav */; };
-		7BA5D90F2522D4120003C239 /* Saturno.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9052522D4120003C239 /* Saturno.wav */; };
-		7BA5D9102522D4120003C239 /* Urano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9062522D4120003C239 /* Urano.wav */; };
-		7BA5D9112522D4120003C239 /* Sol.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9072522D4120003C239 /* Sol.wav */; };
-		7BA5D9122522D4120003C239 /* Marte.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9082522D4120003C239 /* Marte.wav */; };
+		7B93A3FB252372F2002C006B /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93A3FA252372F2002C006B /* Progress.swift */; };
+		7B93A4132523840F002C006B /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93A4122523840F002C006B /* SoundPlayer.swift */; };
+		7BA5D9092522D4120003C239 /* moon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D8FF2522D4110003C239 /* moon.wav */; };
+		7BA5D90A2522D4120003C239 /* mercury.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9002522D4110003C239 /* mercury.wav */; };
+		7BA5D90B2522D4120003C239 /* earth.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9012522D4110003C239 /* earth.wav */; };
+		7BA5D90C2522D4120003C239 /* venus.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9022522D4110003C239 /* venus.wav */; };
+		7BA5D90D2522D4120003C239 /* neptun.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9032522D4110003C239 /* neptun.wav */; };
+		7BA5D90E2522D4120003C239 /* jupiter.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9042522D4120003C239 /* jupiter.wav */; };
+		7BA5D90F2522D4120003C239 /* saturn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9052522D4120003C239 /* saturn.wav */; };
+		7BA5D9102522D4120003C239 /* uran.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9062522D4120003C239 /* uran.wav */; };
+		7BA5D9112522D4120003C239 /* sun.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9072522D4120003C239 /* sun.wav */; };
+		7BA5D9122522D4120003C239 /* mars.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9082522D4120003C239 /* mars.wav */; };
 		A42CC34F2518D9B40007EC95 /* WarningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42CC34E2518D9B40007EC95 /* WarningsViewController.swift */; };
 		A42CC3512518DBAD0007EC95 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42CC3502518DBAD0007EC95 /* Welcome.storyboard */; };
 		A42CC3532518DFB20007EC95 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42CC3522518DFB20007EC95 /* WelcomeViewController.swift */; };
@@ -106,16 +108,18 @@
 		7B38B7E4251ABE130041900A /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		7B38B7EF251AC8100041900A /* RepositoryQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryQuestions.swift; sourceTree = "<group>"; };
 		7B73F17C2523513F005DBD28 /* speak.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = speak.json; sourceTree = "<group>"; };
-		7BA5D8FF2522D4110003C239 /* Lua.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Lua.wav; sourceTree = "<group>"; };
-		7BA5D9002522D4110003C239 /* Mercurio.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Mercurio.wav; sourceTree = "<group>"; };
-		7BA5D9012522D4110003C239 /* Terra.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Terra.wav; sourceTree = "<group>"; };
-		7BA5D9022522D4110003C239 /* Venus.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Venus.wav; sourceTree = "<group>"; };
-		7BA5D9032522D4110003C239 /* Netuno.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Netuno.wav; sourceTree = "<group>"; };
-		7BA5D9042522D4120003C239 /* Jupiter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Jupiter.wav; sourceTree = "<group>"; };
-		7BA5D9052522D4120003C239 /* Saturno.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Saturno.wav; sourceTree = "<group>"; };
-		7BA5D9062522D4120003C239 /* Urano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Urano.wav; sourceTree = "<group>"; };
-		7BA5D9072522D4120003C239 /* Sol.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sol.wav; sourceTree = "<group>"; };
-		7BA5D9082522D4120003C239 /* Marte.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Marte.wav; sourceTree = "<group>"; };
+		7B93A3FA252372F2002C006B /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
+		7B93A4122523840F002C006B /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		7BA5D8FF2522D4110003C239 /* moon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = moon.wav; sourceTree = "<group>"; };
+		7BA5D9002522D4110003C239 /* mercury.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mercury.wav; sourceTree = "<group>"; };
+		7BA5D9012522D4110003C239 /* earth.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = earth.wav; sourceTree = "<group>"; };
+		7BA5D9022522D4110003C239 /* venus.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = venus.wav; sourceTree = "<group>"; };
+		7BA5D9032522D4110003C239 /* neptun.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = neptun.wav; sourceTree = "<group>"; };
+		7BA5D9042522D4120003C239 /* jupiter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jupiter.wav; sourceTree = "<group>"; };
+		7BA5D9052522D4120003C239 /* saturn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = saturn.wav; sourceTree = "<group>"; };
+		7BA5D9062522D4120003C239 /* uran.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = uran.wav; sourceTree = "<group>"; };
+		7BA5D9072522D4120003C239 /* sun.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sun.wav; sourceTree = "<group>"; };
+		7BA5D9082522D4120003C239 /* mars.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mars.wav; sourceTree = "<group>"; };
 		9CDA4C304B69A0BAA46D8350 /* Pods-EscoteiroEspacialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscoteiroEspacialTests.release.xcconfig"; path = "Target Support Files/Pods-EscoteiroEspacialTests/Pods-EscoteiroEspacialTests.release.xcconfig"; sourceTree = "<group>"; };
 		A42CC34E2518D9B40007EC95 /* WarningsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningsViewController.swift; sourceTree = "<group>"; };
 		A42CC3502518DBAD0007EC95 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
@@ -272,6 +276,8 @@
 				A4BB8C8D2510E7C100A2CAB1 /* Planets .swift */,
 				A4BB8C8F2510EC6400A2CAB1 /* Question.swift */,
 				279E1C292518E8D80048C7F5 /* Astro.swift */,
+				7B93A3FA252372F2002C006B /* Progress.swift */,
+				7B93A4122523840F002C006B /* SoundPlayer.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -297,16 +303,16 @@
 		7BA5D8FE2522D3F60003C239 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				7BA5D9042522D4120003C239 /* Jupiter.wav */,
-				7BA5D8FF2522D4110003C239 /* Lua.wav */,
-				7BA5D9082522D4120003C239 /* Marte.wav */,
-				7BA5D9002522D4110003C239 /* Mercurio.wav */,
-				7BA5D9032522D4110003C239 /* Netuno.wav */,
-				7BA5D9052522D4120003C239 /* Saturno.wav */,
-				7BA5D9072522D4120003C239 /* Sol.wav */,
-				7BA5D9012522D4110003C239 /* Terra.wav */,
-				7BA5D9062522D4120003C239 /* Urano.wav */,
-				7BA5D9022522D4110003C239 /* Venus.wav */,
+				7BA5D9042522D4120003C239 /* jupiter.wav */,
+				7BA5D8FF2522D4110003C239 /* moon.wav */,
+				7BA5D9082522D4120003C239 /* mars.wav */,
+				7BA5D9002522D4110003C239 /* mercury.wav */,
+				7BA5D9032522D4110003C239 /* neptun.wav */,
+				7BA5D9052522D4120003C239 /* saturn.wav */,
+				7BA5D9072522D4120003C239 /* sun.wav */,
+				7BA5D9012522D4110003C239 /* earth.wav */,
+				7BA5D9062522D4120003C239 /* uran.wav */,
+				7BA5D9022522D4110003C239 /* venus.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -447,23 +453,23 @@
 				27ED6904250A563700E5A67E /* InfoScreenView.storyboard in Resources */,
 				27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */,
 				A4BB8C942514DCD200A2CAB1 /* Warnings.storyboard in Resources */,
-				7BA5D90F2522D4120003C239 /* Saturno.wav in Resources */,
-				7BA5D90D2522D4120003C239 /* Netuno.wav in Resources */,
-				7BA5D9102522D4120003C239 /* Urano.wav in Resources */,
-				7BA5D90B2522D4120003C239 /* Terra.wav in Resources */,
+				7BA5D90F2522D4120003C239 /* saturn.wav in Resources */,
+				7BA5D90D2522D4120003C239 /* neptun.wav in Resources */,
+				7BA5D9102522D4120003C239 /* uran.wav in Resources */,
+				7BA5D90B2522D4120003C239 /* earth.wav in Resources */,
 				A4BB8C84250FA1C300A2CAB1 /* Questions.storyboard in Resources */,
-				7BA5D90A2522D4120003C239 /* Mercurio.wav in Resources */,
-				7BA5D9122522D4120003C239 /* Marte.wav in Resources */,
-				7BA5D9112522D4120003C239 /* Sol.wav in Resources */,
+				7BA5D90A2522D4120003C239 /* mercury.wav in Resources */,
+				7BA5D9122522D4120003C239 /* mars.wav in Resources */,
+				7BA5D9112522D4120003C239 /* sun.wav in Resources */,
 				273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */,
 				7B73F17D2523513F005DBD28 /* speak.json in Resources */,
 				A42CC3512518DBAD0007EC95 /* Welcome.storyboard in Resources */,
 				27F5BC7725011E8A00AD5531 /* LaunchScreen.storyboard in Resources */,
 				27F5BC7425011E8A00AD5531 /* Assets.xcassets in Resources */,
-				7BA5D90E2522D4120003C239 /* Jupiter.wav in Resources */,
-				7BA5D90C2522D4120003C239 /* Venus.wav in Resources */,
+				7BA5D90E2522D4120003C239 /* jupiter.wav in Resources */,
+				7BA5D90C2522D4120003C239 /* venus.wav in Resources */,
 				27F5BC7225011E8800AD5531 /* HomeSpace.storyboard in Resources */,
-				7BA5D9092522D4120003C239 /* Lua.wav in Resources */,
+				7BA5D9092522D4120003C239 /* moon.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,12 +614,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B93A3FB252372F2002C006B /* Progress.swift in Sources */,
 				A4BB8C9225139AD000A2CAB1 /* QuestionViewController.swift in Sources */,
 				A4BB8C902510EC6400A2CAB1 /* Question.swift in Sources */,
 				27F5BC6F25011E8800AD5531 /* HomeSpaceController.swift in Sources */,
 				27ED6906250A59AB00E5A67E /* InfoScreenController.swift in Sources */,
 				A42CC34F2518D9B40007EC95 /* WarningsViewController.swift in Sources */,
 				7B1F908A251D8B4700FF1B44 /* StarNode.swift in Sources */,
+				7B93A4132523840F002C006B /* SoundPlayer.swift in Sources */,
 				0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */,
 				7B38B7E0251ABE060041900A /* ApiManager.swift in Sources */,
 				27F5BC6B25011E8800AD5531 /* AppDelegate.swift in Sources */,
