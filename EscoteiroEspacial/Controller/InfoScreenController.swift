@@ -8,23 +8,41 @@
 
 import UIKit
 import SceneKit
+import Lottie
 
 class InfoScreenController: UIViewController {
    
     @IBOutlet weak var backButon: UIButton!
     @IBOutlet weak var testeButton: UIButton!
-    @IBOutlet weak var onOffButton: UIButton!
+
+    @IBOutlet weak var microAnimation: AnimationView!
     @IBOutlet weak var sceneView: SCNView!
+    @IBOutlet weak var descriptionText: UILabel!
+    
     var astroIdentifier: Astro?
-    var astroString: String = ""
+    var planets: [Planets] = []
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         sceneView.scene = addPlanet()
         
         sceneView.backgroundColor = UIColor.clear
         sceneView.allowsCameraControl = true
+        
+        let questionFile = RepositoryQuestion(filename: "question")
+        self.planets = questionFile.load()
+        
+        guard let astroIdentifier = astroIdentifier else {return}
+        descriptionText.text = selectDescriptionAstro(astroIdentifier.rawValue)
+        
+        
+        microAnimation.frame = view.bounds
+        microAnimation.contentMode = .scaleToFill
+        microAnimation.loopMode = .loop
+        microAnimation.animationSpeed = 0.5
+        microAnimation.play()
         
     }
     
@@ -48,7 +66,6 @@ class InfoScreenController: UIViewController {
         guard let astroIdentifier = astroIdentifier else {return scene}
         planetNode.getPlanet(planet: astroIdentifier.rawValue)
         scene.rootNode.addChildNode(planetNode)
-
         return scene
         
     }
@@ -56,7 +73,15 @@ class InfoScreenController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destVC = segue.destination as? QuestionViewController else { return }
         guard let astroIdentifier = astroIdentifier else {return}
-        destVC.astroString = astroIdentifier.rawValue//segueAstroToString(with: astroIdentifier)
+        destVC.astroString = astroIdentifier.rawValue
+    }
+    
+    func selectDescriptionAstro(_ astro: String) -> String {
+        for astroSelected in 0...(planets.count - 1) where planets[astroSelected].planet == astro {
+            guard let planetDescription = planets[astroSelected].description else {return ""}
+            return planetDescription
+        }
+        return ""
     }
 
 }
