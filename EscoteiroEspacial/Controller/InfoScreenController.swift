@@ -109,6 +109,7 @@ class InfoScreenController: UIViewController {
             self?.soundPlanet.myAudio(astroIdentifier).pause()
         }
 
+    }
     
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -116,3 +117,5 @@ class InfoScreenController: UIViewController {
     }
     
 }
+
+
