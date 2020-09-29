@@ -116,10 +116,6 @@ class QuestionViewController: UIViewController {
         return answers
     }
 
-//    func getProgress(score: Int) -> Float {
-//        return Float(score) / Float(astroQuestions)
-//    }
-
     func nextQuestion() -> Int {
         if questionNumber < (astroQuestions.questions!.count - 1) {
             questionNumber += 1

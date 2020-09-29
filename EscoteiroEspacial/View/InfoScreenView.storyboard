@@ -30,30 +30,29 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0F-xt-pWZ">
                                         <rect key="frame" x="12" y="52" width="404" height="293"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Olá amigos! Aqui vamos contar uma história bem legal sobre o planeta terra" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gid-j6-MZf">
-                                                <rect key="frame" x="8" y="8" width="388" height="249"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Histórias de Planetas" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6E-oy-YRJ">
+                                                <rect key="frame" x="8" y="8" width="388" height="30"/>
+                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMr-bA-ith">
+                                                <rect key="frame" x="8" y="247" width="38" height="38"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ub5-Jo-ehK">
-                                                <rect key="frame" x="8" y="261" width="24" height="24"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="24" id="JAn-AF-86G"/>
-                                                    <constraint firstAttribute="height" constant="24" id="MOC-7h-eGl"/>
+                                                    <constraint firstAttribute="height" constant="38" id="X7b-cY-2MF"/>
+                                                    <constraint firstAttribute="width" constant="38" id="zBc-fj-29A"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="audio-on"/>
-                                            </button>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="Gid-j6-MZf" firstAttribute="top" secondItem="Q0F-xt-pWZ" secondAttribute="top" constant="8" id="BhY-ua-NyE"/>
-                                            <constraint firstAttribute="bottom" secondItem="Gid-j6-MZf" secondAttribute="bottom" constant="36" id="CD1-dL-ysH"/>
-                                            <constraint firstAttribute="bottom" secondItem="ub5-Jo-ehK" secondAttribute="bottom" constant="8" id="Shc-hP-XuU"/>
-                                            <constraint firstAttribute="trailing" secondItem="Gid-j6-MZf" secondAttribute="trailing" constant="8" id="dV1-oh-MwV"/>
-                                            <constraint firstItem="Gid-j6-MZf" firstAttribute="leading" secondItem="Q0F-xt-pWZ" secondAttribute="leading" constant="8" id="gmm-Or-5Q8"/>
-                                            <constraint firstItem="ub5-Jo-ehK" firstAttribute="leading" secondItem="Q0F-xt-pWZ" secondAttribute="leading" constant="8" id="lth-qj-BLZ"/>
+                                            <constraint firstItem="a6E-oy-YRJ" firstAttribute="top" secondItem="Q0F-xt-pWZ" secondAttribute="top" constant="8" id="3fI-c1-Oyb"/>
+                                            <constraint firstItem="gMr-bA-ith" firstAttribute="top" relation="lessThanOrEqual" secondItem="a6E-oy-YRJ" secondAttribute="bottom" constant="209" id="BCH-YG-gff"/>
+                                            <constraint firstItem="a6E-oy-YRJ" firstAttribute="leading" secondItem="Q0F-xt-pWZ" secondAttribute="leading" constant="8" id="D9E-Sw-Trh"/>
+                                            <constraint firstAttribute="bottom" secondItem="gMr-bA-ith" secondAttribute="bottom" constant="8" id="XSc-DH-58r"/>
+                                            <constraint firstItem="gMr-bA-ith" firstAttribute="leading" secondItem="Q0F-xt-pWZ" secondAttribute="leading" constant="8" id="gtb-cW-Ka4"/>
+                                            <constraint firstAttribute="trailing" secondItem="a6E-oy-YRJ" secondAttribute="trailing" constant="8" id="lM5-c8-iza"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -120,6 +119,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="descriptionText" destination="a6E-oy-YRJ" id="cCa-xE-rce"/>
                         <outlet property="sceneView" destination="0ih-YP-Sug" id="fjb-Ny-80U"/>
                     </connections>
                 </viewController>
@@ -149,13 +149,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="audio-on" width="23" height="19"/>
         <image name="back-button" width="30" height="30"/>
         <image name="background-sem-cometa" width="897" height="414"/>
         <image name="teste-button" width="106" height="28"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
