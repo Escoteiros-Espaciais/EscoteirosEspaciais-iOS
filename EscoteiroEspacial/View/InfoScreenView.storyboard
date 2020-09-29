@@ -36,13 +36,16 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMr-bA-ith">
+                                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMr-bA-ith" customClass="AnimationView" customModule="Lottie">
                                                 <rect key="frame" x="8" y="247" width="38" height="38"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="38" id="X7b-cY-2MF"/>
                                                     <constraint firstAttribute="width" constant="38" id="zBc-fj-29A"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="speak"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -120,6 +123,7 @@
                     </view>
                     <connections>
                         <outlet property="descriptionText" destination="a6E-oy-YRJ" id="cCa-xE-rce"/>
+                        <outlet property="microAnimation" destination="gMr-bA-ith" id="jCa-qW-0dw"/>
                         <outlet property="sceneView" destination="0ih-YP-Sug" id="fjb-Ny-80U"/>
                     </connections>
                 </viewController>
@@ -148,6 +152,9 @@
             <point key="canvasLocation" x="-324" y="578"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="gMr-bA-ith"/>
+    </designables>
     <resources>
         <image name="back-button" width="30" height="30"/>
         <image name="background-sem-cometa" width="897" height="414"/>

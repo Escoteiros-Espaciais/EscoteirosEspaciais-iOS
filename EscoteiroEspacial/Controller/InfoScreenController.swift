@@ -8,12 +8,14 @@
 
 import UIKit
 import SceneKit
+import Lottie
 
 class InfoScreenController: UIViewController {
    
     @IBOutlet weak var backButon: UIButton!
     @IBOutlet weak var testeButton: UIButton!
-    @IBOutlet weak var onOffButton: UIButton!
+
+    @IBOutlet weak var microAnimation: AnimationView!
     @IBOutlet weak var sceneView: SCNView!
     @IBOutlet weak var descriptionText: UILabel!
     
@@ -21,6 +23,7 @@ class InfoScreenController: UIViewController {
     var planets: [Planets] = []
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         sceneView.scene = addPlanet()
@@ -33,6 +36,13 @@ class InfoScreenController: UIViewController {
         
         guard let astroIdentifier = astroIdentifier else {return}
         descriptionText.text = selectDescriptionAstro(astroIdentifier.rawValue)
+        
+        
+        microAnimation.frame = view.bounds
+        microAnimation.contentMode = .scaleToFill
+        microAnimation.loopMode = .loop
+        microAnimation.animationSpeed = 0.5
+        microAnimation.play()
         
     }
     
