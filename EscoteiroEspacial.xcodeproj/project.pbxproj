@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0B2486A9251A48DE0030BBA8 /* QuestionTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2486A8251A48DE0030BBA8 /* QuestionTwoViewController.swift */; };
-		0BC7206425191A5B00F9D82C /* QuestionTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC7206325191A5B00F9D82C /* QuestionTwo.storyboard */; };
 		0BAF9006251FC3A200CD4FAD /* QuestionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF9005251FC3A200CD4FAD /* QuestionViewControllerTests.swift */; };
+		0BC7206425191A5B00F9D82C /* QuestionTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC7206325191A5B00F9D82C /* QuestionTwo.storyboard */; };
 		0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD219D92510F7DD00F95B93 /* Notification.swift */; };
 		270DC2132513A41100E8781F /* PlanetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270DC2122513A41000E8781F /* PlanetNode.swift */; };
 		273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 273DAD5B25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf */; };
@@ -61,8 +61,8 @@
 
 /* Begin PBXFileReference section */
 		0B2486A8251A48DE0030BBA8 /* QuestionTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTwoViewController.swift; sourceTree = "<group>"; };
-		0BC7206325191A5B00F9D82C /* QuestionTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuestionTwo.storyboard; sourceTree = "<group>"; };
 		0BAF9005251FC3A200CD4FAD /* QuestionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerTests.swift; sourceTree = "<group>"; };
+		0BC7206325191A5B00F9D82C /* QuestionTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuestionTwo.storyboard; sourceTree = "<group>"; };
 		0BD219D92510F7DD00F95B93 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		270DC2122513A41000E8781F /* PlanetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNode.swift; sourceTree = "<group>"; };
 		273DAD5B25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PatrickHandSC-Regular.ttf"; sourceTree = "<group>"; };
@@ -643,7 +643,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R39G5DLZJ3;
+				DEVELOPMENT_TEAM = JCC32S9S9V;
 				INFOPLIST_FILE = EscoteiroEspacialTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -665,7 +665,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R39G5DLZJ3;
+				DEVELOPMENT_TEAM = JCC32S9S9V;
 				INFOPLIST_FILE = EscoteiroEspacialTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (

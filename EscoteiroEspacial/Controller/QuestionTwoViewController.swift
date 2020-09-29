@@ -21,30 +21,22 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
     
     var dynamicAnimator: UIDynamicAnimator!
 
-    var astros: [Planets] = []
     var options: [UIImageView] = []
     var answerRight: String = ""
+    var items: [String] = []
+    var score = 0
     
     var behaviors: [Int : UISnapBehavior] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        var info = InfoScreenController()
-//        let astroName:String = info.astroIdentifier?.rawValue ?? ""
-//
-//        let planetNode = PlanetNode()
-//        planetNode.getPlanet(planet: astroName)
-        
-        option1.image = UIImage(named: "Marte")
-        option2.image = UIImage(named: "Mercurio")
-        option3.image = UIImage(named: "Netuno")
-        option4.image = UIImage(named: "Jupiter")
         answer.image = UIImage(named: "EsferaVazia")
+        option1.image = UIImage(named: items[0])
+        option2.image = UIImage(named: items[1])
+        option3.image = UIImage(named: items[2])
+        option4.image = UIImage(named: items[3])
         options = [option1, option2, option3, option4]
-        
-        question.text = "Alguma pergunta para arrastar um planeta"
-        answerRight = "Netuno"
         
         dynamicAnimator = UIDynamicAnimator(referenceView: view)
         answer.isUserInteractionEnabled = false
@@ -59,11 +51,8 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
     }
     
     func snapBehaviorInImage(image: UIImageView) {
-
         behaviors[image.tag] = UISnapBehavior(item: image, snapTo: image.center)
         image.isUserInteractionEnabled = true
-        //dynamicAnimator.addBehavior(snapBehavior)
-
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(pannedView))
         image.addGestureRecognizer(panGesture)
     }
@@ -82,9 +71,9 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
             let translation = recognizer.translation(in: view)
             let moved = CGPoint(x: element.x + translation.x, y: element.y + translation.y)
             object.center = moved
-           recognizer.setTranslation(.zero, in: view)
+            recognizer.setTranslation(.zero, in: view)
             
-           checkIntersectionWith(image: object,behavior: behavior)
+           checkIntersectionWith(image: object, behavior: behavior)
         case .ended, .cancelled, .failed:
             dynamicAnimator.addBehavior(behavior)
             
@@ -96,48 +85,16 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
     func checkIntersectionWith(image: UIView, behavior: UISnapBehavior) {
         if answer.frame.contains(image.center) {
             behavior.snapPoint = answer.center
-        }
-    }
-    
-    func selectedImageName(name: String) -> String {
-        switch name {
-        case "PassSunInfo":
-            return "Sol"
-//        case "PassMercuryInfo":
-//            return .mercury
-//        case "PassVenusInfo":
-//            return .venus
-//        case "PassMoonInfo":
-//            return .moon
-//        case "PassEarthInfo":
-//            return .earth
-//        case "PassMarsInfo":
-//            return .mars
-//        case "PassJupiterInfo":
-//            return .jupiter
-//        case "PassSaturnInfo":
-//            return .saturn
-//        case "PassUranInfo":
-//            return .uran
-//        case "PassNeptunInfo":
-//            return .neptun
-        default:
-            return ""
-        }
-    }
-    
-//    func getQuestions(astro: String) -> Planets {
-//        let questionVC = QuestionViewController()
-//        let quiz = questionVC.astroQuestions[0]
+//            if image == "Sol"{
 //
-//        return quiz
-//    }
-    
-//    func getOptions() {
-//        var questions = getQuestions(astro: <#T##String#>)
-//        for i in questions.questions! {
-//            var items = i.answer
-//        }
-//    }
-    
+//            }
+            score+=1
+            
+            let storyboard = UIStoryboard(name: "Warnings", bundle: nil)
+            let warningsVC = storyboard.instantiateViewController(identifier: "warnings") as WarningsViewController
+            warningsVC.score = score
+            self.present(warningsVC, animated: true, completion: nil)
+        }
+    }
+
 }

@@ -21,7 +21,7 @@ class QuestionViewController: UIViewController {
 
     var astroString: String = ""
     var questionNumber = 0
-    //var score = 0
+    var score = 0
     
     var model = ApiManager()
     var astroQuestions = Planets()
@@ -77,7 +77,7 @@ class QuestionViewController: UIViewController {
 
         if userGotItRight {
             sender.backgroundColor = UIColor.systemGreen
-            //score += 1
+            score += 1
         } else {
             sender.backgroundColor = UIColor.red
         }
@@ -119,10 +119,21 @@ class QuestionViewController: UIViewController {
 //    func getProgress(score: Int) -> Float {
 //        return Float(score) / Float(astroQuestions)
 //    }
-
+    
     func nextQuestion() -> Int {
-        if questionNumber < (astroQuestions.questions!.count - 1) {
+        if questionNumber <= (astroQuestions.questions!.count - 1) {
             questionNumber += 1
+            if questionNumber == 4 {
+                
+                let storyboard = UIStoryboard(name: "QuestionTwo", bundle: nil)
+                let questionTwoVC = storyboard.instantiateViewController(identifier: "questionTwo") as QuestionTwoViewController
+               // questionTwoVC.question.text = getQuestionText()
+                questionTwoVC.answerRight = getRightAnswer(number: questionNumber)
+                questionTwoVC.items = getAnswers()
+                questionTwoVC.score = score
+                self.present(questionTwoVC, animated: true, completion: nil)
+               
+            }
             return questionNumber
         } else {
             questionNumber = 0
