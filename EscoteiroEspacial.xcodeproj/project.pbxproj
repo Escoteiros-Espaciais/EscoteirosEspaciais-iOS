@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		0BAF9006251FC3A200CD4FAD /* QuestionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF9005251FC3A200CD4FAD /* QuestionViewControllerTests.swift */; };
 		0BC7206425191A5B00F9D82C /* QuestionTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC7206325191A5B00F9D82C /* QuestionTwo.storyboard */; };
 		0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD219D92510F7DD00F95B93 /* Notification.swift */; };
+		201516D9876A6328E4E39FFF /* Pods_EscoteiroEspacial_EscoteiroEspacialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A44BCFE4F1436AE08D5A991 /* Pods_EscoteiroEspacial_EscoteiroEspacialUITests.framework */; };
 		270DC2132513A41100E8781F /* PlanetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270DC2122513A41000E8781F /* PlanetNode.swift */; };
 		273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 273DAD5B25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf */; };
 		275AA824251E2B970004CDED /* InfoControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275AA823251E2B970004CDED /* InfoControllerTests.swift */; };
@@ -27,11 +28,26 @@
 		27F5BC8225011E8A00AD5531 /* EscoteiroEspacialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8125011E8A00AD5531 /* EscoteiroEspacialTests.swift */; };
 		27F5BC8D25011E8A00AD5531 /* EscoteiroEspacialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */; };
 		27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27F5BCA0250121BA00AD5531 /* .swiftlint.yml */; };
+		29EB0E966280D42CFA86B38E /* Pods_EscoteiroEspacialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C59C0C4D8F38C187CF88F8 /* Pods_EscoteiroEspacialTests.framework */; };
+		486551FD765AA21B4829314B /* Pods_EscoteiroEspacial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514EB3E6AFAB179407F5C53B /* Pods_EscoteiroEspacial.framework */; };
 		7B1F9085251D89A300FF1B44 /* CometNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1F9084251D89A300FF1B44 /* CometNode.swift */; };
 		7B1F908A251D8B4700FF1B44 /* StarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1F9089251D8B4700FF1B44 /* StarNode.swift */; };
 		7B38B7E0251ABE060041900A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7DF251ABE060041900A /* ApiManager.swift */; };
 		7B38B7E5251ABE130041900A /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7E4251ABE130041900A /* ApiError.swift */; };
 		7B38B7F0251AC8100041900A /* RepositoryQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7EF251AC8100041900A /* RepositoryQuestions.swift */; };
+		7B73F17D2523513F005DBD28 /* speak.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B73F17C2523513F005DBD28 /* speak.json */; };
+		7B93A3FB252372F2002C006B /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93A3FA252372F2002C006B /* Progress.swift */; };
+		7B93A4132523840F002C006B /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93A4122523840F002C006B /* SoundPlayer.swift */; };
+		7BA5D9092522D4120003C239 /* moon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D8FF2522D4110003C239 /* moon.wav */; };
+		7BA5D90A2522D4120003C239 /* mercury.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9002522D4110003C239 /* mercury.wav */; };
+		7BA5D90B2522D4120003C239 /* earth.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9012522D4110003C239 /* earth.wav */; };
+		7BA5D90C2522D4120003C239 /* venus.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9022522D4110003C239 /* venus.wav */; };
+		7BA5D90D2522D4120003C239 /* neptun.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9032522D4110003C239 /* neptun.wav */; };
+		7BA5D90E2522D4120003C239 /* jupiter.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9042522D4120003C239 /* jupiter.wav */; };
+		7BA5D90F2522D4120003C239 /* saturn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9052522D4120003C239 /* saturn.wav */; };
+		7BA5D9102522D4120003C239 /* uran.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9062522D4120003C239 /* uran.wav */; };
+		7BA5D9112522D4120003C239 /* sun.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9072522D4120003C239 /* sun.wav */; };
+		7BA5D9122522D4120003C239 /* mars.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9082522D4120003C239 /* mars.wav */; };
 		A42CC34F2518D9B40007EC95 /* WarningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42CC34E2518D9B40007EC95 /* WarningsViewController.swift */; };
 		A42CC3512518DBAD0007EC95 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42CC3502518DBAD0007EC95 /* Welcome.storyboard */; };
 		A42CC3532518DFB20007EC95 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42CC3522518DFB20007EC95 /* WelcomeViewController.swift */; };
@@ -86,11 +102,29 @@
 		27F5BC8C25011E8A00AD5531 /* EscoteiroEspacialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscoteiroEspacialUITests.swift; sourceTree = "<group>"; };
 		27F5BC8E25011E8A00AD5531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F5BCA0250121BA00AD5531 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		2A44BCFE4F1436AE08D5A991 /* Pods_EscoteiroEspacial_EscoteiroEspacialUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EscoteiroEspacial_EscoteiroEspacialUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		514EB3E6AFAB179407F5C53B /* Pods_EscoteiroEspacial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EscoteiroEspacial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE2C11707B6A0CB9260AE5C /* Pods-EscoteiroEspacial-EscoteiroEspacialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscoteiroEspacial-EscoteiroEspacialUITests.release.xcconfig"; path = "Target Support Files/Pods-EscoteiroEspacial-EscoteiroEspacialUITests/Pods-EscoteiroEspacial-EscoteiroEspacialUITests.release.xcconfig"; sourceTree = "<group>"; };
+		72B497A8782F26C4084F7973 /* Pods-EscoteiroEspacial-EscoteiroEspacialUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscoteiroEspacial-EscoteiroEspacialUITests.debug.xcconfig"; path = "Target Support Files/Pods-EscoteiroEspacial-EscoteiroEspacialUITests/Pods-EscoteiroEspacial-EscoteiroEspacialUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B1F9084251D89A300FF1B44 /* CometNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CometNode.swift; sourceTree = "<group>"; };
 		7B1F9089251D8B4700FF1B44 /* StarNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarNode.swift; sourceTree = "<group>"; };
 		7B38B7DF251ABE060041900A /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		7B38B7E4251ABE130041900A /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		7B38B7EF251AC8100041900A /* RepositoryQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryQuestions.swift; sourceTree = "<group>"; };
+		7B73F17C2523513F005DBD28 /* speak.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = speak.json; sourceTree = "<group>"; };
+		7B93A3FA252372F2002C006B /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
+		7B93A4122523840F002C006B /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		7BA5D8FF2522D4110003C239 /* moon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = moon.wav; sourceTree = "<group>"; };
+		7BA5D9002522D4110003C239 /* mercury.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mercury.wav; sourceTree = "<group>"; };
+		7BA5D9012522D4110003C239 /* earth.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = earth.wav; sourceTree = "<group>"; };
+		7BA5D9022522D4110003C239 /* venus.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = venus.wav; sourceTree = "<group>"; };
+		7BA5D9032522D4110003C239 /* neptun.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = neptun.wav; sourceTree = "<group>"; };
+		7BA5D9042522D4120003C239 /* jupiter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jupiter.wav; sourceTree = "<group>"; };
+		7BA5D9052522D4120003C239 /* saturn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = saturn.wav; sourceTree = "<group>"; };
+		7BA5D9062522D4120003C239 /* uran.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = uran.wav; sourceTree = "<group>"; };
+		7BA5D9072522D4120003C239 /* sun.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sun.wav; sourceTree = "<group>"; };
+		7BA5D9082522D4120003C239 /* mars.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mars.wav; sourceTree = "<group>"; };
+		9CDA4C304B69A0BAA46D8350 /* Pods-EscoteiroEspacialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscoteiroEspacialTests.release.xcconfig"; path = "Target Support Files/Pods-EscoteiroEspacialTests/Pods-EscoteiroEspacialTests.release.xcconfig"; sourceTree = "<group>"; };
 		A42CC34E2518D9B40007EC95 /* WarningsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningsViewController.swift; sourceTree = "<group>"; };
 		A42CC3502518DBAD0007EC95 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		A42CC3522518DFB20007EC95 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +133,10 @@
 		A4BB8C8F2510EC6400A2CAB1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Question.swift; path = EscoteiroEspacial/View/Question.swift; sourceTree = SOURCE_ROOT; };
 		A4BB8C9125139AD000A2CAB1 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		A4BB8C932514DCD200A2CAB1 /* Warnings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Warnings.storyboard; sourceTree = "<group>"; };
+		C0AF23FE378753063018AAFC /* Pods-EscoteiroEspacial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscoteiroEspacial.release.xcconfig"; path = "Target Support Files/Pods-EscoteiroEspacial/Pods-EscoteiroEspacial.release.xcconfig"; sourceTree = "<group>"; };
+		C8C59C0C4D8F38C187CF88F8 /* Pods_EscoteiroEspacialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EscoteiroEspacialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E13967F254EEBEAE5F59A1D2 /* Pods-EscoteiroEspacial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscoteiroEspacial.debug.xcconfig"; path = "Target Support Files/Pods-EscoteiroEspacial/Pods-EscoteiroEspacial.debug.xcconfig"; sourceTree = "<group>"; };
+		F8868ADF73B601C512E5CD25 /* Pods-EscoteiroEspacialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscoteiroEspacialTests.debug.xcconfig"; path = "Target Support Files/Pods-EscoteiroEspacialTests/Pods-EscoteiroEspacialTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486551FD765AA21B4829314B /* Pods_EscoteiroEspacial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29EB0E966280D42CFA86B38E /* Pods_EscoteiroEspacialTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201516D9876A6328E4E39FFF /* Pods_EscoteiroEspacial_EscoteiroEspacialUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +183,8 @@
 				27F5BC8025011E8A00AD5531 /* EscoteiroEspacialTests */,
 				27F5BC8B25011E8A00AD5531 /* EscoteiroEspacialUITests */,
 				27F5BC6825011E8800AD5531 /* Products */,
+				F0BC1DF10AFB5560E28DB62E /* Pods */,
+				DC12EEF636E8F7D1E266B409 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +201,8 @@
 		27F5BC6925011E8800AD5531 /* EscoteiroEspacial */ = {
 			isa = PBXGroup;
 			children = (
+				7B73F1622522D657005DBD28 /* MicroAnimation */,
+				7BA5D8FE2522D3F60003C239 /* Sounds */,
 				273DAD5925123D5E00CCC9C3 /* Fonts */,
 				27F5BC9C25011FCB00AD5531 /* Controller */,
 				27F5BC9B25011FC500AD5531 /* Model */,
@@ -237,6 +282,8 @@
 				A4BB8C8D2510E7C100A2CAB1 /* Planets .swift */,
 				A4BB8C8F2510EC6400A2CAB1 /* Question.swift */,
 				279E1C292518E8D80048C7F5 /* Astro.swift */,
+				7B93A3FA252372F2002C006B /* Progress.swift */,
+				7B93A4122523840F002C006B /* SoundPlayer.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -251,6 +298,54 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
+		7B73F1622522D657005DBD28 /* MicroAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				7B73F17C2523513F005DBD28 /* speak.json */,
+			);
+			path = MicroAnimation;
+			sourceTree = "<group>";
+		};
+		7BA5D8FE2522D3F60003C239 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7BA5D9042522D4120003C239 /* jupiter.wav */,
+				7BA5D8FF2522D4110003C239 /* moon.wav */,
+				7BA5D9082522D4120003C239 /* mars.wav */,
+				7BA5D9002522D4110003C239 /* mercury.wav */,
+				7BA5D9032522D4110003C239 /* neptun.wav */,
+				7BA5D9052522D4120003C239 /* saturn.wav */,
+				7BA5D9072522D4120003C239 /* sun.wav */,
+				7BA5D9012522D4110003C239 /* earth.wav */,
+				7BA5D9062522D4120003C239 /* uran.wav */,
+				7BA5D9022522D4110003C239 /* venus.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		DC12EEF636E8F7D1E266B409 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				514EB3E6AFAB179407F5C53B /* Pods_EscoteiroEspacial.framework */,
+				2A44BCFE4F1436AE08D5A991 /* Pods_EscoteiroEspacial_EscoteiroEspacialUITests.framework */,
+				C8C59C0C4D8F38C187CF88F8 /* Pods_EscoteiroEspacialTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0BC1DF10AFB5560E28DB62E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E13967F254EEBEAE5F59A1D2 /* Pods-EscoteiroEspacial.debug.xcconfig */,
+				C0AF23FE378753063018AAFC /* Pods-EscoteiroEspacial.release.xcconfig */,
+				72B497A8782F26C4084F7973 /* Pods-EscoteiroEspacial-EscoteiroEspacialUITests.debug.xcconfig */,
+				6AE2C11707B6A0CB9260AE5C /* Pods-EscoteiroEspacial-EscoteiroEspacialUITests.release.xcconfig */,
+				F8868ADF73B601C512E5CD25 /* Pods-EscoteiroEspacialTests.debug.xcconfig */,
+				9CDA4C304B69A0BAA46D8350 /* Pods-EscoteiroEspacialTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,10 +353,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27F5BC9125011E8A00AD5531 /* Build configuration list for PBXNativeTarget "EscoteiroEspacial" */;
 			buildPhases = (
+				769712D1F99FD3A4FC770465 /* [CP] Check Pods Manifest.lock */,
 				27F5BC6325011E8800AD5531 /* Sources */,
 				27F5BC6425011E8800AD5531 /* Frameworks */,
 				27F5BC6525011E8800AD5531 /* Resources */,
 				27F5BCA22501223100AD5531 /* ShellScript */,
+				8A92DE92AC39593DB4689F01 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,6 +373,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27F5BC9425011E8A00AD5531 /* Build configuration list for PBXNativeTarget "EscoteiroEspacialTests" */;
 			buildPhases = (
+				7DE2C80FDD9E778879248FDE /* [CP] Check Pods Manifest.lock */,
 				27F5BC7925011E8A00AD5531 /* Sources */,
 				27F5BC7A25011E8A00AD5531 /* Frameworks */,
 				27F5BC7B25011E8A00AD5531 /* Resources */,
@@ -294,9 +392,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27F5BC9725011E8A00AD5531 /* Build configuration list for PBXNativeTarget "EscoteiroEspacialUITests" */;
 			buildPhases = (
+				0D9CC29CFC0BAD2FB91CE302 /* [CP] Check Pods Manifest.lock */,
 				27F5BC8425011E8A00AD5531 /* Sources */,
 				27F5BC8525011E8A00AD5531 /* Frameworks */,
 				27F5BC8625011E8A00AD5531 /* Resources */,
+				2605682E858E7816A19FA8FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -360,12 +460,23 @@
 				0BC7206425191A5B00F9D82C /* QuestionTwo.storyboard in Resources */,
 				27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */,
 				A4BB8C942514DCD200A2CAB1 /* Warnings.storyboard in Resources */,
+				7BA5D90F2522D4120003C239 /* saturn.wav in Resources */,
+				7BA5D90D2522D4120003C239 /* neptun.wav in Resources */,
+				7BA5D9102522D4120003C239 /* uran.wav in Resources */,
+				7BA5D90B2522D4120003C239 /* earth.wav in Resources */,
 				A4BB8C84250FA1C300A2CAB1 /* Questions.storyboard in Resources */,
+				7BA5D90A2522D4120003C239 /* mercury.wav in Resources */,
+				7BA5D9122522D4120003C239 /* mars.wav in Resources */,
+				7BA5D9112522D4120003C239 /* sun.wav in Resources */,
 				273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */,
+				7B73F17D2523513F005DBD28 /* speak.json in Resources */,
 				A42CC3512518DBAD0007EC95 /* Welcome.storyboard in Resources */,
 				27F5BC7725011E8A00AD5531 /* LaunchScreen.storyboard in Resources */,
 				27F5BC7425011E8A00AD5531 /* Assets.xcassets in Resources */,
+				7BA5D90E2522D4120003C239 /* jupiter.wav in Resources */,
+				7BA5D90C2522D4120003C239 /* venus.wav in Resources */,
 				27F5BC7225011E8800AD5531 /* HomeSpace.storyboard in Resources */,
+				7BA5D9092522D4120003C239 /* moon.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +497,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0D9CC29CFC0BAD2FB91CE302 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EscoteiroEspacial-EscoteiroEspacialUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2605682E858E7816A19FA8FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EscoteiroEspacial-EscoteiroEspacialUITests/Pods-EscoteiroEspacial-EscoteiroEspacialUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EscoteiroEspacial-EscoteiroEspacialUITests/Pods-EscoteiroEspacial-EscoteiroEspacialUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EscoteiroEspacial-EscoteiroEspacialUITests/Pods-EscoteiroEspacial-EscoteiroEspacialUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		27F5BCA22501223100AD5531 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,6 +553,67 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: Swiftlint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		769712D1F99FD3A4FC770465 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EscoteiroEspacial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DE2C80FDD9E778879248FDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EscoteiroEspacialTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A92DE92AC39593DB4689F01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EscoteiroEspacial/Pods-EscoteiroEspacial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EscoteiroEspacial/Pods-EscoteiroEspacial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EscoteiroEspacial/Pods-EscoteiroEspacial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -410,12 +621,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B93A3FB252372F2002C006B /* Progress.swift in Sources */,
 				A4BB8C9225139AD000A2CAB1 /* QuestionViewController.swift in Sources */,
 				A4BB8C902510EC6400A2CAB1 /* Question.swift in Sources */,
 				27F5BC6F25011E8800AD5531 /* HomeSpaceController.swift in Sources */,
 				27ED6906250A59AB00E5A67E /* InfoScreenController.swift in Sources */,
 				A42CC34F2518D9B40007EC95 /* WarningsViewController.swift in Sources */,
 				7B1F908A251D8B4700FF1B44 /* StarNode.swift in Sources */,
+				7B93A4132523840F002C006B /* SoundPlayer.swift in Sources */,
 				0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */,
 				7B38B7E0251ABE060041900A /* ApiManager.swift in Sources */,
 				27F5BC6B25011E8800AD5531 /* AppDelegate.swift in Sources */,
@@ -603,6 +816,7 @@
 		};
 		27F5BC9225011E8A00AD5531 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E13967F254EEBEAE5F59A1D2 /* Pods-EscoteiroEspacial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -615,12 +829,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.EscoteiroEspacial.EscoteiroEspacial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		27F5BC9325011E8A00AD5531 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0AF23FE378753063018AAFC /* Pods-EscoteiroEspacial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -633,12 +848,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.EscoteiroEspacial.EscoteiroEspacial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		27F5BC9525011E8A00AD5531 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8868ADF73B601C512E5CD25 /* Pods-EscoteiroEspacialTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -661,6 +877,7 @@
 		};
 		27F5BC9625011E8A00AD5531 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CDA4C304B69A0BAA46D8350 /* Pods-EscoteiroEspacialTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -683,6 +900,7 @@
 		};
 		27F5BC9825011E8A00AD5531 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72B497A8782F26C4084F7973 /* Pods-EscoteiroEspacial-EscoteiroEspacialUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -703,6 +921,7 @@
 		};
 		27F5BC9925011E8A00AD5531 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AE2C11707B6A0CB9260AE5C /* Pods-EscoteiroEspacial-EscoteiroEspacialUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -37,9 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                 print("User gave permissions for local notifications")
             }
         }
-        
+
         UNUserNotificationCenter.current().delegate = self
-        
+
         return true
     }
     

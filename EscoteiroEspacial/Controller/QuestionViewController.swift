@@ -11,7 +11,7 @@ import SceneKit
 
 class QuestionViewController: UIViewController {
     
-    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var backInfoButton: UIButton!
     @IBOutlet weak var animation: SCNView!
     @IBOutlet weak var questionText: UILabel!
     @IBOutlet weak var choice1: UIButton!

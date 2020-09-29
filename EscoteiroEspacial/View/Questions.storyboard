@@ -46,7 +46,7 @@
                                             <constraint firstAttribute="width" secondItem="Ujo-E3-kKm" secondAttribute="height" multiplier="1:1" id="0xu-vP-Qsu"/>
                                             <constraint firstAttribute="width" constant="30" id="Yf0-UC-mbB"/>
                                         </constraints>
-                                        <state key="normal" image="back-button"/>
+                                        <state key="normal" backgroundImage="back-button2"/>
                                         <connections>
                                             <action selector="backInfo:" destination="iey-go-QXB" eventType="touchUpInside" id="PWq-W3-2Lc"/>
                                         </connections>
@@ -81,7 +81,9 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-0O-hcd">
+                                          
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-0O-hcd">
+                                              
                                                 <rect key="frame" x="0.0" y="34.5" width="388" height="70.5"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choice1" backgroundImage="Rectangle"/>
@@ -94,7 +96,7 @@
                                                     <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="dIt-XP-xRZ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-Vu-pkf">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-Vu-pkf">
                                                 <rect key="frame" x="0.0" y="115" width="388" height="71"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choice2" backgroundImage="Rectangle"/>
@@ -107,7 +109,7 @@
                                                     <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="PY8-Xq-kNn"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMc-dX-SMV">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMc-dX-SMV">
                                                 <rect key="frame" x="0.0" y="196" width="388" height="71"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choise3" backgroundImage="Rectangle"/>
@@ -163,7 +165,7 @@
                     </view>
                     <connections>
                         <outlet property="animation" destination="Aew-b6-u8Z" id="kr7-i0-guH"/>
-                        <outlet property="backButton" destination="Ujo-E3-kKm" id="GrX-Ok-6sm"/>
+                        <outlet property="backInfoButton" destination="Ujo-E3-kKm" id="HbM-jV-9Vg"/>
                         <outlet property="choice1" destination="e7h-0O-hcd" id="eS8-WP-a6u"/>
                         <outlet property="choice2" destination="qVx-Vu-pkf" id="BOn-84-QNw"/>
                         <outlet property="choice3" destination="HMc-dX-SMV" id="WJj-bV-Qua"/>
@@ -178,7 +180,7 @@
     <resources>
         <image name="Rectangle" width="322" height="68"/>
         <image name="audio-on" width="23" height="19"/>
-        <image name="back-button" width="30" height="30"/>
+        <image name="back-button2" width="30" height="30"/>
         <image name="background-sem-cometa" width="897" height="414"/>
     </resources>
 </document>
