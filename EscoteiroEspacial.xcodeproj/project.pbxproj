@@ -33,7 +33,7 @@
 		7B38B7E0251ABE060041900A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7DF251ABE060041900A /* ApiManager.swift */; };
 		7B38B7E5251ABE130041900A /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7E4251ABE130041900A /* ApiError.swift */; };
 		7B38B7F0251AC8100041900A /* RepositoryQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38B7EF251AC8100041900A /* RepositoryQuestions.swift */; };
-		7B73F1782522DC51005DBD28 /* speak.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B73F1772522DC51005DBD28 /* speak.json */; };
+		7B73F17D2523513F005DBD28 /* speak.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B73F17C2523513F005DBD28 /* speak.json */; };
 		7BA5D9092522D4120003C239 /* Lua.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D8FF2522D4110003C239 /* Lua.wav */; };
 		7BA5D90A2522D4120003C239 /* Mercurio.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9002522D4110003C239 /* Mercurio.wav */; };
 		7BA5D90B2522D4120003C239 /* Terra.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BA5D9012522D4110003C239 /* Terra.wav */; };
@@ -105,7 +105,7 @@
 		7B38B7DF251ABE060041900A /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		7B38B7E4251ABE130041900A /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		7B38B7EF251AC8100041900A /* RepositoryQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryQuestions.swift; sourceTree = "<group>"; };
-		7B73F1772522DC51005DBD28 /* speak.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = speak.json; sourceTree = "<group>"; };
+		7B73F17C2523513F005DBD28 /* speak.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = speak.json; sourceTree = "<group>"; };
 		7BA5D8FF2522D4110003C239 /* Lua.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Lua.wav; sourceTree = "<group>"; };
 		7BA5D9002522D4110003C239 /* Mercurio.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Mercurio.wav; sourceTree = "<group>"; };
 		7BA5D9012522D4110003C239 /* Terra.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Terra.wav; sourceTree = "<group>"; };
@@ -289,7 +289,7 @@
 		7B73F1622522D657005DBD28 /* MicroAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				7B73F1772522DC51005DBD28 /* speak.json */,
+				7B73F17C2523513F005DBD28 /* speak.json */,
 			);
 			path = MicroAnimation;
 			sourceTree = "<group>";
@@ -456,9 +456,9 @@
 				7BA5D9122522D4120003C239 /* Marte.wav in Resources */,
 				7BA5D9112522D4120003C239 /* Sol.wav in Resources */,
 				273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */,
+				7B73F17D2523513F005DBD28 /* speak.json in Resources */,
 				A42CC3512518DBAD0007EC95 /* Welcome.storyboard in Resources */,
 				27F5BC7725011E8A00AD5531 /* LaunchScreen.storyboard in Resources */,
-				7B73F1782522DC51005DBD28 /* speak.json in Resources */,
 				27F5BC7425011E8A00AD5531 /* Assets.xcassets in Resources */,
 				7BA5D90E2522D4120003C239 /* Jupiter.wav in Resources */,
 				7BA5D90C2522D4120003C239 /* Venus.wav in Resources */,
