@@ -12,7 +12,7 @@ import Lottie
 
 class InfoScreenController: UIViewController {
    
-    @IBOutlet weak var backButon: UIButton!
+    @IBOutlet weak var back: UIButton!
     @IBOutlet weak var testeButton: UIButton!
 
     @IBOutlet weak var microAnimation: AnimationView!
@@ -83,5 +83,10 @@ class InfoScreenController: UIViewController {
         }
         return ""
     }
-
+    
+    
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }

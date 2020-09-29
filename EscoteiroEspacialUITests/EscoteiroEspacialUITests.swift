@@ -27,7 +27,43 @@ class EscoteiroEspacialUITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+        XCUIDevice.shared.orientation = .landscapeRight
+        
+        _ = XCUIApplication()
+        app.buttons["Skip"].tap()
+        sleep(1)
+        app.buttons["Sol"].tap()
+        app.buttons["teste button"].tap()
+        app.buttons["back button2"].tap()
+        
+        let backButtonButton = app.buttons["back button"]
+        backButtonButton.tap()
+        app.buttons["Mercurio"].tap()
+        backButtonButton.tap()
+        app.buttons["Venus"].tap()
+        backButtonButton.tap()
+        app.buttons["Lua"].tap()
+        backButtonButton.tap()
+        app.buttons["Terra"].tap()
+        backButtonButton.tap()
+        app.buttons["Marte"].tap()
+        backButtonButton.tap()
+        app.buttons["Jupiter"].tap()
+        backButtonButton.tap()
+        app.buttons["Saturno"].tap()
+        backButtonButton.tap()
+        app.buttons["Urano"].tap()
+        backButtonButton.tap()
+        app.buttons["Netuno"].tap()
+        backButtonButton.tap()
+        
+        
+        
+      
+              
 
+   
+        
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
