@@ -13,7 +13,7 @@ import AVFoundation
 
 class InfoScreenController: UIViewController {
    
-    @IBOutlet weak var backButon: UIButton!
+    @IBOutlet weak var back: UIButton!
     @IBOutlet weak var testeButton: UIButton!
 
     @IBOutlet weak var microAnimation: AnimationView!
@@ -108,6 +108,11 @@ class InfoScreenController: UIViewController {
             guard let astroIdentifier = self!.astroIdentifier else {return}
             self?.soundPlanet.myAudio(astroIdentifier).pause()
         }
+
+    
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+
     }
     
 }
