@@ -37,7 +37,6 @@ class InfoScreenController: UIViewController {
         guard let astroIdentifier = astroIdentifier else {return}
         descriptionText.text = selectDescriptionAstro(astroIdentifier.rawValue)
         
-        
         microAnimation.frame = view.bounds
         microAnimation.contentMode = .scaleToFill
         microAnimation.loopMode = .loop
