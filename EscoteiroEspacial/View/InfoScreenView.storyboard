@@ -32,7 +32,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Histórias de Planetas" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6E-oy-YRJ">
                                                 <rect key="frame" x="8" y="8" width="388" height="30"/>
-                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="22"/>
+                                                <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -98,7 +98,7 @@
                                     <color key="titleColor" systemColor="systemOrangeColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="I8u-r6-BYd" kind="show" id="hXi-sz-5sN"/>
+                                    <action selector="back:" destination="XY6-rH-Cgn" eventType="touchUpInside" id="lGl-5A-9EM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -122,6 +122,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="back" destination="bRo-Wr-BUp" id="HWh-9a-hpF"/>
                         <outlet property="descriptionText" destination="a6E-oy-YRJ" id="cCa-xE-rce"/>
                         <outlet property="microAnimation" destination="gMr-bA-ith" id="jCa-qW-0dw"/>
                         <outlet property="sceneView" destination="0ih-YP-Sug" id="fjb-Ny-80U"/>
@@ -140,16 +141,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cfs-Vu-XvJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-183" y="577"/>
-        </scene>
-        <!--HomeSpace-->
-        <scene sceneID="LOa-8B-R2H">
-            <objects>
-                <viewControllerPlaceholder storyboardName="HomeSpace" id="I8u-r6-BYd" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="4rU-lv-WEI"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DMw-9C-M03" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-324" y="578"/>
         </scene>
     </scenes>
     <designables>

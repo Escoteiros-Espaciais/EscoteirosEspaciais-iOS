@@ -47,7 +47,7 @@
                                             <constraint firstAttribute="width" secondItem="Ujo-E3-kKm" secondAttribute="height" multiplier="1:1" id="0xu-vP-Qsu"/>
                                             <constraint firstAttribute="width" constant="30" id="Yf0-UC-mbB"/>
                                         </constraints>
-                                        <state key="normal" image="back-button"/>
+                                        <state key="normal" backgroundImage="back-button2"/>
                                         <connections>
                                             <action selector="backInfo:" destination="iey-go-QXB" eventType="touchUpInside" id="PWq-W3-2Lc"/>
                                         </connections>
@@ -164,7 +164,7 @@
                     </view>
                     <connections>
                         <outlet property="animation" destination="Aew-b6-u8Z" id="kr7-i0-guH"/>
-                        <outlet property="backButton" destination="Ujo-E3-kKm" id="GrX-Ok-6sm"/>
+                        <outlet property="backInfoButton" destination="Ujo-E3-kKm" id="HbM-jV-9Vg"/>
                         <outlet property="choice1" destination="e7h-0O-hcd" id="eS8-WP-a6u"/>
                         <outlet property="choice2" destination="qVx-Vu-pkf" id="BOn-84-QNw"/>
                         <outlet property="choice3" destination="HMc-dX-SMV" id="WJj-bV-Qua"/>
@@ -179,7 +179,7 @@
     <resources>
         <image name="Rectangle" width="322" height="68"/>
         <image name="audio-on" width="23" height="19"/>
-        <image name="back-button" width="30" height="30"/>
+        <image name="back-button2" width="30" height="30"/>
         <image name="background-sem-cometa" width="897" height="414"/>
     </resources>
 </document>
