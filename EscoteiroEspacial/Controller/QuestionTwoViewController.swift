@@ -24,7 +24,6 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
     var options: [UIImageView] = []
     var text = ""
     var answerRight = ""
-    //var imageRight = UIImageView()
     var items: [String] = []
     var score = 0
     
@@ -40,7 +39,6 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
         option3.image = UIImage(named: items[2])
         option4.image = UIImage(named: items[3])
         options = [option1, option2, option3, option4]
-        //imageRight.image = UIImage(named: answerRight)
         
         dynamicAnimator = UIDynamicAnimator(referenceView: view)
         answer.isUserInteractionEnabled = false
