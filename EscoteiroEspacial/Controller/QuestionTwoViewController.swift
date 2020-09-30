@@ -22,7 +22,9 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
     var dynamicAnimator: UIDynamicAnimator!
 
     var options: [UIImageView] = []
-    var answerRight: String = ""
+    var text = ""
+    var answerRight = ""
+    //var imageRight = UIImageView()
     var items: [String] = []
     var score = 0
     
@@ -31,12 +33,14 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        question.text = text
         answer.image = UIImage(named: "EsferaVazia")
         option1.image = UIImage(named: items[0])
         option2.image = UIImage(named: items[1])
         option3.image = UIImage(named: items[2])
         option4.image = UIImage(named: items[3])
         options = [option1, option2, option3, option4]
+        //imageRight.image = UIImage(named: answerRight)
         
         dynamicAnimator = UIDynamicAnimator(referenceView: view)
         answer.isUserInteractionEnabled = false
@@ -79,16 +83,33 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
             
         case .possible:
             break
+        @unknown default:
+            break
+        }
+    }
+    
+    func itemRigth(answer: String) -> Int {
+        for (index, item) in items.enumerated() {
+            if answer == item {
+                return index
+            }
+        }
+        return 0
+    }
+    
+    func checkImageAnswer(image: UIView) {
+        if image.tag == itemRigth(answer: answerRight) {
+            score+=1
+            answer.image = UIImage(named: "EsferaCerta")
+        } else {
+            answer.image = UIImage(named: "EsferaErrada")
         }
     }
     
     func checkIntersectionWith(image: UIView, behavior: UISnapBehavior) {
         if answer.frame.contains(image.center) {
             behavior.snapPoint = answer.center
-//            if image == "Sol"{
-//
-//            }
-            score+=1
+            checkImageAnswer(image: image)
             
             let storyboard = UIStoryboard(name: "Warnings", bundle: nil)
             let warningsVC = storyboard.instantiateViewController(identifier: "warnings") as WarningsViewController

@@ -23,19 +23,11 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-sem-cometa" translatesAutoresizingMaskIntoConstraints="NO" id="JjX-y2-D9B">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSu-GP-Rgf">
-                                <rect key="frame" x="24" y="8" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="OSu-GP-Rgf" secondAttribute="height" multiplier="1:1" id="IL9-zi-tWT"/>
-                                    <constraint firstAttribute="width" constant="30" id="zC5-MU-lt7"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="back-button"/>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P23-nO-ddi">
-                                <rect key="frame" x="64" y="30" width="444" height="77.5"/>
+                                <rect key="frame" x="60" y="30" width="448" height="77.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26G-ZM-tM4">
-                                        <rect key="frame" x="8" y="8" width="428" height="61.5"/>
+                                        <rect key="frame" x="8" y="8" width="432" height="61.5"/>
                                         <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -48,7 +40,19 @@
                                     <constraint firstAttribute="bottom" secondItem="26G-ZM-tM4" secondAttribute="bottom" constant="8" id="ydr-8G-c5s"/>
                                     <constraint firstItem="26G-ZM-tM4" firstAttribute="leading" secondItem="P23-nO-ddi" secondAttribute="leading" constant="8" id="yfh-VD-2VW"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gn0-pN-KcA">
+                                <rect key="frame" x="249" y="237.5" width="70" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Zk7-bR-EVC"/>
+                                    <constraint firstAttribute="width" secondItem="Gn0-pN-KcA" secondAttribute="height" multiplier="40:37" id="lhM-uH-kog"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CDv-H2-ha5">
                                 <rect key="frame" x="99" y="127.5" width="70" height="65"/>
                                 <constraints>
@@ -77,13 +81,6 @@
                                     <constraint firstAttribute="width" secondItem="vYL-T0-SN8" secondAttribute="height" multiplier="40:37" id="gbA-6P-lRN"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gn0-pN-KcA">
-                                <rect key="frame" x="249" y="237.5" width="70" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Zk7-bR-EVC"/>
-                                    <constraint firstAttribute="width" secondItem="Gn0-pN-KcA" secondAttribute="height" multiplier="40:37" id="lhM-uH-kog"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -97,22 +94,19 @@
                             <constraint firstItem="p9P-5w-f4s" firstAttribute="centerX" secondItem="OoM-DI-0pA" secondAttribute="centerX" constant="-50" id="XzB-cX-A3J"/>
                             <constraint firstItem="JjX-y2-D9B" firstAttribute="leading" secondItem="OoM-DI-0pA" secondAttribute="leading" id="fe8-YB-Ant"/>
                             <constraint firstItem="CDv-H2-ha5" firstAttribute="centerY" secondItem="OoM-DI-0pA" secondAttribute="centerY" id="gSH-at-Bwm"/>
-                            <constraint firstItem="P23-nO-ddi" firstAttribute="leading" secondItem="OSu-GP-Rgf" secondAttribute="trailing" constant="10" id="gX9-kr-Lxa"/>
+                            <constraint firstItem="P23-nO-ddi" firstAttribute="leading" secondItem="OoM-DI-0pA" secondAttribute="leading" constant="60" id="gX9-kr-Lxa"/>
                             <constraint firstItem="UhE-Hu-xui" firstAttribute="top" secondItem="P23-nO-ddi" secondAttribute="bottom" constant="20" id="gjL-dq-0AY"/>
                             <constraint firstItem="CDv-H2-ha5" firstAttribute="centerX" secondItem="OoM-DI-0pA" secondAttribute="centerX" constant="-150" id="h25-Qi-MMZ"/>
                             <constraint firstItem="vYL-T0-SN8" firstAttribute="centerY" secondItem="OoM-DI-0pA" secondAttribute="centerY" id="hGP-UG-0AJ"/>
                             <constraint firstItem="UhE-Hu-xui" firstAttribute="centerY" secondItem="OoM-DI-0pA" secondAttribute="centerY" id="hxW-GF-Ozf"/>
                             <constraint firstAttribute="bottom" secondItem="JjX-y2-D9B" secondAttribute="bottom" id="kf1-sg-MU7"/>
-                            <constraint firstItem="OSu-GP-Rgf" firstAttribute="leading" secondItem="MsY-Sh-Sa8" secondAttribute="leading" constant="24" id="mp0-5C-eGS"/>
                             <constraint firstItem="UhE-Hu-xui" firstAttribute="centerX" secondItem="OoM-DI-0pA" secondAttribute="centerX" constant="50" id="nOV-m6-nmE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="P23-nO-ddi" secondAttribute="trailing" constant="40" id="qZy-Yq-jUi"/>
-                            <constraint firstItem="OSu-GP-Rgf" firstAttribute="top" secondItem="MsY-Sh-Sa8" secondAttribute="top" constant="8" id="tGQ-kh-Sxj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MsY-Sh-Sa8"/>
                     </view>
                     <connections>
                         <outlet property="answer" destination="Gn0-pN-KcA" id="JaC-C2-wyZ"/>
-                        <outlet property="back" destination="OSu-GP-Rgf" id="wT2-4J-0Yv"/>
                         <outlet property="option1" destination="CDv-H2-ha5" id="x56-Ur-7bi"/>
                         <outlet property="option2" destination="p9P-5w-f4s" id="NwD-dM-VwH"/>
                         <outlet property="option3" destination="UhE-Hu-xui" id="Rm5-Ql-6ej"/>
@@ -127,7 +121,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back-button" width="30" height="30"/>
         <image name="background-sem-cometa" width="897" height="414"/>
     </resources>
 </document>

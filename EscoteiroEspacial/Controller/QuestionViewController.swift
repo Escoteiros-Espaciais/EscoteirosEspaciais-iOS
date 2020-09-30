@@ -119,6 +119,23 @@ class QuestionViewController: UIViewController {
 //    func getProgress(score: Int) -> Float {
 //        return Float(score) / Float(astroQuestions)
 //    }
+    func getRightAnswer(number: Int) -> String {
+         if let answerOk = astroQuestions.questions![number].rightAnswer {
+             return answerOk
+         } else {
+             return ""
+         }
+     }
+    
+    func checkAnswer(userAnswer: String) -> Bool {
+         //Need to change answer to rightAnswer here.
+         let answerOk = getRightAnswer(number: questionNumber)
+         if (answerOk != "") && (userAnswer == answerOk) {
+             return true
+         } else {
+             return false
+         }
+     }
     
     func nextQuestion() -> Int {
         if questionNumber <= (astroQuestions.questions!.count - 1) {
@@ -127,7 +144,7 @@ class QuestionViewController: UIViewController {
                 
                 let storyboard = UIStoryboard(name: "QuestionTwo", bundle: nil)
                 let questionTwoVC = storyboard.instantiateViewController(identifier: "questionTwo") as QuestionTwoViewController
-               // questionTwoVC.question.text = getQuestionText()
+                questionTwoVC.text = getQuestionText()
                 questionTwoVC.answerRight = getRightAnswer(number: questionNumber)
                 questionTwoVC.items = getAnswers()
                 questionTwoVC.score = score
@@ -135,28 +152,9 @@ class QuestionViewController: UIViewController {
                
             }
             return questionNumber
-        } else {
-            questionNumber = 0
-            return questionNumber
         }
-    }
-
-    func getRightAnswer(number: Int) -> String {
-        if let answerOk = astroQuestions.questions![number].rightAnswer {
-            return answerOk
-        } else {
-            return ""
-        }
+        return questionNumber
     }
     
-    func checkAnswer(userAnswer: String) -> Bool {
-        //Need to change answer to rightAnswer here.
-        let answerOk = getRightAnswer(number: questionNumber)
-        if (answerOk != "") && (userAnswer == answerOk) {
-            return true
-        } else {
-            return false
-        }
-    }
     
 }
