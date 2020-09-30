@@ -29,7 +29,7 @@ class Notification: UIViewController {
         let center = UNUserNotificationCenter.current()
               
         let content = UNMutableNotificationContent()
-        content.title = "Notification's title"
+        content.title = "Viagem espacial"
         content.body = Message.allCases.randomElement()!.rawValue
         content.sound = .default
               

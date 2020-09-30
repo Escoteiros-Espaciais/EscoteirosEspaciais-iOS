@@ -24,7 +24,7 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
     var options: [UIImageView] = []
     var text = ""
     var answerRight = ""
-    var imageRight = UIImageView()
+    //var imageRight = UIImageView()
     var items: [String] = []
     var score = 0
     
@@ -40,7 +40,7 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
         option3.image = UIImage(named: items[2])
         option4.image = UIImage(named: items[3])
         options = [option1, option2, option3, option4]
-        imageRight.image = UIImage(named: answerRight)
+        //imageRight.image = UIImage(named: answerRight)
         
         dynamicAnimator = UIDynamicAnimator(referenceView: view)
         answer.isUserInteractionEnabled = false
@@ -83,15 +83,28 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
             
         case .possible:
             break
+        @unknown default:
+            break
         }
     }
     
+    func itemRigth(answer: String) -> Int {
+        for (index, item) in items.enumerated() {
+            if answer == item {
+                return index
+            }
+        }
+        return 0
+    }
+    
     func checkImageAnswer(image: UIView) {
-        if image == imageRight {
+        if image.tag == itemRigth(answer: answerRight) {
             score+=1
             print("acertou")
+            answer.image = UIImage(named: "EsferaCerta")
         } else {
             print("errou")
+            answer.image = UIImage(named: "EsferaErrada")
         }
     }
     
