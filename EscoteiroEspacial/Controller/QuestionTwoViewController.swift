@@ -26,6 +26,7 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
     var answerRight = ""
     var items: [String] = []
     var score = 0
+    var planetName = ""
     
     var behaviors: [Int : UISnapBehavior] = [:]
     
@@ -112,6 +113,7 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
             let storyboard = UIStoryboard(name: "Warnings", bundle: nil)
             let warningsVC = storyboard.instantiateViewController(identifier: "warnings") as WarningsViewController
             warningsVC.score = score
+            warningsVC.astroId = planetName
             self.present(warningsVC, animated: true, completion: nil)
         }
     }

@@ -148,6 +148,7 @@ class QuestionViewController: UIViewController {
                 questionTwoVC.answerRight = getRightAnswer(number: questionNumber)
                 questionTwoVC.items = getAnswers()
                 questionTwoVC.score = score
+                questionTwoVC.planetName = astroQuestions.planet as! String
                 self.present(questionTwoVC, animated: true, completion: nil)
                
             }
