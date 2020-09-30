@@ -64,14 +64,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6F-oR-VOo">
                                 <rect key="frame" x="424" y="40" width="404" height="313"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enR-OI-K5W">
-                                        <rect key="frame" x="8" y="281" width="24" height="24"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="YIs-RB-Ris"/>
-                                            <constraint firstAttribute="width" constant="24" id="ndY-UX-4kK"/>
-                                        </constraints>
-                                        <state key="normal" backgroundImage="audio-on"/>
-                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7xk-8F-wqM">
                                         <rect key="frame" x="8" y="8" width="388" height="267"/>
                                         <subviews>
@@ -81,9 +73,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                          
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-0O-hcd">
-                                              
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-0O-hcd">
                                                 <rect key="frame" x="0.0" y="34.5" width="388" height="70.5"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choice1" backgroundImage="Rectangle"/>
@@ -96,7 +86,7 @@
                                                     <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="dIt-XP-xRZ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-Vu-pkf">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-Vu-pkf">
                                                 <rect key="frame" x="0.0" y="115" width="388" height="71"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choice2" backgroundImage="Rectangle"/>
@@ -109,7 +99,7 @@
                                                     <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="PY8-Xq-kNn"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMc-dX-SMV">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMc-dX-SMV">
                                                 <rect key="frame" x="0.0" y="196" width="388" height="71"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choise3" backgroundImage="Rectangle"/>
@@ -133,11 +123,9 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="enR-OI-K5W" firstAttribute="leading" secondItem="z6F-oR-VOo" secondAttribute="leading" constant="8" id="QQY-3M-FUu"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="7xk-8F-wqM" secondAttribute="trailing" id="Umq-HN-9HP"/>
                                     <constraint firstItem="7xk-8F-wqM" firstAttribute="top" secondItem="z6F-oR-VOo" secondAttribute="topMargin" id="V4W-gD-2mh"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="7xk-8F-wqM" secondAttribute="bottom" constant="30" id="Zxq-ge-ity"/>
-                                    <constraint firstAttribute="bottom" secondItem="enR-OI-K5W" secondAttribute="bottom" constant="8" id="buf-TU-zHR"/>
                                     <constraint firstItem="7xk-8F-wqM" firstAttribute="leading" secondItem="z6F-oR-VOo" secondAttribute="leadingMargin" id="uYK-4L-Mm6"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -179,7 +167,6 @@
     </scenes>
     <resources>
         <image name="Rectangle" width="322" height="68"/>
-        <image name="audio-on" width="23" height="19"/>
         <image name="back-button2" width="30" height="30"/>
         <image name="background-sem-cometa" width="897" height="414"/>
     </resources>

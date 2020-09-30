@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="landscape" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -22,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="BackStars" translatesAutoresizingMaskIntoConstraints="NO" id="9zy-r0-Os1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="background-sem-cometa" translatesAutoresizingMaskIntoConstraints="NO" id="9zy-r0-Os1">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <viewLayoutGuide key="safeArea" id="dUZ-fH-qQg"/>
                             </imageView>
@@ -494,8 +492,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="mL3-cS-SJT" secondAttribute="bottom" id="6VY-8m-o3J"/>
                             <constraint firstItem="9zy-r0-Os1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8ux-k1-r7J"/>
@@ -510,6 +507,7 @@
                             <constraint firstItem="aPW-qA-ZSi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="44" id="oBi-HD-OS7"/>
                             <constraint firstAttribute="trailing" secondItem="9zy-r0-Os1" secondAttribute="trailing" id="xLR-nG-SVk"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="jupiterButton" destination="xjE-Uk-45m" id="w1c-3J-Mcc"/>
@@ -547,7 +545,6 @@
         <segue reference="Aax-fI-D8c"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="BackStars" width="897" height="414"/>
         <image name="Jupiter" width="160" height="167"/>
         <image name="Lua" width="68" height="76"/>
         <image name="Marte" width="61" height="53"/>
@@ -562,8 +559,6 @@
         <image name="Terra" width="124" height="130"/>
         <image name="Urano" width="126" height="117"/>
         <image name="Venus" width="61" height="60"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="background-sem-cometa" width="897" height="414"/>
     </resources>
 </document>
