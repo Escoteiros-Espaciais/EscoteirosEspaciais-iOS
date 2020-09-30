@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9vY-VF-D4D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9vY-VF-D4D">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -31,6 +33,9 @@
                                     <constraint firstAttribute="height" constant="47" id="kmP-lh-dZF"/>
                                 </constraints>
                                 <state key="normal" image="RemakeButton"/>
+                                <connections>
+                                    <segue destination="tUz-nC-ELT" kind="show" identifier="InfoScreenController" id="ize-Q3-8Z1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyy-Or-uOK">
                                 <rect key="frame" x="259.5" y="296" width="109" height="47"/>
@@ -46,6 +51,9 @@
                                         <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="cpt-Xe-z8y" kind="show" identifier="HomeSpaceController" id="fSB-v6-Cp1"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJ7-fG-IUn">
                                 <rect key="frame" x="417.5" y="135" width="61" height="44"/>
@@ -54,7 +62,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lJy-pq-rFS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="NXa-Cz-bqk" secondAttribute="bottom" constant="71" id="BYZ-Yn-q77"/>
                             <constraint firstItem="aJ7-fG-IUn" firstAttribute="centerY" secondItem="20p-pT-VSv" secondAttribute="centerY" constant="-50" id="URa-aj-YhS"/>
@@ -63,7 +72,6 @@
                             <constraint firstItem="vyy-Or-uOK" firstAttribute="centerX" secondItem="20p-pT-VSv" secondAttribute="centerX" constant="-134" id="h5U-pb-yku"/>
                             <constraint firstItem="aJ7-fG-IUn" firstAttribute="centerX" secondItem="20p-pT-VSv" secondAttribute="centerX" id="mc3-2K-lvc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="lJy-pq-rFS"/>
                     </view>
                     <connections>
                         <outlet property="buttonSolarSystem" destination="vyy-Or-uOK" id="655-yo-hkC"/>
@@ -75,10 +83,33 @@
             </objects>
             <point key="canvasLocation" x="351" y="-196"/>
         </scene>
+        <!--HomeSpace-->
+        <scene sceneID="clh-zd-TuR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeSpace" id="cpt-Xe-z8y" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ag4-CV-TYt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wO9-Yl-4TC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="396"/>
+        </scene>
+        <!--InfoScreenView-->
+        <scene sceneID="UXf-Ab-9kV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InfoScreenView" id="tUz-nC-ELT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hPC-YB-SIX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ri7-Nb-CIj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416" y="396"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BackWhite" width="1708" height="848"/>
         <image name="InitialButton" width="545" height="235"/>
         <image name="RemakeButton" width="545" height="235"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
