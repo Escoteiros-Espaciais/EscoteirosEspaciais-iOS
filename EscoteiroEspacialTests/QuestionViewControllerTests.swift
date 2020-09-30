@@ -58,8 +58,8 @@ class QuestionViewControllerTests: XCTestCase {
         XCTAssertEqual(result, 1)
         
         //sut.planets[0].questions = [Question(text: "", rightAnswer: "", answer: []), Question(text: "", rightAnswer: "", answer: [])]
-        let result2 = sut.nextQuestion()
-        XCTAssertEqual(result2, 0)
+//        let result2 = sut.nextQuestion()
+//        XCTAssertEqual(result2, 0)
     }
 
     func test_getRightAnsewr_gettingRightAnswer_returnEqual() {
