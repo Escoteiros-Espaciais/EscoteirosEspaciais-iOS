@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2486A9251A48DE0030BBA8 /* QuestionTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2486A8251A48DE0030BBA8 /* QuestionTwoViewController.swift */; };
 		0BAF9006251FC3A200CD4FAD /* QuestionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF9005251FC3A200CD4FAD /* QuestionViewControllerTests.swift */; };
+		0BC7206425191A5B00F9D82C /* QuestionTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC7206325191A5B00F9D82C /* QuestionTwo.storyboard */; };
 		0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD219D92510F7DD00F95B93 /* Notification.swift */; };
 		201516D9876A6328E4E39FFF /* Pods_EscoteiroEspacial_EscoteiroEspacialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A44BCFE4F1436AE08D5A991 /* Pods_EscoteiroEspacial_EscoteiroEspacialUITests.framework */; };
 		270DC2132513A41100E8781F /* PlanetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270DC2122513A41000E8781F /* PlanetNode.swift */; };
@@ -74,7 +76,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B2486A8251A48DE0030BBA8 /* QuestionTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTwoViewController.swift; sourceTree = "<group>"; };
 		0BAF9005251FC3A200CD4FAD /* QuestionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerTests.swift; sourceTree = "<group>"; };
+		0BC7206325191A5B00F9D82C /* QuestionTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuestionTwo.storyboard; sourceTree = "<group>"; };
 		0BD219D92510F7DD00F95B93 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		270DC2122513A41000E8781F /* PlanetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNode.swift; sourceTree = "<group>"; };
 		273DAD5B25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PatrickHandSC-Regular.ttf"; sourceTree = "<group>"; };
@@ -243,6 +247,7 @@
 				7B1F9084251D89A300FF1B44 /* CometNode.swift */,
 				A4BB8C83250FA1C300A2CAB1 /* Questions.storyboard */,
 				A4BB8C932514DCD200A2CAB1 /* Warnings.storyboard */,
+				0BC7206325191A5B00F9D82C /* QuestionTwo.storyboard */,
 				A42CC3502518DBAD0007EC95 /* Welcome.storyboard */,
 			);
 			path = View;
@@ -263,6 +268,7 @@
 				27F5BC6E25011E8800AD5531 /* HomeSpaceController.swift */,
 				27ED6905250A59AB00E5A67E /* InfoScreenController.swift */,
 				0BD219D92510F7DD00F95B93 /* Notification.swift */,
+				0B2486A8251A48DE0030BBA8 /* QuestionTwoViewController.swift */,
 				A4BB8C9125139AD000A2CAB1 /* QuestionViewController.swift */,
 				A42CC34E2518D9B40007EC95 /* WarningsViewController.swift */,
 				A42CC3522518DFB20007EC95 /* WelcomeViewController.swift */,
@@ -451,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27ED6904250A563700E5A67E /* InfoScreenView.storyboard in Resources */,
+				0BC7206425191A5B00F9D82C /* QuestionTwo.storyboard in Resources */,
 				27F5BCA1250121BA00AD5531 /* .swiftlint.yml in Resources */,
 				A4BB8C942514DCD200A2CAB1 /* Warnings.storyboard in Resources */,
 				7BA5D90F2522D4120003C239 /* saturn.wav in Resources */,
@@ -625,6 +632,7 @@
 				0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */,
 				7B38B7E0251ABE060041900A /* ApiManager.swift in Sources */,
 				27F5BC6B25011E8800AD5531 /* AppDelegate.swift in Sources */,
+				0B2486A9251A48DE0030BBA8 /* QuestionTwoViewController.swift in Sources */,
 				7B1F9085251D89A300FF1B44 /* CometNode.swift in Sources */,
 				279E1C2A2518E8D80048C7F5 /* Astro.swift in Sources */,
 				A4BB8C8E2510E7C200A2CAB1 /* Planets .swift in Sources */,
@@ -851,7 +859,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R39G5DLZJ3;
+				DEVELOPMENT_TEAM = JCC32S9S9V;
 				INFOPLIST_FILE = EscoteiroEspacialTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -874,7 +882,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R39G5DLZJ3;
+				DEVELOPMENT_TEAM = JCC32S9S9V;
 				INFOPLIST_FILE = EscoteiroEspacialTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
