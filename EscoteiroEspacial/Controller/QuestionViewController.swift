@@ -127,7 +127,7 @@ class QuestionViewController: UIViewController {
                 
                 let storyboard = UIStoryboard(name: "QuestionTwo", bundle: nil)
                 let questionTwoVC = storyboard.instantiateViewController(identifier: "questionTwo") as QuestionTwoViewController
-               // questionTwoVC.question.text = getQuestionText()
+                questionTwoVC.text = getQuestionText()
                 questionTwoVC.answerRight = getRightAnswer(number: questionNumber)
                 questionTwoVC.items = getAnswers()
                 questionTwoVC.score = score
