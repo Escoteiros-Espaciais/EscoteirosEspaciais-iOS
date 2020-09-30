@@ -76,6 +76,7 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-0O-hcd">
                                                 <rect key="frame" x="0.0" y="34.5" width="388" height="70.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Choice1"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choice1" backgroundImage="Rectangle"/>
                                                 <userDefinedRuntimeAttributes>
@@ -89,6 +90,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-Vu-pkf">
                                                 <rect key="frame" x="0.0" y="115" width="388" height="71"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Choice2"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choice2" backgroundImage="Rectangle"/>
                                                 <userDefinedRuntimeAttributes>
@@ -102,6 +104,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMc-dX-SMV">
                                                 <rect key="frame" x="0.0" y="196" width="388" height="71"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Choice3"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
                                                 <state key="normal" title="Choise3" backgroundImage="Rectangle"/>
                                                 <userDefinedRuntimeAttributes>

@@ -39,12 +39,12 @@ class EscoteiroEspacialUITests: XCTestCase {
         let testeButtonButton = app.buttons["teste button"]
         testeButtonButton.tap()
         
-        let solStaticText = app2/*@START_MENU_TOKEN@*/.buttons["Sol"].staticTexts["Sol"]/*[[".buttons[\"Sol\"].staticTexts[\"Sol\"]",".staticTexts[\"Sol\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
+        let solStaticText = app2.buttons["Choice1"] //app2/*@START_MENU_TOKEN@*/.buttons["Sol"].staticTexts["Sol"]/*[[".buttons[\"Sol\"].staticTexts[\"Sol\"]",".staticTexts[\"Sol\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         solStaticText.tap()
         solStaticText.tap()
         solStaticText.tap()
         
-        let nOStaticText = app2/*@START_MENU_TOKEN@*/.buttons["Não"].staticTexts["Não"]/*[[".buttons[\"Não\"].staticTexts[\"Não\"]",".staticTexts[\"Não\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
+        let nOStaticText = app2.buttons["Choice2"] //app2/*@START_MENU_TOKEN@*/.buttons["Não"].staticTexts["Não"]/*[[".buttons[\"Não\"].staticTexts[\"Não\"]",".staticTexts[\"Não\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
 //        nOStaticText.tap()
         
         let backButton2Button = app.buttons["back button2"]
@@ -55,10 +55,10 @@ class EscoteiroEspacialUITests: XCTestCase {
         app.buttons["Mercurio"].tap()
         testeButtonButton.tap()
         
-        let mercRioStaticText = app2/*@START_MENU_TOKEN@*/.buttons["Mercúrio"].staticTexts["Mercúrio"]/*[[".buttons[\"Mercúrio\"].staticTexts[\"Mercúrio\"]",".staticTexts[\"Mercúrio\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
+        let mercRioStaticText = app2.buttons["Choice3"] //app2/*@START_MENU_TOKEN@*/.buttons["Mercúrio"].staticTexts["Mercúrio"]/*[[".buttons[\"Mercúrio\"].staticTexts[\"Mercúrio\"]",".staticTexts[\"Mercúrio\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         mercRioStaticText.tap()
         
-        let luaStaticText = app2/*@START_MENU_TOKEN@*/.buttons["Lua"].staticTexts["Lua"]/*[[".buttons[\"Lua\"].staticTexts[\"Lua\"]",".staticTexts[\"Lua\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
+        let luaStaticText = app2.buttons["Choice1"] //app2/*@START_MENU_TOKEN@*/.buttons["Lua"].staticTexts["Lua"]/*[[".buttons[\"Lua\"].staticTexts[\"Lua\"]",".staticTexts[\"Lua\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         luaStaticText.tap()
         mercRioStaticText.tap()
 //        app2/*@START_MENU_TOKEN@*/.staticTexts["Nenhuma"]/*[[".buttons[\"Nenhuma\"].staticTexts[\"Nenhuma\"]",".staticTexts[\"Nenhuma\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
@@ -67,7 +67,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         app.buttons["Venus"].tap()
         testeButtonButton.tap()
         
-        let vNusStaticText = app2/*@START_MENU_TOKEN@*/.buttons["Vênus"].staticTexts["Vênus"]/*[[".buttons[\"Vênus\"].staticTexts[\"Vênus\"]",".staticTexts[\"Vênus\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
+        let vNusStaticText = app2.buttons["Choice2"]//app2/*@START_MENU_TOKEN@*/.buttons["Vênus"].staticTexts["Vênus"]/*[[".buttons[\"Vênus\"].staticTexts[\"Vênus\"]",".staticTexts[\"Vênus\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         vNusStaticText.tap()
         solStaticText.tap()
         vNusStaticText.tap()
@@ -79,10 +79,10 @@ class EscoteiroEspacialUITests: XCTestCase {
         luaStaticText.tap()
         app2/*@START_MENU_TOKEN@*/.buttons["Uma"].staticTexts["Uma"]/*[[".buttons[\"Uma\"].staticTexts[\"Uma\"]",".staticTexts[\"Uma\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
         
-        let simStaticText = app2/*@START_MENU_TOKEN@*/.buttons["Sim"].staticTexts["Sim"]/*[[".buttons[\"Sim\"].staticTexts[\"Sim\"]",".staticTexts[\"Sim\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
+        let simStaticText = app2.buttons["Choice3"]//app2/*@START_MENU_TOKEN@*/.buttons["Sim"].staticTexts["Sim"]/*[[".buttons[\"Sim\"].staticTexts[\"Sim\"]",".staticTexts[\"Sim\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         simStaticText.tap()
         
-        let marteStaticText = app2/*@START_MENU_TOKEN@*/.buttons["Marte"].staticTexts["Marte"]/*[[".buttons[\"Marte\"].staticTexts[\"Marte\"]",".staticTexts[\"Marte\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
+        let marteStaticText = app2.buttons["Choice1"]//app2/*@START_MENU_TOKEN@*/.buttons["Marte"].staticTexts["Marte"]/*[[".buttons[\"Marte\"].staticTexts[\"Marte\"]",".staticTexts[\"Marte\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
 //        marteStaticText.tap()
         backButton2Button.tap()
         backButtonButton.tap()
@@ -100,7 +100,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         testeButtonButton.tap()
         simStaticText.tap()
         nOStaticText.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Netuno"].staticTexts["Netuno"]/*[[".buttons[\"Netuno\"].staticTexts[\"Netuno\"]",".staticTexts[\"Netuno\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+        app2.buttons["Choice2"].tap() //app2/*@START_MENU_TOKEN@*/.buttons["Netuno"].staticTexts["Netuno"]/*[[".buttons[\"Netuno\"].staticTexts[\"Netuno\"]",".staticTexts[\"Netuno\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
 //        app2/*@START_MENU_TOKEN@*/.buttons["Duas"].staticTexts["Duas"]/*[[".buttons[\"Duas\"].staticTexts[\"Duas\"]",".staticTexts[\"Duas\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
         backButton2Button.tap()
         backButtonButton.tap()
@@ -109,7 +109,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         testeButtonButton.tap()
         mercRioStaticText.tap()
         nOStaticText.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Ganimedes"].staticTexts["Ganimedes"]/*[[".buttons[\"Ganimedes\"].staticTexts[\"Ganimedes\"]",".staticTexts[\"Ganimedes\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+        app2.buttons["Choice3"].tap()//app2/*@START_MENU_TOKEN@*/.buttons["Ganimedes"].staticTexts["Ganimedes"]/*[[".buttons[\"Ganimedes\"].staticTexts[\"Ganimedes\"]",".staticTexts[\"Ganimedes\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
 //        mercRioStaticText.tap()
         backButton2Button.tap()
         backButtonButton.tap()
@@ -117,12 +117,12 @@ class EscoteiroEspacialUITests: XCTestCase {
         app.buttons["Saturno"].tap()
         testeButtonButton.tap()
         
-        let terraStaticText = app2/*@START_MENU_TOKEN@*/.buttons["Terra"].staticTexts["Terra"]/*[[".buttons[\"Terra\"].staticTexts[\"Terra\"]",".staticTexts[\"Terra\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
+        let terraStaticText = app2.buttons["Choice1"]//app2/*@START_MENU_TOKEN@*/.buttons["Terra"].staticTexts["Terra"]/*[[".buttons[\"Terra\"].staticTexts[\"Terra\"]",".staticTexts[\"Terra\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         terraStaticText.tap()
         solStaticText.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Amarelo"].staticTexts["Amarelo"]/*[[".buttons[\"Amarelo\"].staticTexts[\"Amarelo\"]",".staticTexts[\"Amarelo\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+        app2.buttons["Choice1"].tap()//app2/*@START_MENU_TOKEN@*/.buttons["Amarelo"].staticTexts["Amarelo"]/*[[".buttons[\"Amarelo\"].staticTexts[\"Amarelo\"]",".staticTexts[\"Amarelo\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
         
-        let umPlanetaGasosoStaticText = app2/*@START_MENU_TOKEN@*/.buttons["um planeta gasoso."].staticTexts["um planeta gasoso."]/*[[".buttons[\"um planeta gasoso.\"].staticTexts[\"um planeta gasoso.\"]",".staticTexts[\"um planeta gasoso.\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
+        let umPlanetaGasosoStaticText = app2.buttons["Choice2"]//app2/*@START_MENU_TOKEN@*/.buttons["um planeta gasoso."].staticTexts["um planeta gasoso."]/*[[".buttons[\"um planeta gasoso.\"].staticTexts[\"um planeta gasoso.\"]",".staticTexts[\"um planeta gasoso.\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
 //        umPlanetaGasosoStaticText.tap()
         backButton2Button.tap()
         backButtonButton.tap()
@@ -131,7 +131,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         testeButtonButton.tap()
         simStaticText.tap()
         umPlanetaGasosoStaticText.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Urano"].staticTexts["Urano"]/*[[".buttons[\"Urano\"].staticTexts[\"Urano\"]",".staticTexts[\"Urano\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+        app2.buttons["Choice3"].tap()//app2/*@START_MENU_TOKEN@*/.buttons["Urano"].staticTexts["Urano"]/*[[".buttons[\"Urano\"].staticTexts[\"Urano\"]",".staticTexts[\"Urano\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
 //        nOStaticText.tap()
         backButton2Button.tap()
         backButtonButton.tap()
@@ -139,8 +139,8 @@ class EscoteiroEspacialUITests: XCTestCase {
         app.buttons["Netuno"].tap()
         testeButtonButton.tap()
         luaStaticText.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Júpiter"].staticTexts["Júpiter"]/*[[".buttons[\"Júpiter\"].staticTexts[\"Júpiter\"]",".staticTexts[\"Júpiter\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Cometa"].staticTexts["Cometa"]/*[[".buttons[\"Cometa\"].staticTexts[\"Cometa\"]",".staticTexts[\"Cometa\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+        app2.buttons["Choice1"].tap() //app2/*@START_MENU_TOKEN@*/.buttons["Júpiter"].staticTexts["Júpiter"]/*[[".buttons[\"Júpiter\"].staticTexts[\"Júpiter\"]",".staticTexts[\"Júpiter\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+        app2.buttons["Choice2"].tap() //app2/*@START_MENU_TOKEN@*/.buttons["Cometa"].staticTexts["Cometa"]/*[[".buttons[\"Cometa\"].staticTexts[\"Cometa\"]",".staticTexts[\"Cometa\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
 //        terraStaticText.tap()
         backButton2Button.tap()
         backButtonButton.tap()
