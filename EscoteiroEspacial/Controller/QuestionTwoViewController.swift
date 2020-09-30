@@ -100,10 +100,8 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
     func checkImageAnswer(image: UIView) {
         if image.tag == itemRigth(answer: answerRight) {
             score+=1
-            print("acertou")
             answer.image = UIImage(named: "EsferaCerta")
         } else {
-            print("errou")
             answer.image = UIImage(named: "EsferaErrada")
         }
     }
