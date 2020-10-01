@@ -35,9 +35,11 @@ class EscoteiroEspacialUITests: XCTestCase {
         app.buttons["Skip"].tap()
         sleep(1)
         app.buttons["Sol"].tap()
+        sleep(1)
         
         let testeButtonButton = app.buttons["teste button"]
         testeButtonButton.tap()
+        sleep(2)
         
         let solStaticText = app2.buttons["Choice1"] //app2/*@START_MENU_TOKEN@*/.buttons["Sol"].staticTexts["Sol"]/*[[".buttons[\"Sol\"].staticTexts[\"Sol\"]",".staticTexts[\"Sol\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         solStaticText.tap()
@@ -54,6 +56,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         backButtonButton.tap()
         app.buttons["Mercurio"].tap()
         testeButtonButton.tap()
+        sleep(1)
         
         let mercRioStaticText = app2.buttons["Choice3"] //app2/*@START_MENU_TOKEN@*/.buttons["Mercúrio"].staticTexts["Mercúrio"]/*[[".buttons[\"Mercúrio\"].staticTexts[\"Mercúrio\"]",".staticTexts[\"Mercúrio\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         mercRioStaticText.tap()
@@ -66,6 +69,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         backButtonButton.tap()
         app.buttons["Venus"].tap()
         testeButtonButton.tap()
+        sleep(1)
         
         let vNusStaticText = app2.buttons["Choice2"]//app2/*@START_MENU_TOKEN@*/.buttons["Vênus"].staticTexts["Vênus"]/*[[".buttons[\"Vênus\"].staticTexts[\"Vênus\"]",".staticTexts[\"Vênus\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         vNusStaticText.tap()
@@ -79,9 +83,11 @@ class EscoteiroEspacialUITests: XCTestCase {
         luaStaticText.tap()
         app2/*@START_MENU_TOKEN@*/.buttons["Uma"].staticTexts["Uma"]/*[[".buttons[\"Uma\"].staticTexts[\"Uma\"]",".staticTexts[\"Uma\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
         
+        sleep(1)
         let simStaticText = app2.buttons["Choice3"]//app2/*@START_MENU_TOKEN@*/.buttons["Sim"].staticTexts["Sim"]/*[[".buttons[\"Sim\"].staticTexts[\"Sim\"]",".staticTexts[\"Sim\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         simStaticText.tap()
         
+        sleep(1)
         let marteStaticText = app2.buttons["Choice1"]//app2/*@START_MENU_TOKEN@*/.buttons["Marte"].staticTexts["Marte"]/*[[".buttons[\"Marte\"].staticTexts[\"Marte\"]",".staticTexts[\"Marte\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
 //        marteStaticText.tap()
         backButton2Button.tap()
