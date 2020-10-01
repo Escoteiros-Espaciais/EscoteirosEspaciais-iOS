@@ -23,9 +23,20 @@ class WarningsViewController: UIViewController {
         
         print(astroId)
        // result = (100 * score)/5
-        label.text = "Você acertou \(score)/5 das atividades 🎉"
+       result()
 
     }
+    
+    func result() {
+        if score <= 2 {
+            label.text = "Você acertou \(score) de 5 das atividades, continue tentando 😁"
+        }else if score == 5 {
+            label.text = "Parabéns, Você acertou todas as atividades 🎉🎉🎉"
+        }else {
+            label.text = "Você acertou \(score) de 5 das atividades 🎉"
+        }
+    }
+    
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "HomeSpaceController" {
             guard segue.destination is HomeSpaceController else { return }
