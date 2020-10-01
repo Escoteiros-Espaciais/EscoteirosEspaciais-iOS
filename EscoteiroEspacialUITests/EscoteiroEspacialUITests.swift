@@ -55,8 +55,9 @@ class EscoteiroEspacialUITests: XCTestCase {
         let backButtonButton = app.buttons["back button"]
         backButtonButton.tap()
         app.buttons["Mercurio"].tap()
+        sleep(10)
         testeButtonButton.tap()
-        sleep(2)
+        sleep(10)
         
         let mercRioStaticText = app2.buttons["Choice3"] //app2/*@START_MENU_TOKEN@*/.buttons["Mercúrio"].staticTexts["Mercúrio"]/*[[".buttons[\"Mercúrio\"].staticTexts[\"Mercúrio\"]",".staticTexts[\"Mercúrio\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         mercRioStaticText.tap()
@@ -68,6 +69,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         backButton2Button.tap()
         backButtonButton.tap()
         app.buttons["Venus"].tap()
+        sleep(2)
         testeButtonButton.tap()
         sleep(2)
         
