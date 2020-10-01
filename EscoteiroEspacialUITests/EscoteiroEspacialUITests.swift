@@ -56,7 +56,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         backButtonButton.tap()
         app.buttons["Mercurio"].tap()
         testeButtonButton.tap()
-        sleep(1)
+        sleep(2)
         
         let mercRioStaticText = app2.buttons["Choice3"] //app2/*@START_MENU_TOKEN@*/.buttons["Mercúrio"].staticTexts["Mercúrio"]/*[[".buttons[\"Mercúrio\"].staticTexts[\"Mercúrio\"]",".staticTexts[\"Mercúrio\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         mercRioStaticText.tap()
@@ -69,7 +69,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         backButtonButton.tap()
         app.buttons["Venus"].tap()
         testeButtonButton.tap()
-        sleep(1)
+        sleep(2)
         
         let vNusStaticText = app2.buttons["Choice2"]//app2/*@START_MENU_TOKEN@*/.buttons["Vênus"].staticTexts["Vênus"]/*[[".buttons[\"Vênus\"].staticTexts[\"Vênus\"]",".staticTexts[\"Vênus\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         vNusStaticText.tap()
@@ -81,9 +81,10 @@ class EscoteiroEspacialUITests: XCTestCase {
         app.buttons["Terra"].tap()
         testeButtonButton.tap()
         luaStaticText.tap()
+        sleep(2)
         app2/*@START_MENU_TOKEN@*/.buttons["Uma"].staticTexts["Uma"]/*[[".buttons[\"Uma\"].staticTexts[\"Uma\"]",".staticTexts[\"Uma\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+        sleep(2)
         
-        sleep(1)
         let simStaticText = app2.buttons["Choice3"]//app2/*@START_MENU_TOKEN@*/.buttons["Sim"].staticTexts["Sim"]/*[[".buttons[\"Sim\"].staticTexts[\"Sim\"]",".staticTexts[\"Sim\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         simStaticText.tap()
         
@@ -94,6 +95,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         backButtonButton.tap()
         
         app.buttons["Lua"].tap()
+        sleep(2)
         testeButtonButton.tap()
         marteStaticText.tap()
         nOStaticText.tap()
@@ -103,6 +105,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         backButtonButton.tap()
         
         app.buttons["Marte"].tap()
+        sleep(2)
         testeButtonButton.tap()
         simStaticText.tap()
         nOStaticText.tap()
@@ -112,6 +115,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         backButtonButton.tap()
         
         app.buttons["Jupiter"].tap()
+        sleep(2)
         testeButtonButton.tap()
         mercRioStaticText.tap()
         nOStaticText.tap()
@@ -121,6 +125,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         backButtonButton.tap()
         
         app.buttons["Saturno"].tap()
+        sleep(2)
         testeButtonButton.tap()
         
         let terraStaticText = app2.buttons["Choice1"]//app2/*@START_MENU_TOKEN@*/.buttons["Terra"].staticTexts["Terra"]/*[[".buttons[\"Terra\"].staticTexts[\"Terra\"]",".staticTexts[\"Terra\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
@@ -134,6 +139,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         backButtonButton.tap()
         
         app.buttons["Urano"].tap()
+        sleep(2)
         testeButtonButton.tap()
         simStaticText.tap()
         umPlanetaGasosoStaticText.tap()
@@ -143,6 +149,7 @@ class EscoteiroEspacialUITests: XCTestCase {
         backButtonButton.tap()
         
         app.buttons["Netuno"].tap()
+        sleep(2)
         testeButtonButton.tap()
         luaStaticText.tap()
         app2.buttons["Choice1"].tap() //app2/*@START_MENU_TOKEN@*/.buttons["Júpiter"].staticTexts["Júpiter"]/*[[".buttons[\"Júpiter\"].staticTexts[\"Júpiter\"]",".staticTexts[\"Júpiter\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
