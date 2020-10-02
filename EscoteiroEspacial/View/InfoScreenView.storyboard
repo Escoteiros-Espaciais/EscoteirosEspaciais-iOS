@@ -71,6 +71,7 @@
                                         </constraints>
                                         <state key="normal" backgroundImage="teste-button"/>
                                         <connections>
+                                            <action selector="quiz:" destination="XY6-rH-Cgn" eventType="touchUpInside" id="Z4n-Sy-IvF"/>
                                             <segue destination="r8p-9S-5d9" kind="show" identifier="PassQuestion" id="Ypa-KK-4LH"/>
                                         </connections>
                                     </button>
