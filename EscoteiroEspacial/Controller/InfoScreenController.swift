@@ -11,7 +11,7 @@ import SceneKit
 import Lottie
 import AVFoundation
 
-class InfoScreenController: UIViewController {
+class InfoScreenController: UIViewController, SCNSceneRendererDelegate {
    
     @IBOutlet weak var back: UIButton!
     @IBOutlet weak var testeButton: UIButton!
@@ -27,13 +27,13 @@ class InfoScreenController: UIViewController {
     var audioOn: Bool = true
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        
         sceneView.scene = addPlanet()
+        sceneView.delegate = self
         
         sceneView.backgroundColor = UIColor.clear
         sceneView.allowsCameraControl = true
+        sceneView.autoenablesDefaultLighting = true
         
         let questionFile = RepositoryQuestion(filename: "question")
         self.planets = questionFile.load()
@@ -47,7 +47,25 @@ class InfoScreenController: UIViewController {
         microAnimation.animationSpeed = 0.5
         microAnimation.currentFrame = 28
         addToggleRecognizer(microAnimation)
+        
     }
+    
+    func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+        //let point = self.sceneView.pointOfView
+        guard let viewCamera = self.sceneView.pointOfView?.camera?.yFov else {return}
+        if viewCamera <= 40 {
+            self.sceneView.pointOfView?.camera?.yFov = 40
+        }
+        if viewCamera >= 80 {
+            self.sceneView.pointOfView?.camera?.yFov = 80
+        }
+//        if sceneView.projectPoint(planetNode.position).x != 182.0 {
+//            self.sceneView.pointOfView = point
+//
+//        }
+//
+//        print(sceneView.pointOfView)
+}
     
     func addToggleRecognizer(_ animationView: AnimationView) {
             let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(toggleMenu(recognizer:)))
@@ -61,7 +79,7 @@ class InfoScreenController: UIViewController {
     
     func addPlanet() -> SCNScene {
         let scene = SCNScene()
-        
+
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
         cameraNode.position = SCNVector3(x: 0, y: 0, z: 5)
@@ -71,16 +89,16 @@ class InfoScreenController: UIViewController {
         let lightNode = SCNNode()
         lightNode.light = SCNLight()
         lightNode.light?.type = .ambient
-        lightNode.position = SCNVector3(x: 0, y: 10, z: 2)
+        lightNode.position = SCNVector3(x: 0, y: 0, z: 2)
 
         scene.rootNode.addChildNode(lightNode)
-        
+
         let planetNode = PlanetNode()
         guard let astroIdentifier = astroIdentifier else {return scene}
         planetNode.getPlanet(planet: astroIdentifier.rawValue)
         scene.rootNode.addChildNode(planetNode)
         return scene
-        
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

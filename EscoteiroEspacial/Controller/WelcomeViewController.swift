@@ -9,21 +9,20 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    
     @IBOutlet weak var skip: UIButton!
     @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
-        if UserDefaults.standard.bool(forKey: "First Launch") == false{
-           
+        if UserDefaults.standard.bool(forKey: "First Launch") == false {
+            
             first()
-                    
+            
         } else {
             noFirst()
-
+            
         }
         UserDefaults.standard.set(true, forKey: "First Launch")
     }
@@ -32,10 +31,10 @@ class WelcomeViewController: UIViewController {
         label.text = "Olá viajante, hoje você está iniciando\nsua jornada pelo sistema solar!"
     }
     
-    func noFirst(){
+    func noFirst() {
         label.text = "Vamos continuar\nnossa jornada pelo sistema solar!"
     }
-  
+    
     @IBAction func skipButton(_ sender: Any) {
     }
     

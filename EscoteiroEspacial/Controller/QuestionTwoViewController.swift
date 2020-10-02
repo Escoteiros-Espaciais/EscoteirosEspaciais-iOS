@@ -88,10 +88,8 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
     }
     
     func itemRigth(answer: String) -> Int {
-        for (index, item) in items.enumerated() {
-            if answer == item {
+        for (index, item) in items.enumerated() where answer == item {
                 return index
-            }
         }
         return 0
     }

@@ -9,7 +9,7 @@
 import UIKit
 import SceneKit
 
-class QuestionViewController: UIViewController {
+class QuestionViewController: UIViewController, SCNSceneRendererDelegate {
     
     @IBOutlet weak var backInfoButton: UIButton!
     @IBOutlet weak var animation: SCNView!
@@ -17,7 +17,6 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var choice1: UIButton!
     @IBOutlet weak var choice2: UIButton!
     @IBOutlet weak var choice3: UIButton!
-//    @IBOutlet weak var progressBar: UIProgressView!
 
     var astroString: String = ""
     var questionNumber = 0
@@ -51,6 +50,7 @@ class QuestionViewController: UIViewController {
         animation.scene = scene
         animation.backgroundColor = UIColor.clear
         animation.allowsCameraControl = true
+        animation.delegate = self
         
         let questionFile = RepositoryQuestion(filename: "question")
         self.planets = questionFile.load()
@@ -59,7 +59,24 @@ class QuestionViewController: UIViewController {
         
         updateUI()
     }
-    
+    func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+        //let point = self.animation.pointOfView
+        guard let viewCamera = self.animation.pointOfView?.camera?.yFov else {return}
+        if viewCamera <= 40 {
+            self.animation.pointOfView?.camera?.yFov = 40
+        }
+        if viewCamera >= 80 {
+            self.animation.pointOfView?.camera?.yFov = 80
+        }
+        
+        print(self.animation.pointOfView?.camera?.yFov)
+//        if sceneView.projectPoint(planetNode.position).x != 182.0 {
+//            self.sceneView.pointOfView = point
+//
+//        }
+//
+//        print(sceneView.pointOfView)
+}
     func selectQuestionsAstro(_ astro: String) -> Planets? {
         for astroSelected in 0...(planets.count - 1) where planets[astroSelected].planet == astro {
             self.astroQuestions = planets[astroSelected]
@@ -116,9 +133,6 @@ class QuestionViewController: UIViewController {
         return answers
     }
 
-//    func getProgress(score: Int) -> Float {
-//        return Float(score) / Float(astroQuestions)
-//    }
     func getRightAnswer(number: Int) -> String {
          if let answerOk = astroQuestions.questions![number].rightAnswer {
              return answerOk
@@ -148,7 +162,9 @@ class QuestionViewController: UIViewController {
                 questionTwoVC.answerRight = getRightAnswer(number: questionNumber)
                 questionTwoVC.items = getAnswers()
                 questionTwoVC.score = score
+                // swiftlint:disable force_cast
                 questionTwoVC.planetName = astroQuestions.planet as! String
+                // swiftlint:enable force_cast
                 self.present(questionTwoVC, animated: true, completion: nil)
                
             }
