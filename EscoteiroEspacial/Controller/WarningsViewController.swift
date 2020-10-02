@@ -30,9 +30,9 @@ class WarningsViewController: UIViewController {
     func result() {
         if score <= 2 {
             label.text = "Você acertou \(score) de 5 das atividades, continue tentando 😁"
-        }else if score == 5 {
+        } else if score == 5 {
             label.text = "Parabéns, Você acertou todas as atividades 🎉🎉🎉"
-        }else {
+        } else {
             label.text = "Você acertou \(score) de 5 das atividades 🎉"
         }
     }

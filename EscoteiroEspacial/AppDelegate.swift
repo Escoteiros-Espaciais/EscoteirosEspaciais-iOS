@@ -31,8 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Override point for customization after application launch.
         
         UNUserNotificationCenter.current()
-        .requestAuthorization(options: [.alert, .sound]) {
-        (granted, error) in
+        .requestAuthorization(options: [.alert, .sound]) {(granted, _ ) in
             if granted {
                 print("User gave permissions for local notifications")
             }
