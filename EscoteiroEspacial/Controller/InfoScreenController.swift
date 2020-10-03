@@ -115,18 +115,22 @@ class InfoScreenController: UIViewController, SCNSceneRendererDelegate {
         return ""
     }
     
+    
     private func startSound() {
+        let astro = self.astroIdentifier
         microAnimation.play(fromFrame: ProgressKeyFrames.start.rawValue, toFrame: ProgressKeyFrames.finished.rawValue, loopMode: .none) { [weak self] (_) in
-            guard let astroIdentifier = self!.astroIdentifier else {return}
+            guard let astroIdentifier = astro else {return}
             self?.soundPlanet.myAudio(astroIdentifier).play()
         }
+        
     }
     private func finishSound() {
+        let astro = self.astroIdentifier
         microAnimation?.play(fromFrame: ProgressKeyFrames.first.rawValue, toFrame: ProgressKeyFrames.clouse.rawValue, loopMode: .none) { [weak self] (_) in
-            guard let astroIdentifier = self!.astroIdentifier else {return}
+            guard let astroIdentifier = astro else {return}
             self?.soundPlanet.myAudio(astroIdentifier).pause()
         }
-
+        
     }
     
     @IBAction func back(_ sender: Any) {
@@ -134,4 +138,7 @@ class InfoScreenController: UIViewController, SCNSceneRendererDelegate {
 
     }
     
+    @IBAction func quiz(_ sender: Any) {
+        finishSound()
+    }
 }
