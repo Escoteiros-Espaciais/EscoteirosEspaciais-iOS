@@ -69,7 +69,7 @@ class QuestionViewController: UIViewController, SCNSceneRendererDelegate {
             self.animation.pointOfView?.camera?.yFov = 80
         }
         
-        print(self.animation.pointOfView?.camera?.yFov)
+       // print(self.animation.pointOfView?.camera?.yFov)
 //        if sceneView.projectPoint(planetNode.position).x != 182.0 {
 //            self.sceneView.pointOfView = point
 //
