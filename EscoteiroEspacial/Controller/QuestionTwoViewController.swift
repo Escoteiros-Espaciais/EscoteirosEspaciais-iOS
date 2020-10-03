@@ -19,6 +19,11 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
     @IBOutlet weak var option4: UIImageView!
     @IBOutlet weak var answer: UIImageView!
     
+    @IBOutlet weak var name1: UILabel!
+    @IBOutlet weak var name2: UILabel!
+    @IBOutlet weak var name3: UILabel!
+    @IBOutlet weak var name4: UILabel!
+    
     var dynamicAnimator: UIDynamicAnimator!
 
     var options: [UIImageView] = []
@@ -40,6 +45,11 @@ class QuestionTwoViewController: UIViewController { //Mudar nome para QuestionTw
         option3.image = UIImage(named: items[2])
         option4.image = UIImage(named: items[3])
         options = [option1, option2, option3, option4]
+        
+        name1.text = items[0]
+        name2.text = items[1]
+        name3.text = items[2]
+        name4.text = items[3]
         
         dynamicAnimator = UIDynamicAnimator(referenceView: view)
         answer.isUserInteractionEnabled = false

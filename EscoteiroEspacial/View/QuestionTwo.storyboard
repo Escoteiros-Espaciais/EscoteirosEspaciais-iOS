@@ -141,6 +141,10 @@
                     </view>
                     <connections>
                         <outlet property="answer" destination="Gn0-pN-KcA" id="JaC-C2-wyZ"/>
+                        <outlet property="name1" destination="7a4-8S-Fq8" id="OQ3-h3-0nF"/>
+                        <outlet property="name2" destination="dvA-oh-UWU" id="3DM-lw-4hx"/>
+                        <outlet property="name3" destination="dCb-Xq-c7v" id="ZIt-7F-nMA"/>
+                        <outlet property="name4" destination="vvo-5j-0go" id="fv8-ng-2ZQ"/>
                         <outlet property="option1" destination="CDv-H2-ha5" id="x56-Ur-7bi"/>
                         <outlet property="option2" destination="p9P-5w-f4s" id="NwD-dM-VwH"/>
                         <outlet property="option3" destination="UhE-Hu-xui" id="Rm5-Ql-6ej"/>
