@@ -162,9 +162,7 @@ class QuestionViewController: UIViewController, SCNSceneRendererDelegate {
                 questionTwoVC.answerRight = getRightAnswer(number: questionNumber)
                 questionTwoVC.items = getAnswers()
                 questionTwoVC.score = score
-                // swiftlint:disable force_cast
-                questionTwoVC.planetName = astroQuestions.planet as! String
-                // swiftlint:enable force_cast
+                questionTwoVC.planetName = astroQuestions.planet!
                 self.present(questionTwoVC, animated: true, completion: nil)
                
             }

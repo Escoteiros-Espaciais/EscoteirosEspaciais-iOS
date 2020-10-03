@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iey-go-QXB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iey-go-QXB">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -74,7 +73,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-0O-hcd">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-0O-hcd">
                                                 <rect key="frame" x="0.0" y="34.5" width="388" height="70.5"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="Choice1"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
@@ -88,7 +87,7 @@
                                                     <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="dIt-XP-xRZ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-Vu-pkf">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-Vu-pkf">
                                                 <rect key="frame" x="0.0" y="115" width="388" height="71"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="Choice2"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
@@ -102,7 +101,7 @@
                                                     <action selector="answerButtonPressed:" destination="iey-go-QXB" eventType="touchUpInside" id="PY8-Xq-kNn"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMc-dX-SMV">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMc-dX-SMV">
                                                 <rect key="frame" x="0.0" y="196" width="388" height="71"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="Choice3"/>
                                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="24"/>
@@ -139,7 +138,6 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="Ueh-0U-5pR"/>
                         <constraints>
                             <constraint firstItem="Ueh-0U-5pR" firstAttribute="bottom" secondItem="z6F-oR-VOo" secondAttribute="bottom" constant="40" id="6us-s4-EiL"/>
                             <constraint firstItem="fO0-nA-sYa" firstAttribute="leading" secondItem="Ueh-0U-5pR" secondAttribute="leading" id="AVL-oe-9xK"/>
@@ -154,6 +152,7 @@
                             <constraint firstItem="Lqf-zh-W6I" firstAttribute="leading" secondItem="PKR-RI-AQq" secondAttribute="leading" id="svR-Rk-uOE"/>
                             <constraint firstItem="Ueh-0U-5pR" firstAttribute="bottom" secondItem="fO0-nA-sYa" secondAttribute="bottom" id="yTt-UN-l6H"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ueh-0U-5pR"/>
                     </view>
                     <connections>
                         <outlet property="animation" destination="Aew-b6-u8Z" id="kr7-i0-guH"/>
