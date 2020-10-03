@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9vY-VF-D4D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9vY-VF-D4D">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -55,23 +53,25 @@
                                     <segue destination="cpt-Xe-z8y" kind="show" identifier="HomeSpaceController" id="fSB-v6-Cp1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJ7-fG-IUn">
-                                <rect key="frame" x="417.5" y="135" width="61" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJ7-fG-IUn">
+                                <rect key="frame" x="409" y="138.5" width="78.5" height="37.5"/>
                                 <fontDescription key="fontDescription" name="PatrickHandSC-Regular" family="Patrick Hand SC" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="lJy-pq-rFS"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="NXa-Cz-bqk" secondAttribute="bottom" constant="71" id="BYZ-Yn-q77"/>
                             <constraint firstItem="aJ7-fG-IUn" firstAttribute="centerY" secondItem="20p-pT-VSv" secondAttribute="centerY" constant="-50" id="URa-aj-YhS"/>
                             <constraint firstItem="NXa-Cz-bqk" firstAttribute="centerX" secondItem="20p-pT-VSv" secondAttribute="centerX" constant="134" id="cSo-p9-C6z"/>
                             <constraint firstAttribute="bottom" secondItem="vyy-Or-uOK" secondAttribute="bottom" constant="71" id="fZB-di-MYk"/>
                             <constraint firstItem="vyy-Or-uOK" firstAttribute="centerX" secondItem="20p-pT-VSv" secondAttribute="centerX" constant="-134" id="h5U-pb-yku"/>
+                            <constraint firstItem="aJ7-fG-IUn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="20p-pT-VSv" secondAttribute="leading" constant="16" id="j6A-8s-cEC"/>
                             <constraint firstItem="aJ7-fG-IUn" firstAttribute="centerX" secondItem="20p-pT-VSv" secondAttribute="centerX" id="mc3-2K-lvc"/>
+                            <constraint firstItem="aJ7-fG-IUn" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="20p-pT-VSv" secondAttribute="trailing" constant="16" id="qeR-Jy-0MN"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="lJy-pq-rFS"/>
                     </view>
                     <connections>
                         <outlet property="buttonSolarSystem" destination="vyy-Or-uOK" id="655-yo-hkC"/>
@@ -108,8 +108,5 @@
         <image name="BackWhite" width="1708" height="848"/>
         <image name="InitialButton" width="545" height="235"/>
         <image name="RemakeButton" width="545" height="235"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
