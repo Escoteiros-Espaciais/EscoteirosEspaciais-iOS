@@ -139,5 +139,6 @@ class InfoScreenController: UIViewController, SCNSceneRendererDelegate {
     
     @IBAction func quiz(_ sender: Any) {
         finishSound()
+        audioOn = true
     }
 }
