@@ -10,6 +10,7 @@ import UIKit
 import SceneKit
 import Lottie
 import AVFoundation
+//import ARKit
 
 class InfoScreenController: UIViewController, SCNSceneRendererDelegate {
    
@@ -25,6 +26,13 @@ class InfoScreenController: UIViewController, SCNSceneRendererDelegate {
     
     var soundPlanet = Sounds()
     var audioOn: Bool = true
+    
+    var panStartZ = CGFloat()
+    
+    let scene = SCNScene()
+    let cameraNode = SCNNode()
+    let lightNode = SCNNode()
+    let planetNode = PlanetNode()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,27 +86,53 @@ class InfoScreenController: UIViewController, SCNSceneRendererDelegate {
         }
     
     func addPlanet() -> SCNScene {
-        let scene = SCNScene()
-
-        let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
         cameraNode.position = SCNVector3(x: 0, y: 0, z: 5)
 
         scene.rootNode.addChildNode(cameraNode)
 
-        let lightNode = SCNNode()
         lightNode.light = SCNLight()
         lightNode.light?.type = .ambient
         lightNode.position = SCNVector3(x: 0, y: 0, z: 2)
 
         scene.rootNode.addChildNode(lightNode)
 
-        let planetNode = PlanetNode()
         guard let astroIdentifier = astroIdentifier else {return scene}
         planetNode.getPlanet(planet: astroIdentifier.rawValue)
         scene.rootNode.addChildNode(planetNode)
+        
+        let panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(panGesture:)))
+        sceneView.addGestureRecognizer(panRecognizer)
+        
         return scene
 
+    }
+    
+    @objc func handlePan(panGesture: UIPanGestureRecognizer) {
+      guard let view = view as? SCNView else { return }
+      let location = panGesture.location(in: self.view)
+      var lastPanLocation = SCNVector3(x: 0, y: 0, z: 5)
+        
+      switch panGesture.state {
+      case .began:
+        // existing logic from previous approach. Keep this.
+        guard let hitNodeResult = view.hitTest(location, options: nil).first else { return }
+        panStartZ = CGFloat(view.projectPoint(lastPanLocation).z)
+        // lastPanLocation is new
+        lastPanLocation = hitNodeResult.worldCoordinates
+      case .changed:
+        // This entire case has been replaced
+        let worldTouchPosition = view.unprojectPoint(SCNVector3(location.x, location.y, panStartZ))
+        let movementVector = SCNVector3(
+          worldTouchPosition.x - lastPanLocation.x,
+          worldTouchPosition.y - lastPanLocation.y,
+          worldTouchPosition.z - lastPanLocation.z)
+        planetNode.localTranslate(by: movementVector)
+        lastPanLocation = worldTouchPosition
+        
+      default:
+        break
+      }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -114,7 +148,6 @@ class InfoScreenController: UIViewController, SCNSceneRendererDelegate {
         }
         return ""
     }
-    
     
     private func startSound() {
         let astro = self.astroIdentifier
