@@ -119,6 +119,12 @@ class InfoScreenController: UIViewController, SCNSceneRendererDelegate {
     }
     
     private func startSound() {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback)
+        } catch(let error) {
+            print(error.localizedDescription)
+        }
+        
         let astro = self.astroIdentifier
         microAnimation.play(fromFrame: ProgressKeyFrames.start.rawValue, toFrame: ProgressKeyFrames.finished.rawValue, loopMode: .none) { [weak self] (_) in
             guard let astroIdentifier = astro else {return}
