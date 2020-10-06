@@ -45,12 +45,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     // MARK: UISceneSession Lifecycle
     
-    func applicationDidBecomeActive(_ application: UIApplication) {
+    func applicationWillResignActive(_ application: UIApplication) {
 
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.soloAmbient)
         } catch {
-            print("AVAudioSessionCategoryPlayback not work")
+            print("AVAudioSessionCategorySoloAmbient not work")
         }
     }
 

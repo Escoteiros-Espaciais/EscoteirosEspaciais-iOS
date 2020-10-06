@@ -26,6 +26,13 @@ class InfoScreenController: UIViewController, SCNSceneRendererDelegate {
     var soundPlanet = Sounds()
     var audioOn: Bool = true
     
+    var panStartZ = CGFloat()
+    
+    let scene = SCNScene()
+    let cameraNode = SCNNode()
+    let lightNode = SCNNode()
+    let planetNode = PlanetNode()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sceneView.scene = addPlanet()
@@ -78,25 +85,21 @@ class InfoScreenController: UIViewController, SCNSceneRendererDelegate {
         }
     
     func addPlanet() -> SCNScene {
-        let scene = SCNScene()
-
-        let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
         cameraNode.position = SCNVector3(x: 0, y: 0, z: 5)
 
         scene.rootNode.addChildNode(cameraNode)
 
-        let lightNode = SCNNode()
         lightNode.light = SCNLight()
         lightNode.light?.type = .ambient
         lightNode.position = SCNVector3(x: 0, y: 0, z: 2)
 
         scene.rootNode.addChildNode(lightNode)
 
-        let planetNode = PlanetNode()
         guard let astroIdentifier = astroIdentifier else {return scene}
         planetNode.getPlanet(planet: astroIdentifier.rawValue)
         scene.rootNode.addChildNode(planetNode)
+        
         return scene
 
     }
