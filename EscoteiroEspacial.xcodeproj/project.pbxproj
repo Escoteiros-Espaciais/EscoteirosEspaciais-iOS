@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B2486A9251A48DE0030BBA8 /* QuestionTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2486A8251A48DE0030BBA8 /* QuestionTwoViewController.swift */; };
+		0B41BCE8252CB7ED0017D515 /* foguete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B41BCE7252CB7ED0017D515 /* foguete.jpg */; };
 		0BAF9006251FC3A200CD4FAD /* QuestionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF9005251FC3A200CD4FAD /* QuestionViewControllerTests.swift */; };
 		0BC7206425191A5B00F9D82C /* QuestionTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC7206325191A5B00F9D82C /* QuestionTwo.storyboard */; };
 		0BD219DA2510F7DD00F95B93 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD219D92510F7DD00F95B93 /* Notification.swift */; };
@@ -77,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		0B2486A8251A48DE0030BBA8 /* QuestionTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTwoViewController.swift; sourceTree = "<group>"; };
+		0B41BCE7252CB7ED0017D515 /* foguete.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foguete.jpg; sourceTree = "<group>"; };
 		0BAF9005251FC3A200CD4FAD /* QuestionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerTests.swift; sourceTree = "<group>"; };
 		0BC7206325191A5B00F9D82C /* QuestionTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuestionTwo.storyboard; sourceTree = "<group>"; };
 		0BD219D92510F7DD00F95B93 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
@@ -167,6 +169,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B41BCE3252CB7800017D515 /* LocalNotification */ = {
+			isa = PBXGroup;
+			children = (
+				0B41BCE7252CB7ED0017D515 /* foguete.jpg */,
+			);
+			path = LocalNotification;
+			sourceTree = "<group>";
+		};
 		273DAD5925123D5E00CCC9C3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +211,7 @@
 		27F5BC6925011E8800AD5531 /* EscoteiroEspacial */ = {
 			isa = PBXGroup;
 			children = (
+				0B41BCE3252CB7800017D515 /* LocalNotification */,
 				7B73F1622522D657005DBD28 /* MicroAnimation */,
 				7BA5D8FE2522D3F60003C239 /* Sounds */,
 				273DAD5925123D5E00CCC9C3 /* Fonts */,
@@ -466,6 +477,7 @@
 				7BA5D90B2522D4120003C239 /* earth.wav in Resources */,
 				A4BB8C84250FA1C300A2CAB1 /* Questions.storyboard in Resources */,
 				7BA5D90A2522D4120003C239 /* mercury.wav in Resources */,
+				0B41BCE8252CB7ED0017D515 /* foguete.jpg in Resources */,
 				7BA5D9122522D4120003C239 /* mars.wav in Resources */,
 				7BA5D9112522D4120003C239 /* sun.wav in Resources */,
 				273DAD5C25124C8600CCC9C3 /* PatrickHandSC-Regular.ttf in Resources */,

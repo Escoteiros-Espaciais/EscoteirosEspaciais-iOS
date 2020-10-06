@@ -9,7 +9,6 @@
 
 import UIKit
 import UserNotifications
-import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -40,19 +39,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
         UNUserNotificationCenter.current().delegate = self
         
+        let notification = Notification()
+        notification.schenduleNotification()
+        
         return true
     }
     
     // MARK: UISceneSession Lifecycle
-    
-    func applicationWillResignActive(_ application: UIApplication) {
-
-        do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.soloAmbient)
-        } catch {
-            print("AVAudioSessionCategorySoloAmbient not work")
-        }
-    }
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
