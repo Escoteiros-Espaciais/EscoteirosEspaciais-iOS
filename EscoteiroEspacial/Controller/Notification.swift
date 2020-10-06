@@ -10,10 +10,10 @@ import UIKit
 import UserNotifications
 
 enum Message: String, CaseIterable {
-    case text1 = "Olá amigo, hora da sua viagem no espaço"
+    case text1 = "Olá amigo, hora da sua viagem no espaço!"
     case text2 = "Que tal conhecer mais um planeta super bacana?"
-    case text3 = "Alerta! Precisamos de você para continuar essa viagem"
-    case text4 = "Vive no mundo da lua? Então vem ficar mais um pouco"
+    case text3 = "Alerta! Precisamos de você para continuar essa viagem."
+    case text4 = "Vive no mundo da lua? Então vem ficar mais um pouco..."
     case text5 = "Hey, pequeno viajante! Vamos decolar?"
 }
 
@@ -21,7 +21,6 @@ class Notification: UIViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        //schenduleNotification()
     }
     
     func schenduleNotification() {
@@ -33,7 +32,7 @@ class Notification: UIViewController {
         content.body = Message.allCases.randomElement()!.rawValue
         content.sound = .default
               
-        let date = Date().addingTimeInterval(5) //Sugestão de intervalo: 43200 segundos => 12 horas
+        let date = Date().addingTimeInterval(43200) //Sugestão de intervalo: 43200 segundos => 12 horas
         let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
         
