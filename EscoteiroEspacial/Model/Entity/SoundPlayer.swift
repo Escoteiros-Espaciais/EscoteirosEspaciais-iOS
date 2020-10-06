@@ -24,6 +24,11 @@ struct Sounds {
     }
     
     mutating func myAudio (_ astro: Astro) -> AVAudioPlayer {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback)
+        } catch(let error) {
+            print(error.localizedDescription)
+        }
         return setupPlayer(nome: astro.rawValue, formato: "wav")
     }
 }
