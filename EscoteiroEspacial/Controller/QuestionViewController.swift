@@ -100,7 +100,7 @@ class QuestionViewController: UIViewController, SCNSceneRendererDelegate {
         }
 
         nextQuestion()
-        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 0.6, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
     }
     
     @IBAction func backInfo(_ sender: UIButton) {
@@ -153,7 +153,10 @@ class QuestionViewController: UIViewController, SCNSceneRendererDelegate {
     
     func nextQuestion() -> Int {
         if questionNumber <= (astroQuestions.questions!.count - 1) {
-            questionNumber += 1
+            Timer.scheduledTimer(withTimeInterval: 1.0 , repeats: false) { (_) in
+                self.questionNumber += 1
+            }
+            
             if questionNumber == 4 {
                 
                 let storyboard = UIStoryboard(name: "QuestionTwo", bundle: nil)
